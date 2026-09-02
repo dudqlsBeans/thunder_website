@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>People &#8212; Thunder Research Group</title>
+<meta name="description" content="Faculty, researchers and students of the Thunder Research Group.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=JetBrains+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13 2 4 14h6l-1 8 9-12h-6z' fill='%237fd7e6'/%3E%3C/svg%3E">
+</head>
+<body>
+<!-- ================= Header ================= -->
+<header class="header">
+  <div class="wrap header-in">
+    <a class="brand" href="index.html" aria-label="Thunder Research Group — home">
+      <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M13 2.5 4.5 14.2h5.8L9.2 21.5 19.5 9.6h-6.2z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+        <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
+      </svg>
+      <b>Thunder</b>
+      <span>Research Group</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="research.html">Research</a>
+      <a href="people.html" aria-current="page">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="join.html">Join</a>
+    </nav>
+
+    <div class="hdr-tools">
+      <button class="icon-btn" data-theme-toggle aria-label="Switch colour theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" data-menu aria-expanded="false" aria-controls="nav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="page-head">
+  <div class="hero-grid" aria-hidden="true" style="opacity:.35"></div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="eyebrow">People</div>
+    <h1>A small group with two vocabularies.</h1>
+    <p class="lede">
+      Systems researchers and model researchers in the same room, reviewing each other's drafts.
+      The overlap is the point &#8212; most of our best results started as someone asking a question
+      from the wrong division.
+    </p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="filters" data-filters>
+      <button class="filter" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter" data-filter="cs" aria-pressed="false">Computer science</button>
+      <button class="filter" data-filter="ds" aria-pressed="false">Data science</button>
+    </div>
+
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">Faculty</div>
+      <div><h2 class="sec-title">Principal investigator</h2></div>
+    </div>
+
+    <div class="people" style="margin-bottom:64px">
+      <div class="person cs" data-div="cs" data-tags="cs ds" data-reveal>
+        <div class="avatar">YP</div>
+        <h4>Prof. Your Name</h4>
+        <div class="role">Principal Investigator</div>
+        <p>Execution platforms for deep learning and quantum computing; multimodal learning. Directs both divisions.</p>
+        <div class="links"><a href="mailto:pi@example.edu">Email</a><a href="#">Scholar</a><a href="#">CV</a></div>
+      </div>
+    </div>
+
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">Researchers</div>
+      <div><h2 class="sec-title">Postdocs &amp; doctoral students</h2></div>
+    </div>
+
+    <div class="people" style="margin-bottom:64px">
+      <div class="person cs" data-div="cs" data-reveal>
+        <div class="avatar">AB</div><h4>Researcher Name</h4>
+        <div class="role">Postdoc &#183; CS</div>
+        <p>Compiler scheduling and memory planning for large-model training.</p>
+        <div class="links"><a href="#">Page</a><a href="#">Scholar</a></div>
+      </div>
+      <div class="person cs" data-div="cs" data-reveal>
+        <div class="avatar">CD</div><h4>Student Name</h4>
+        <div class="role">PhD &#183; CS</div>
+        <p>Qubit mapping and noise-aware scheduling on superconducting devices.</p>
+        <div class="links"><a href="#">Page</a><a href="#">GitHub</a></div>
+      </div>
+      <div class="person cs" data-div="cs" data-reveal>
+        <div class="avatar">EF</div><h4>Student Name</h4>
+        <div class="role">PhD &#183; CS</div>
+        <p>Distributed serving systems and elastic inference scheduling.</p>
+        <div class="links"><a href="#">Page</a><a href="#">GitHub</a></div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">GH</div><h4>Student Name</h4>
+        <div class="role">PhD &#183; DS</div>
+        <p>Post-training recipes and reasoning behaviour in language models.</p>
+        <div class="links"><a href="#">Page</a><a href="#">Scholar</a></div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">IJ</div><h4>Student Name</h4>
+        <div class="role">PhD &#183; DS</div>
+        <p>Multilingual speech&#8211;text alignment and low-resource transfer.</p>
+        <div class="links"><a href="#">Page</a><a href="#">GitHub</a></div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">KL</div><h4>Student Name</h4>
+        <div class="role">PhD &#183; DS</div>
+        <p>Evaluation design, contamination and failure analysis.</p>
+        <div class="links"><a href="#">Page</a><a href="#">Scholar</a></div>
+      </div>
+    </div>
+
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">Masters &amp; undergraduate</div>
+      <div><h2 class="sec-title">Students</h2></div>
+    </div>
+
+    <div class="people" style="margin-bottom:64px">
+      <div class="person cs" data-div="cs" data-reveal>
+        <div class="avatar">MN</div><h4>Student Name</h4>
+        <div class="role">MS &#183; CS</div>
+        <p>Kernel autotuning and benchmark infrastructure.</p>
+        <div class="links"><a href="#">GitHub</a></div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">OP</div><h4>Student Name</h4>
+        <div class="role">MS &#183; DS</div>
+        <p>Data curation for multimodal pre-training.</p>
+        <div class="links"><a href="#">GitHub</a></div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">QR</div><h4>Student Name</h4>
+        <div class="role">Undergraduate &#183; DS</div>
+        <p>Evaluation tooling and reproduction studies.</p>
+        <div class="links"><a href="#">GitHub</a></div>
+      </div>
+    </div>
+
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">Alumni</div>
+      <div><h2 class="sec-title">Where people went next</h2></div>
+    </div>
+    <div class="news">
+      <div class="news-item" data-reveal><time>2026</time><p><b>Alumnus Name</b> &#8212; PhD, CS division. Now at a systems team in industry.</p></div>
+      <div class="news-item" data-reveal><time>2025</time><p><b>Alumna Name</b> &#8212; MS, DS division. Now a doctoral student elsewhere.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta" data-reveal>
+      <div>
+        <h2>Your name could sit in one of these cells.</h2>
+        <p>We recruit into both divisions every cycle, and we read every email that shows evidence of having read our papers.</p>
+      </div>
+      <div><a class="btn btn-primary" href="join.html">See openings
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= Footer ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M13 2.5 4.5 14.2h5.8L9.2 21.5 19.5 9.6h-6.2z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+            <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
+          </svg>
+          <b>Thunder Research Group</b>
+        </a>
+        <p class="addr">
+          Department of Computer Science<br>
+          University Name, Building &amp; Room<br>
+          City, Country
+        </p>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <ul>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Elsewhere</h5>
+        <ul>
+          <li><a href="mailto:contact@example.edu">contact@example.edu</a></li>
+          <li><a href="#">Google Scholar</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>&copy; <span data-year>2026</span> Thunder Research Group</span>
+      <span>Computer Science &nbsp;·&nbsp; Data Science</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

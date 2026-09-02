@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research &#8212; Thunder Research Group</title>
+<meta name="description" content="Execution platforms for deep learning and quantum computing; large language and multimodal models.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=JetBrains+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13 2 4 14h6l-1 8 9-12h-6z' fill='%237fd7e6'/%3E%3C/svg%3E">
+</head>
+<body>
+<!-- ================= Header ================= -->
+<header class="header">
+  <div class="wrap header-in">
+    <a class="brand" href="index.html" aria-label="Thunder Research Group — home">
+      <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M13 2.5 4.5 14.2h5.8L9.2 21.5 19.5 9.6h-6.2z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+        <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
+      </svg>
+      <b>Thunder</b>
+      <span>Research Group</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="join.html">Join</a>
+    </nav>
+
+    <div class="hdr-tools">
+      <button class="icon-btn" data-theme-toggle aria-label="Switch colour theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" data-menu aria-expanded="false" aria-controls="nav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="page-head">
+  <div class="hero-grid" aria-hidden="true" style="opacity:.35"></div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="eyebrow">Research programme</div>
+    <h1>Building the substrate, and the workloads that test it.</h1>
+    <p class="lede">
+      Our two divisions ask the same question from opposite ends: what does it take to run a
+      computation that did not exist a few years ago. The computer science division builds
+      execution platforms for deep learning and quantum hardware. The data science division
+      builds and studies the language and multimodal models that keep moving the target.
+    </p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="divisions">
+      <article class="division cs" data-reveal>
+        <div class="division-idx">DIVISION 01 &nbsp;— &nbsp;COMPUTER SCIENCE</div>
+        <h3>Execution platforms</h3>
+        <p class="desc">Deep learning and quantum computing, approached as one compilation-and-scheduling problem against two very different machines.</p>
+        <ul>
+          <li><i>&#8595;</i><span><a href="#cs-01">Compiler stacks</a></span></li>
+          <li><i>&#8595;</i><span><a href="#cs-02">Distributed execution</a></span></li>
+          <li><i>&#8595;</i><span><a href="#cs-03">Quantum toolchains</a></span></li>
+          <li><i>&#8595;</i><span><a href="#cs-04">Hybrid orchestration</a></span></li>
+        </ul>
+      </article>
+      <article class="division ds" data-reveal style="--d:110ms">
+        <div class="division-idx">DIVISION 02 &nbsp;— &nbsp;DATA SCIENCE</div>
+        <h3>Language &amp; multimodal models</h3>
+        <p class="desc">What models learn, where they break, and what it costs to run them once they are worth running.</p>
+        <ul>
+          <li><i>&#8595;</i><span><a href="#ds-01">Language model training</a></span></li>
+          <li><i>&#8595;</i><span><a href="#ds-02">Multimodal representation</a></span></li>
+          <li><i>&#8595;</i><span><a href="#ds-03">Efficiency</a></span></li>
+          <li><i>&#8595;</i><span><a href="#ds-04">Evaluation</a></span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="cs">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">Division 01</div>
+      <div>
+        <h2 class="sec-title">Computer science &#8212; execution platforms</h2>
+        <p class="sec-lede" style="margin-top:14px">
+          A model or a circuit is a description of intent. Everything between that description
+          and a finished result is our subject: what is decided ahead of time, what is decided
+          while running, and what it costs to be wrong.
+        </p>
+      </div>
+    </div>
+
+    <div class="areas">
+      <article class="area cs" id="cs-01" data-reveal>
+        <div class="n">01</div>
+        <h3>Compiler stacks for deep learning</h3>
+        <div class="body">
+          <p>Graph capture, operator fusion, kernel selection and memory planning. We are interested
+          in decisions that survive a change of model family &#8212; and in the cases where the compiler
+          should hand control back to the runtime rather than guess.</p>
+          <p style="margin-top:14px;color:var(--ink-3);font-size:.9rem">Typical questions: when does fusion stop paying? What does a scheduler need to know about a shape it will only see at run time?</p>
+          <div class="tags"><span class="tag">IR design</span><span class="tag">Fusion</span><span class="tag">Autotuning</span><span class="tag">Memory planning</span></div>
+        </div>
+      </article>
+
+      <article class="area cs" id="cs-02" data-reveal>
+        <div class="n">02</div>
+        <h3>Distributed training and serving</h3>
+        <div class="body">
+          <p>Parallelism strategy, collective communication, checkpointing and elasticity on clusters
+          that are shared, heterogeneous and occasionally unreliable. We measure end to end, including
+          the failures, because the tail is where the cost lives.</p>
+          <p style="margin-top:14px;color:var(--ink-3);font-size:.9rem">Typical questions: how should a serving system trade latency against utilisation when the request mix shifts hourly?</p>
+          <div class="tags"><span class="tag">Parallelism</span><span class="tag">Collectives</span><span class="tag">Elasticity</span><span class="tag">Inference serving</span></div>
+        </div>
+      </article>
+
+      <article class="area cs" id="cs-03" data-reveal>
+        <div class="n">03</div>
+        <h3>Quantum compilation and control</h3>
+        <div class="body">
+          <p>Circuit synthesis, qubit mapping and routing under real device topologies, noise-aware
+          scheduling, and the software layer that turns a scheduled circuit into pulses. The constraints
+          are harsher than in classical compilation, which makes the trade-offs easier to see.</p>
+          <p style="margin-top:14px;color:var(--ink-3);font-size:.9rem">Typical questions: what does a compiler do differently when every additional gate costs fidelity?</p>
+          <div class="tags"><span class="tag">Mapping &amp; routing</span><span class="tag">Noise-aware</span><span class="tag">Pulse control</span><span class="tag">Error mitigation</span></div>
+        </div>
+      </article>
+
+      <article class="area cs" id="cs-04" data-reveal>
+        <div class="n">04</div>
+        <h3>Hybrid classical&#8211;quantum orchestration</h3>
+        <div class="body">
+          <p>Variational and iterative workloads put a QPU inside a classical loop. We work on
+          scheduling, queueing and cost models that treat both resources as one system rather than
+          a fast machine waiting on a slow one.</p>
+          <p style="margin-top:14px;color:var(--ink-3);font-size:.9rem">Typical questions: where should the loop live, and what is the right unit of work to send across the boundary?</p>
+          <div class="tags"><span class="tag">Schedulers</span><span class="tag">Cost models</span><span class="tag">Runtime systems</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="ds">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">Division 02</div>
+      <div>
+        <h2 class="sec-title">Data science &#8212; language and multimodal models</h2>
+        <p class="sec-lede" style="margin-top:14px">
+          We train models, take them apart, and try to say precisely what changed and why.
+          The work is empirical by temperament: a claim that cannot be measured on something
+          other than the benchmark it was tuned on is not yet a result.
+        </p>
+      </div>
+    </div>
+
+    <div class="areas">
+      <article class="area ds" id="ds-01" data-reveal>
+        <div class="n">01</div>
+        <h3>Training and steering language models</h3>
+        <div class="body">
+          <p>Data curation, pre-training and post-training recipes, and the reasoning behaviour they
+          produce. We are especially interested in separating genuine generalisation from the
+          well-dressed memorisation that looks just like it on a leaderboard.</p>
+          <p style="margin-top:14px;color:var(--ink-3);font-size:.9rem">Typical questions: which post-training choices move capability, and which only move the score?</p>
+          <div class="tags"><span class="tag">Pre-training data</span><span class="tag">Post-training</span><span class="tag">Reasoning</span><span class="tag">Alignment</span></div>
+        </div>
+      </article>
+
+      <article class="area ds" id="ds-02" data-reveal>
+        <div class="n">02</div>
+        <h3>Multimodal representation</h3>
+        <div class="body">
+          <p>Speech, vision and text in a single model: how modalities are aligned, how much transfers
+          across languages, and what breaks first in the low-resource setting. Multilingual speech is a
+          recurring test bed because it exposes shortcuts quickly.</p>
+          <p style="margin-top:14px;color:var(--ink-3);font-size:.9rem">Typical questions: is the model reasoning across modalities, or has one modality quietly become decorative?</p>
+          <div class="tags"><span class="tag">Speech</span><span class="tag">Vision-language</span><span class="tag">Cross-modal alignment</span><span class="tag">Low-resource</span></div>
+        </div>
+      </article>
+
+      <article class="area ds" id="ds-03" data-reveal>
+        <div class="n">03</div>
+        <h3>Efficiency as a research variable</h3>
+        <div class="body">
+          <p>Distillation, quantisation, sparsity and caching &#8212; studied with the serving system in
+          view rather than as isolated tricks. This is where the two divisions meet most often, and
+          where a systems result and a modelling result are usually the same result.</p>
+          <p style="margin-top:14px;color:var(--ink-3);font-size:.9rem">Typical questions: what does a quality/latency curve look like when the deployment is honest about batch size?</p>
+          <div class="tags"><span class="tag">Distillation</span><span class="tag">Quantisation</span><span class="tag">Inference cost</span></div>
+        </div>
+      </article>
+
+      <article class="area ds" id="ds-04" data-reveal>
+        <div class="n">04</div>
+        <h3>Evaluation and failure analysis</h3>
+        <div class="body">
+          <p>Benchmarks that keep meaning something after release: contamination, construct validity,
+          and evaluations designed so that a failure tells you which assumption was wrong. We publish
+          the cases we could not fix along with the ones we could.</p>
+          <p style="margin-top:14px;color:var(--ink-3);font-size:.9rem">Typical questions: what does this number predict about behaviour outside the test set &#8212; and how would we know?</p>
+          <div class="tags"><span class="tag">Benchmark design</span><span class="tag">Contamination</span><span class="tag">Error analysis</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">Practice</div>
+      <div><h2 class="sec-title">How the work gets done</h2></div>
+    </div>
+    <div class="cards c3">
+      <div class="card" data-reveal>
+        <h4>Measured, not asserted</h4>
+        <p>Every systems claim comes with an end-to-end number on hardware we describe. Microbenchmarks are evidence, not conclusions.</p>
+      </div>
+      <div class="card" data-reveal>
+        <h4>Artifacts by default</h4>
+        <p>Code, configurations and traces are released with the paper. If a result cannot be reproduced from the repository, it is not finished.</p>
+      </div>
+      <div class="card" data-reveal>
+        <h4>Two divisions, one review</h4>
+        <p>Systems drafts get read by model people and the reverse. It is slower, and it catches the assumptions each side forgot it was making.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta" data-reveal>
+      <div>
+        <h2>Looking for a problem to work on?</h2>
+        <p>Each thread above has open questions we would happily hand to a new student or a visiting collaborator.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a class="btn btn-primary" href="join.html">Join the group
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="publications.html">Read the papers</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= Footer ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M13 2.5 4.5 14.2h5.8L9.2 21.5 19.5 9.6h-6.2z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+            <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
+          </svg>
+          <b>Thunder Research Group</b>
+        </a>
+        <p class="addr">
+          Department of Computer Science<br>
+          University Name, Building &amp; Room<br>
+          City, Country
+        </p>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <ul>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Elsewhere</h5>
+        <ul>
+          <li><a href="mailto:contact@example.edu">contact@example.edu</a></li>
+          <li><a href="#">Google Scholar</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>&copy; <span data-year>2026</span> Thunder Research Group</span>
+      <span>Computer Science &nbsp;·&nbsp; Data Science</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

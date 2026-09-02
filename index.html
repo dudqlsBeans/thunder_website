@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thunder Research Group — Execution Platforms &amp; Multimodal Intelligence</title>
+<meta name="description" content="Thunder Research Group builds execution platforms for deep learning and quantum computing, and studies large language and multimodal models.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=JetBrains+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13 2 4 14h6l-1 8 9-12h-6z' fill='%237fd7e6'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ================= Header ================= -->
+<header class="header">
+  <div class="wrap header-in">
+    <a class="brand" href="index.html" aria-label="Thunder Research Group — home">
+      <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M13 2.5 4.5 14.2h5.8L9.2 21.5 19.5 9.6h-6.2z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+        <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
+      </svg>
+      <b>Thunder</b>
+      <span>Research Group</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="join.html">Join</a>
+    </nav>
+
+    <div class="hdr-tools">
+      <button class="icon-btn" data-theme-toggle aria-label="Switch colour theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" data-menu aria-expanded="false" aria-controls="nav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= Hero ================= -->
+<section class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <canvas class="hero-canvas" aria-hidden="true"></canvas>
+
+  <div class="wrap hero-in">
+    <div class="hero-meta">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="eyebrow">Computer Science Division</span>
+      <span class="eyebrow" style="color:var(--ink-4)">/</span>
+      <span class="eyebrow">Data Science Division</span>
+    </div>
+
+    <h1 class="display">The machinery beneath <em>new kinds</em> of computation.</h1>
+
+    <p class="hero-lede">
+      We build the execution platforms that carry deep learning and quantum workloads onto
+      real hardware — and we study the language and multimodal models that keep raising the bar
+      those platforms have to clear. Two divisions, one bench.
+    </p>
+
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="research.html">
+        Explore the research
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="join.html">Work with us</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="hero-strip">
+      <div class="strip-cell"><b>Two divisions</b><p>Computer science and data science, deliberately sharing a hallway.</p></div>
+      <div class="strip-cell"><b>Systems &#8596; models</b><p>Platform work shaped by the workloads it actually has to carry.</p></div>
+      <div class="strip-cell"><b>Classical + quantum</b><p>One discipline of compilation and scheduling across two machines.</p></div>
+      <div class="strip-cell"><b>Open bench</b><p>Artifacts, benchmarks and reproductions released alongside the papers.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Divisions ================= -->
+<section class="section" id="divisions">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">01 &nbsp;/&nbsp; Divisions</div>
+      <div>
+        <h2 class="sec-title">Two halves of the same question</h2>
+        <p class="sec-lede" style="margin-top:14px">
+          What can be computed, and what does it take to actually run it. One division builds
+          the substrate; the other pushes the models that stress it. Neither is much use alone.
+        </p>
+      </div>
+    </div>
+
+    <div class="divisions">
+
+      <!-- CS -->
+      <article class="division cs" data-reveal>
+        <div class="division-idx">DIVISION 01 &nbsp;— &nbsp;COMPUTER SCIENCE</div>
+        <h3>Execution platforms for deep learning and quantum computing</h3>
+        <p class="desc">
+          Compilers, runtimes and schedulers that turn a program into work a machine will
+          finish — measured end to end, on the hardware, not in the abstract.
+        </p>
+
+        <div class="figure" aria-hidden="true">
+          <svg viewBox="0 0 380 108" fill="none" stroke="var(--cs)" stroke-width="1">
+            <g opacity=".85">
+              <rect x="1" y="18" width="78" height="34" rx="2" opacity=".45"/>
+              <rect x="99" y="18" width="78" height="34" rx="2" opacity=".6"/>
+              <rect x="197" y="18" width="78" height="34" rx="2" opacity=".75"/>
+              <rect x="295" y="18" width="80" height="34" rx="2"/>
+              <path d="M79 35h20M177 35h20M275 35h20" stroke-dasharray="3 3" opacity=".7"/>
+              <path d="M40 52v22M138 52v22M236 52v22M335 52v22" opacity=".35"/>
+              <path d="M12 84h352" opacity=".25"/>
+              <circle cx="40" cy="84" r="2.5" fill="var(--cs)" stroke="none" opacity=".8"/>
+              <circle cx="138" cy="84" r="2.5" fill="var(--cs)" stroke="none" opacity=".8"/>
+              <circle cx="236" cy="84" r="2.5" fill="var(--cs)" stroke="none" opacity=".8"/>
+              <circle cx="335" cy="84" r="2.5" fill="var(--cs)" stroke="none" opacity=".8"/>
+            </g>
+          </svg>
+        </div>
+
+        <ul>
+          <li><i>01</i><span><b>Compilers &amp; runtimes</b> — graph capture, kernel selection, memory planning for deep learning.</span></li>
+          <li><i>02</i><span><b>Distributed execution</b> — parallelism strategy, communication scheduling, elastic training and serving.</span></li>
+          <li><i>03</i><span><b>Quantum toolchains</b> — circuit compilation, mapping and routing, noise-aware scheduling and control.</span></li>
+          <li><i>04</i><span><b>Hybrid orchestration</b> — classical and quantum resources under one scheduler and one cost model.</span></li>
+        </ul>
+      </article>
+
+      <!-- DS -->
+      <article class="division ds" data-reveal style="--d:110ms">
+        <div class="division-idx">DIVISION 02 &nbsp;— &nbsp;DATA SCIENCE</div>
+        <h3>Large language models and multimodal intelligence</h3>
+        <p class="desc">
+          How models learn, reason and fail across text, speech and vision — and what has to
+          change in the recipe when a modality is added rather than bolted on.
+        </p>
+
+        <div class="figure" aria-hidden="true">
+          <svg viewBox="0 0 380 108" fill="none" stroke="var(--ds)" stroke-width="1">
+            <g opacity=".85">
+              <circle cx="128" cy="54" r="40" opacity=".55"/>
+              <circle cx="190" cy="54" r="40" opacity=".75"/>
+              <circle cx="252" cy="54" r="40" opacity=".55"/>
+              <path d="M190 14v80" opacity=".2"/>
+              <path d="M8 54h60M312 54h60" stroke-dasharray="3 3" opacity=".45"/>
+              <circle cx="190" cy="54" r="3" fill="var(--ds)" stroke="none"/>
+              <circle cx="159" cy="54" r="1.6" fill="var(--ds)" stroke="none" opacity=".7"/>
+              <circle cx="221" cy="54" r="1.6" fill="var(--ds)" stroke="none" opacity=".7"/>
+            </g>
+          </svg>
+        </div>
+
+        <ul>
+          <li><i>01</i><span><b>Language models</b> — pre- and post-training recipes, reasoning behaviour, alignment under real constraints.</span></li>
+          <li><i>02</i><span><b>Multimodal learning</b> — speech, vision and text in one representation, and where the alignment breaks.</span></li>
+          <li><i>03</i><span><b>Efficiency</b> — data curation, distillation, and inference cost as a first-class research variable.</span></li>
+          <li><i>04</i><span><b>Evaluation</b> — benchmarks that survive contact with deployment, and honest failure analysis.</span></li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= Research index ================= -->
+<section class="section" id="research">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">02 &nbsp;/&nbsp; Current work</div>
+      <div>
+        <h2 class="sec-title">Six threads we are pulling on</h2>
+        <p class="sec-lede" style="margin-top:14px">
+          Active directions across both divisions. Each one is a standing project with
+          students, code and a benchmark attached.
+        </p>
+      </div>
+    </div>
+
+    <div class="areas">
+      <article class="area cs" data-reveal>
+        <div class="n">01</div>
+        <h3>Compiler stacks for deep learning</h3>
+        <div class="body">
+          <p>Scheduling, fusion and memory planning that hold up across model families instead of
+          one benchmark. We care about the compile-time / runtime boundary and what belongs on each side.</p>
+          <div class="tags"><span class="tag">Compilers</span><span class="tag">Kernels</span><span class="tag">Memory</span></div>
+        </div>
+      </article>
+
+      <article class="area cs" data-reveal>
+        <div class="n">02</div>
+        <h3>Distributed training &amp; serving</h3>
+        <div class="body">
+          <p>Parallelism strategies, collective communication and elasticity for clusters that are
+          shared, heterogeneous and occasionally unreliable — which is to say, real ones.</p>
+          <div class="tags"><span class="tag">Parallelism</span><span class="tag">Scheduling</span><span class="tag">Serving</span></div>
+        </div>
+      </article>
+
+      <article class="area cs" data-reveal>
+        <div class="n">03</div>
+        <h3>Quantum compilation &amp; control</h3>
+        <div class="body">
+          <p>Mapping and routing under real device topologies, noise-aware scheduling, and the
+          software layer between a circuit and the pulses that run it.</p>
+          <div class="tags"><span class="tag">Circuit mapping</span><span class="tag">Noise-aware</span><span class="tag">Hybrid</span></div>
+        </div>
+      </article>
+
+      <article class="area ds" data-reveal>
+        <div class="n">04</div>
+        <h3>Training and steering language models</h3>
+        <div class="body">
+          <p>Data curation, post-training and the reasoning behaviour it produces — including the
+          parts that look like capability but are closer to memorisation.</p>
+          <div class="tags"><span class="tag">Post-training</span><span class="tag">Reasoning</span><span class="tag">Data</span></div>
+        </div>
+      </article>
+
+      <article class="area ds" data-reveal>
+        <div class="n">05</div>
+        <h3>Multimodal representation</h3>
+        <div class="body">
+          <p>Speech, vision and language sharing one model: cross-modal alignment, transfer across
+          languages and modalities, and the low-resource cases that expose the shortcuts.</p>
+          <div class="tags"><span class="tag">Speech</span><span class="tag">Vision-language</span><span class="tag">Alignment</span></div>
+        </div>
+      </article>
+
+      <article class="area ds" data-reveal>
+        <div class="n">06</div>
+        <h3>Efficiency and evaluation</h3>
+        <div class="body">
+          <p>Inference cost, distillation and quantisation studied together with measurement:
+          what a benchmark number actually predicts once the model is deployed.</p>
+          <div class="tags"><span class="tag">Inference</span><span class="tag">Distillation</span><span class="tag">Benchmarks</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= News ================= -->
+<!-- PLACEHOLDER CONTENT: replace these entries with the group's real news. -->
+<section class="section" id="news">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">03 &nbsp;/&nbsp; Notes</div>
+      <div>
+        <h2 class="sec-title">From the lab</h2>
+      </div>
+    </div>
+
+    <div class="news">
+      <div class="news-item" data-reveal><time datetime="2026-08">Aug 2026</time><p><b>New preprint.</b> A scheduler that treats classical and quantum resources under a single cost model. Code and traces released with it.</p></div>
+      <div class="news-item" data-reveal><time datetime="2026-06">Jun 2026</time><p><b>Two papers accepted</b> at a systems venue and an NLP venue in the same week — a fair summary of how this group works.</p></div>
+      <div class="news-item" data-reveal><time datetime="2026-04">Apr 2026</time><p><b>Benchmark release.</b> A multilingual speech–text evaluation suite, with the failure cases we could not fix included on purpose.</p></div>
+      <div class="news-item" data-reveal><time datetime="2026-03">Mar 2026</time><p><b>We are recruiting</b> graduate students and interns for both divisions. See <a href="join.html" style="border-bottom:1px solid var(--line-2)">Join</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="section">
+  <div class="wrap">
+    <div class="cta" data-reveal>
+      <div>
+        <h2>Come build the layer nobody sees.</h2>
+        <p>
+          We take students, interns and collaborators from both sides — systems people who want
+          to know what the models need, and model people who want to know what the machine can do.
+        </p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a class="btn btn-primary" href="join.html">
+          Openings
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="mailto:contact@example.edu">Email the group</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= Footer ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M13 2.5 4.5 14.2h5.8L9.2 21.5 19.5 9.6h-6.2z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+            <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
+          </svg>
+          <b>Thunder Research Group</b>
+        </a>
+        <p class="addr">
+          Department of Computer Science<br>
+          University Name, Building &amp; Room<br>
+          City, Country
+        </p>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <ul>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Elsewhere</h5>
+        <ul>
+          <li><a href="mailto:contact@example.edu">contact@example.edu</a></li>
+          <li><a href="#">Google Scholar</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>&copy; <span data-year>2026</span> Thunder Research Group</span>
+      <span>Computer Science &nbsp;·&nbsp; Data Science</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
