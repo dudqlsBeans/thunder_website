@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Thunder Research Group — Execution Platforms &amp; Multimodal Intelligence</title>
+<title>THUNDER Research Group — Execution Platforms &amp; Multimodal Intelligence</title>
 <meta name="description" content="Thunder Research Group builds execution platforms for deep learning and quantum computing, and studies large language and multimodal models.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
 <!-- ================= Header ================= -->
 <header class="header">
   <div class="wrap header-in">
-    <a class="brand" href="index.html" aria-label="Thunder Research Group — home">
+    <a class="brand" href="index.html" aria-label="THUNDER Research Group — home">
       <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path d="M13 2.5 4.5 14.2h5.8L9.2 21.5 19.5 9.6h-6.2z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
         <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
@@ -54,17 +54,19 @@
   <div class="wrap hero-in">
     <div class="hero-meta">
       <span class="dot" aria-hidden="true"></span>
-      <span class="eyebrow">Computer Science Division</span>
+      <span class="eyebrow">Seoul National University</span>
       <span class="eyebrow" style="color:var(--ink-4)">/</span>
-      <span class="eyebrow">Data Science Division</span>
+      <span class="eyebrow">CSE &#183; Data Science</span>
     </div>
 
-    <h1 class="display">The machinery beneath <em>new kinds</em> of computation.</h1>
+    <h1 class="display">Accelerating <em>large-scale AI</em>, pragmatically.</h1>
 
     <p class="hero-lede">
-      We build the execution platforms that carry deep learning and quantum workloads onto
-      real hardware — and we study the language and multimodal models that keep raising the bar
-      those platforms have to clear. Two divisions, one bench.
+      THUNDER belongs to both the Department of Computer Science and Engineering in the College
+      of Engineering and the Department of Data Science in the Graduate School of Data Science at
+      Seoul National University. Our goal is to accelerate the training and inference of large-scale
+      AI models and to reduce their size. We also work on natural language processing from the
+      perspective of deep learning. We emphasise pragmatic approaches.
     </p>
 
     <div class="hero-cta">
@@ -78,10 +80,10 @@
 
   <div class="wrap">
     <div class="hero-strip">
-      <div class="strip-cell"><b>Two divisions</b><p>Computer science and data science, deliberately sharing a hallway.</p></div>
-      <div class="strip-cell"><b>Systems &#8596; models</b><p>Platform work shaped by the workloads it actually has to carry.</p></div>
-      <div class="strip-cell"><b>Classical + quantum</b><p>One discipline of compilation and scheduling across two machines.</p></div>
-      <div class="strip-cell"><b>Open bench</b><p>Artifacts, benchmarks and reproductions released alongside the papers.</p></div>
+      <div class="strip-cell"><b>Two departments</b><p>Computer Science and Engineering, and Data Science, in one group.</p></div>
+      <div class="strip-cell"><b>Beyond the programming wall</b><p>Compilers, runtimes and systems that make heterogeneous machines usable.</p></div>
+      <div class="strip-cell"><b>Korean-first LLMs</b><p>Datasets, tokenizers and models built for Korean from the ground up.</p></div>
+      <div class="strip-cell"><b>Released software</b><p>SnuCL, SnuQS, SnuRHAC, SOFF, HUM and the UDC datasets are public.</p></div>
     </div>
   </div>
 </section>
@@ -91,12 +93,13 @@
   <div class="wrap">
     <div class="sec-head" data-reveal>
       <div class="rule" aria-hidden="true"></div>
-      <div class="eyebrow">01 &nbsp;/&nbsp; Divisions</div>
+      <div class="eyebrow">01 &nbsp;/&nbsp; Departments</div>
       <div>
-        <h2 class="sec-title">Two halves of the same question</h2>
+        <h2 class="sec-title">One group, two departments</h2>
         <p class="sec-lede" style="margin-top:14px">
-          What can be computed, and what does it take to actually run it. One division builds
-          the substrate; the other pushes the models that stress it. Neither is much use alone.
+          Accelerator-based heterogeneous systems are the de facto standard for running large-scale
+          applications, but the programming wall stands between a model designer and the machine.
+          We work on both sides of it.
         </p>
       </div>
     </div>
@@ -105,11 +108,11 @@
 
       <!-- CS -->
       <article class="division cs" data-reveal>
-        <div class="division-idx">DIVISION 01 &nbsp;— &nbsp;COMPUTER SCIENCE</div>
+        <div class="division-idx">COMPUTER SCIENCE AND ENGINEERING</div>
         <h3>Execution platforms for deep learning and quantum computing</h3>
         <p class="desc">
-          Compilers, runtimes and schedulers that turn a program into work a machine will
-          finish — measured end to end, on the hardware, not in the abstract.
+          Compilers, runtime systems and programming environments for GPUs, FPGAs and clusters —
+          built so that a model designer does not have to know the machine to use all of it.
         </p>
 
         <div class="figure" aria-hidden="true">
@@ -131,20 +134,20 @@
         </div>
 
         <ul>
-          <li><i>01</i><span><b>Compilers &amp; runtimes</b> — graph capture, kernel selection, memory planning for deep learning.</span></li>
-          <li><i>02</i><span><b>Distributed execution</b> — parallelism strategy, communication scheduling, elastic training and serving.</span></li>
-          <li><i>03</i><span><b>Quantum toolchains</b> — circuit compilation, mapping and routing, noise-aware scheduling and control.</span></li>
-          <li><i>04</i><span><b>Hybrid orchestration</b> — classical and quantum resources under one scheduler and one cost model.</span></li>
+          <li><i>01</i><span><b>Automatic parallelization</b> — finding the best parallelization scheme for a DNN on multi-node, multi-GPU systems.</span></li>
+          <li><i>02</i><span><b>Memory beyond the GPU</b> — DeepUM and SnuRHAC use CUDA Unified Memory, host memory and SSDs to run past GPU capacity.</span></li>
+          <li><i>03</i><span><b>Frameworks for FPGAs</b> — SOFF synthesises OpenCL and CUDA for FPGAs without user annotations.</span></li>
+          <li><i>04</i><span><b>Quantum simulation</b> — SnuQS scales full-state circuit simulation using storage devices.</span></li>
         </ul>
       </article>
 
       <!-- DS -->
       <article class="division ds" data-reveal style="--d:110ms">
-        <div class="division-idx">DIVISION 02 &nbsp;— &nbsp;DATA SCIENCE</div>
-        <h3>Large language models and multimodal intelligence</h3>
+        <div class="division-idx">DATA SCIENCE</div>
+        <h3>Large language models, in Korean</h3>
         <p class="desc">
-          How models learn, reason and fail across text, speech and vision — and what has to
-          change in the recipe when a modality is added rather than bolted on.
+          Datasets, tokenizers and models for a language the leaderboards were not built for —
+          plus the evaluation needed to say whether any of it actually worked.
         </p>
 
         <div class="figure" aria-hidden="true">
@@ -163,10 +166,10 @@
         </div>
 
         <ul>
-          <li><i>01</i><span><b>Language models</b> — pre- and post-training recipes, reasoning behaviour, alignment under real constraints.</span></li>
-          <li><i>02</i><span><b>Multimodal learning</b> — speech, vision and text in one representation, and where the alignment breaks.</span></li>
-          <li><i>03</i><span><b>Efficiency</b> — data curation, distillation, and inference cost as a first-class research variable.</span></li>
-          <li><i>04</i><span><b>Evaluation</b> — benchmarks that survive contact with deployment, and honest failure analysis.</span></li>
+          <li><i>01</i><span><b>Korean datasets</b> — web crawling, de-identification and de-duplication at scale for LLM training.</span></li>
+          <li><i>02</i><span><b>Korean tokenizers</b> — Thunder-Tok and morpheme-aware tokenization that cuts tokens per word.</span></li>
+          <li><i>03</i><span><b>Korean language models</b> — Thunder-LLM, adapted to Korean with minimal resources.</span></li>
+          <li><i>04</i><span><b>Benchmarks</b> — Thunder-NUBench and Thunder-KoNUBench for what the models still cannot do.</span></li>
         </ul>
       </article>
 
@@ -181,72 +184,56 @@
       <div class="rule" aria-hidden="true"></div>
       <div class="eyebrow">02 &nbsp;/&nbsp; Current work</div>
       <div>
-        <h2 class="sec-title">Six threads we are pulling on</h2>
+        <h2 class="sec-title">Four areas of research</h2>
         <p class="sec-lede" style="margin-top:14px">
-          Active directions across both divisions. Each one is a standing project with
-          students, code and a benchmark attached.
+          Standing projects, each with students, code and published results behind it.
+          The <a href="research.html" style="color:var(--ink-2);border-bottom:1px solid var(--line-2)">research page</a>
+          describes them in full.
         </p>
       </div>
     </div>
 
     <div class="areas">
-      <article class="area cs" data-reveal>
+      <article class="area" data-area="systems" data-reveal>
         <div class="n">01</div>
-        <h3>Compiler stacks for deep learning</h3>
+        <h3>Execution platforms for deep learning</h3>
         <div class="body">
-          <p>Scheduling, fusion and memory planning that hold up across model families instead of
-          one benchmark. We care about the compile-time / runtime boundary and what belongs on each side.</p>
-          <div class="tags"><span class="tag">Compilers</span><span class="tag">Kernels</span><span class="tag">Memory</span></div>
+          <p>Automatic parallelization of DNN models across multi-node, multi-GPU systems; DeepUM and
+          SnuRHAC for memory and cluster transparency; DeepCuts for kernel generation; and a full-stack
+          deep learning framework for FPGAs.</p>
+          <div class="tags"><span class="tag">Parallelization</span><span class="tag">Unified memory</span><span class="tag">FPGA</span><span class="tag">Kernels</span></div>
         </div>
       </article>
 
-      <article class="area cs" data-reveal>
+      <article class="area" data-area="lm" data-reveal>
         <div class="n">02</div>
-        <h3>Distributed training &amp; serving</h3>
+        <h3>Large language models</h3>
         <div class="body">
-          <p>Parallelism strategies, collective communication and elasticity for clusters that are
-          shared, heterogeneous and occasionally unreliable — which is to say, real ones.</p>
-          <div class="tags"><span class="tag">Parallelism</span><span class="tag">Scheduling</span><span class="tag">Serving</span></div>
+          <p>Korean datasets, tokenizers and language models built from scratch, along with the training
+          techniques, energy characterisation and compression needed to make them affordable.</p>
+          <div class="tags"><span class="tag">Korean data</span><span class="tag">Tokenizers</span><span class="tag">Compression</span><span class="tag">Energy</span></div>
         </div>
       </article>
 
-      <article class="area cs" data-reveal>
+      <article class="area" data-area="quantum" data-reveal>
         <div class="n">03</div>
-        <h3>Quantum compilation &amp; control</h3>
+        <h3>Quantum computing</h3>
         <div class="body">
-          <p>Mapping and routing under real device topologies, noise-aware scheduling, and the
-          software layer between a circuit and the pulses that run it.</p>
-          <div class="tags"><span class="tag">Circuit mapping</span><span class="tag">Noise-aware</span><span class="tag">Hybrid</span></div>
+          <p>An end-to-end software stack — compiler, runtime and simulator. SnuQS simulated a 42-qubit
+          quantum supremacy circuit on a workstation with NVMe SSDs and HDDs, 256 times larger than a
+          conventional full-state simulator.</p>
+          <div class="tags"><span class="tag">SnuQS</span><span class="tag">Full-state simulation</span><span class="tag">Storage I/O</span></div>
         </div>
       </article>
 
-      <article class="area ds" data-reveal>
+      <article class="area" data-area="vision" data-reveal>
         <div class="n">04</div>
-        <h3>Training and steering language models</h3>
+        <h3>Under-display camera image restoration</h3>
         <div class="body">
-          <p>Data curation, post-training and the reasoning behaviour it produces — including the
-          parts that look like capability but are closer to memorisation.</p>
-          <div class="tags"><span class="tag">Post-training</span><span class="tag">Reasoning</span><span class="tag">Data</span></div>
-        </div>
-      </article>
-
-      <article class="area ds" data-reveal>
-        <div class="n">05</div>
-        <h3>Multimodal representation</h3>
-        <div class="body">
-          <p>Speech, vision and language sharing one model: cross-modal alignment, transfer across
-          languages and modalities, and the low-resource cases that expose the shortcuts.</p>
-          <div class="tags"><span class="tag">Speech</span><span class="tag">Vision-language</span><span class="tag">Alignment</span></div>
-        </div>
-      </article>
-
-      <article class="area ds" data-reveal>
-        <div class="n">06</div>
-        <h3>Efficiency and evaluation</h3>
-        <div class="body">
-          <p>Inference cost, distillation and quantisation studied together with measurement:
-          what a benchmark number actually predicts once the model is deployed.</p>
-          <div class="tags"><span class="tag">Inference</span><span class="tag">Distillation</span><span class="tag">Benchmarks</span></div>
+          <p>Cameras placed beneath a display lose light and gain diffraction. We build real-world
+          datasets — UDC-SIT and UDC-VIT — and deep learning restoration methods that work on them
+          rather than on synthetic degradation.</p>
+          <div class="tags"><span class="tag">UDC-SIT</span><span class="tag">UDC-VIT</span><span class="tag">Restoration</span></div>
         </div>
       </article>
     </div>
@@ -266,10 +253,44 @@
     </div>
 
     <div class="news">
-      <div class="news-item" data-reveal><time datetime="2026-08">Aug 2026</time><p><b>New preprint.</b> A scheduler that treats classical and quantum resources under a single cost model. Code and traces released with it.</p></div>
-      <div class="news-item" data-reveal><time datetime="2026-06">Jun 2026</time><p><b>Two papers accepted</b> at a systems venue and an NLP venue in the same week — a fair summary of how this group works.</p></div>
-      <div class="news-item" data-reveal><time datetime="2026-04">Apr 2026</time><p><b>Benchmark release.</b> A multilingual speech–text evaluation suite, with the failure cases we could not fix included on purpose.</p></div>
-      <div class="news-item" data-reveal><time datetime="2026-03">Mar 2026</time><p><b>We are recruiting</b> graduate students and interns for both divisions. See <a href="join.html" style="border-bottom:1px solid var(--line-2)">Join</a>.</p></div>
+      <div class="news-item" data-reveal><time>2025</time><p><b>Prof. Jaejin Lee's team develops an AI that de-identifies personal information in court judgments.</b> <a href="https://cse.snu.ac.kr/en/community/news/1192" rel="noopener" style="border-bottom:1px solid var(--line-2)">SNU CSE news</a></p></div>
+      <div class="news-item" data-reveal><time>2025</time><p><b>&#8220;Korea can build its own DeepSeek&#8221;</b> — SNU researchers develop a high-performance Korean LLM. <a href="https://n.news.naver.com/article/584/0000033143" rel="noopener" style="border-bottom:1px solid var(--line-2)">Coverage</a></p></div>
+      <div class="news-item" data-reveal><time>2024</time><p><b>Moreh, founded by members of the group, releases a 102B open-source model</b> with leading Korean performance. <a href="https://cse.snu.ac.kr/community/news/1182" rel="noopener" style="border-bottom:1px solid var(--line-2)">SNU CSE news</a></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Spinouts & funding ================= -->
+<section class="section" id="around">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">04 &nbsp;/&nbsp; Around the group</div>
+      <div><h2 class="sec-title">Spinouts, software and support</h2></div>
+    </div>
+
+    <div class="cards">
+      <div class="card" data-reveal>
+        <h4>Startups by alumni</h4>
+        <p><a href="http://manycoresoft.co.kr/" rel="noopener">ManyCoreSoft</a> — deep learning systems.<br>
+        <a href="https://moreh.io/" rel="noopener">Moreh Inc.</a> — deep learning compilers and cloud solutions.</p>
+      </div>
+      <div class="card" data-reveal>
+        <h4>Software and systems</h4>
+        <p>Chundoong, a low-cost energy-efficient heterogeneous supercomputer; the UDC-SIT and UDC-VIT
+        datasets; and SnuQS, SnuRHAC, SOFF, HUM, SnuCL, SFMalloc, FaCSim and COMIC on GitHub.</p>
+      </div>
+      <div class="card" data-reveal>
+        <h4>Funding</h4>
+        <p>Ministry of Science and ICT (NRF of Korea), the Engineering Research Center for Optimizing
+        Hyperscale AI Models and Platforms, Software Star Lab, the Creative Research Initiative
+        (Center for Manycore Programming), and the Ministry of Knowledge Economy.</p>
+      </div>
+      <div class="card" data-reveal>
+        <h4>Industry partners</h4>
+        <p>Samsung Electronics, Samsung Display, LG Electronics, SK Hynix, Hancom
+        (&#54620;&#44544;&#44284; &#52964;&#54364;&#53552;), Moreh Inc., SK Telecom and Microsoft.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -279,10 +300,10 @@
   <div class="wrap">
     <div class="cta" data-reveal>
       <div>
-        <h2>Come build the layer nobody sees.</h2>
+        <h2>Come work on the layer nobody sees.</h2>
         <p>
-          We take students, interns and collaborators from both sides — systems people who want
-          to know what the models need, and model people who want to know what the machine can do.
+          We take graduate students, interns and collaborators in both departments — systems people
+          who want to know what the models need, and model people who want to know what the machine can do.
         </p>
       </div>
       <div style="display:flex;flex-wrap:wrap;gap:12px">
@@ -290,7 +311,7 @@
           Openings
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
-        <a class="btn btn-ghost" href="mailto:contact@example.edu">Email the group</a>
+        <a class="btn btn-ghost" href="mailto:chief@aces.snu.ac.kr">Email the group</a>
       </div>
     </div>
   </div>
@@ -308,12 +329,13 @@
             <path d="M13 2.5 4.5 14.2h5.8L9.2 21.5 19.5 9.6h-6.2z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
             <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
           </svg>
-          <b>Thunder Research Group</b>
+          <b>THUNDER Research Group</b>
         </a>
         <p class="addr">
-          Department of Computer Science<br>
-          University Name, Building &amp; Room<br>
-          City, Country
+          Room 651, Building 303<br>
+          Seoul National University<br>
+          Seoul 08826, South Korea<br>
+          +82-2-880-1837
         </p>
       </div>
       <div>
@@ -328,15 +350,15 @@
       <div>
         <h5>Elsewhere</h5>
         <ul>
-          <li><a href="mailto:contact@example.edu">contact@example.edu</a></li>
-          <li><a href="#">Google Scholar</a></li>
-          <li><a href="#">GitHub</a></li>
+          <li><a href="mailto:chief@aces.snu.ac.kr">chief@aces.snu.ac.kr</a></li>
+          <li><a href="https://cse.snu.ac.kr/" rel="noopener">SNU CSE</a></li>
+          <li><a href="https://gsds.snu.ac.kr/" rel="noopener">SNU Data Science</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-base">
-      <span>&copy; <span data-year>2026</span> Thunder Research Group</span>
-      <span>Computer Science &nbsp;·&nbsp; Data Science</span>
+      <span>&copy; 2023&#8211;<span data-year>2026</span> THUNDER Research Group</span>
+      <span>Computer Science and Engineering &nbsp;·&nbsp; Data Science</span>
     </div>
   </div>
 </footer>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Publications &#8212; Thunder Research Group</title>
-<meta name="description" content="Selected papers on execution platforms, quantum compilation, language and multimodal models.">
+<title>Publications &#8212; THUNDER Research Group</title>
+<meta name="description" content="Papers, theses and reports from the THUNDER Research Group, Seoul National University.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=JetBrains+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 <!-- ================= Header ================= -->
 <header class="header">
   <div class="wrap header-in">
-    <a class="brand" href="index.html" aria-label="Thunder Research Group — home">
+    <a class="brand" href="index.html" aria-label="THUNDER Research Group — home">
       <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path d="M13 2.5 4.5 14.2h5.8L9.2 21.5 19.5 9.6h-6.2z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
         <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
@@ -51,8 +51,9 @@
     <div class="eyebrow">Publications</div>
     <h1>What we have written down.</h1>
     <p class="lede">
-      Selected papers from both divisions. Code and data accompany the entries marked
-      <span style="color:var(--ink)">Artifact</span>; if something you need is missing, ask and we will dig it out.
+      Papers, theses and reports from the THUNDER Research Group and its predecessor laboratories,
+      1995 to today. Use the filters to narrow the list to a research area, or to the group's
+      M.S. and Ph.D. theses.
     </p>
   </div>
 </section>
@@ -61,94 +62,2122 @@
   <div class="wrap">
     <div class="filters" data-filters>
       <button class="filter" data-filter="all" aria-pressed="true">All</button>
-      <button class="filter" data-filter="cs" aria-pressed="false">Computer science</button>
-      <button class="filter" data-filter="ds" aria-pressed="false">Data science</button>
+      <button class="filter" data-filter="lm" aria-pressed="false">Language models</button>
+      <button class="filter" data-filter="systems" aria-pressed="false">Execution platforms</button>
+      <button class="filter" data-filter="quantum" aria-pressed="false">Quantum computing</button>
+      <button class="filter" data-filter="vision" aria-pressed="false">Under-display camera</button>
+      <button class="filter" data-filter="compilers" aria-pressed="false">Compilers &amp; architecture</button>
+      <button class="filter" data-filter="theses" aria-pressed="false">Theses</button>
     </div>
 
     <div class="pubs">
-      <article class="pub" data-div="cs" data-reveal>
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm" data-reveal>
         <div class="year">2026</div>
         <div>
-          <div class="title">A unified cost model for scheduling hybrid classical&#8211;quantum workloads</div>
-          <div class="authors">Author, Author, <b>Your Name</b></div>
-          <div class="links"><a href="#">PDF</a><a href="#">arXiv</a><a href="#">Artifact</a></div>
+          <div class="title">Thunder-DeID+: Boundary-Aware Korean De-identification from Court Judgments to Broader Sensitive Documents</div>
+          <div class="authors">Gyuseong Lee, Gyeongje Cho, Jongmin Kim, Heejin Kim, Yeonkyoung So, Hyunggeun Jeon, Hyunji M. Park, Sangho Kim, Yoonhee Park, Youngbin Pyo, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Language models</span></div>
+          
         </div>
-        <div class="venue"><em>Preprint</em> &#183; 2026</div>
+        <div class="venue"><em>EMNLP</em> &#183; 2026</div>
       </article>
 
-      <article class="pub" data-div="cs" data-reveal>
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm" data-reveal>
         <div class="year">2026</div>
         <div>
-          <div class="title">Memory planning that survives a change of model family</div>
-          <div class="authors">Author, <b>Your Name</b>, Author</div>
-          <div class="links"><a href="#">PDF</a><a href="#">Code</a><a href="#">Artifact</a></div>
+          <div class="title">TRONTOR: To RoPE or Not to RoPE for Long-Context Modeling</div>
+          <div class="authors">Youngjun Son, Jongyeon Park, <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Language models</span></div>
+          
         </div>
-        <div class="venue"><em>Systems venue</em> &#183; 2026</div>
+        <div class="venue"><em>EMNLP</em> &#183; 2026</div>
       </article>
 
-      <article class="pub" data-div="ds" data-reveal>
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm" data-reveal>
         <div class="year">2026</div>
         <div>
-          <div class="title">Reasoning or recall? Separating generalisation from memorisation after post-training</div>
-          <div class="authors">Author, Author, <b>Your Name</b></div>
-          <div class="links"><a href="#">PDF</a><a href="#">Data</a></div>
+          <div class="title">SEDD: Scalable and Efficient Dataset Deduplication with GPUs</div>
+          <div class="authors">Youngjun Son, Chaewon Kim, <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Language models</span></div>
+          
         </div>
-        <div class="venue"><em>NLP venue</em> &#183; 2026</div>
+        <div class="venue"><em>KDD</em> &#183; 2026</div>
       </article>
 
-      <article class="pub" data-div="ds" data-reveal>
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
         <div class="year">2026</div>
         <div>
-          <div class="title">A multilingual speech&#8211;text benchmark, including the failures</div>
-          <div class="authors"><b>Your Name</b>, Author</div>
-          <div class="links"><a href="#">PDF</a><a href="#">Benchmark</a><a href="#">Artifact</a></div>
+          <div class="title">Less Is More: Reducing Token Counts Without Compromising Performance.</div>
+          <div class="authors">Gyeongje Cho, Yeonkyoung So, Sangmin Lee, and <b>Jaejin Lee</b></div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          
         </div>
-        <div class="venue"><em>ML venue</em> &#183; 2026</div>
+        <div class="venue"><em>arXiv</em> &#183; 2026</div>
       </article>
 
-      <article class="pub" data-div="cs" data-reveal>
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm" data-reveal>
+        <div class="year">2026</div>
+        <div>
+          <div class="title">Thunder-KoNUBench: A Corpus-Aligned Benchmark for Korean Negation Understanding</div>
+          <div class="authors">Sungmok Jung, Yeonkyoung So, Joonhak Lee, Sangho Kim, Yelim Ahn, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Language models</span></div>
+          
+        </div>
+        <div class="venue"><em>ACL</em> &#183; 2026</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm" data-reveal>
+        <div class="year">2026</div>
+        <div>
+          <div class="title">Choices Speak Louder than Questions</div>
+          <div class="authors">Gyeongje Cho, Yeonkyoung So, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Language models</span></div>
+          
+        </div>
+        <div class="venue"><em>ICLR</em> &#183; 2026</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm" data-reveal>
+        <div class="year">2026</div>
+        <div>
+          <div class="title">Thunder-NUbench: A benchmark for LLMs’ sentence-level negation understanding</div>
+          <div class="authors">Yeonkyoung So, Gyuseong Lee, Sungmok Jung, Joonhak Lee, JiA Kang, Sangho Kim, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Language models</span></div>
+          
+        </div>
+        <div class="venue"><em>EACL</em> &#183; 2026</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm theses" data-reveal>
+        <div class="year">2026</div>
+        <div>
+          <div class="title">Automatic Routing Between Symbol-Prediction and Cloze Scoring</div>
+          <div class="authors">Joonhak Lee.</div>
+          <div class="pub-areas"><span class="tag">Language models</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MsThesisDS</em> &#183; 2026</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm theses" data-reveal>
+        <div class="year">2026</div>
+        <div>
+          <div class="title">Reasoning by Commented Code for Table Question Answering</div>
+          <div class="authors">Seho Pyo.</div>
+          <div class="pub-areas"><span class="tag">Language models</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MsThesisDS</em> &#183; 2026</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2026</div>
+        <div>
+          <div class="title">Analysis of NoPE Replacement for Rotational Positional Embeddings in Transformer Architectures</div>
+          <div class="authors">Jongyeon Park.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MsThesisDS</em> &#183; 2026</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm" data-reveal>
         <div class="year">2025</div>
         <div>
-          <div class="title">Noise-aware routing for circuits that do not fit the coupling map</div>
-          <div class="authors">Author, <b>Your Name</b></div>
-          <div class="links"><a href="#">PDF</a><a href="#">Code</a></div>
+          <div class="title">SPipe: Hybrid GPU and CPU Pipeline for Training LLMs under Memory Pressure</div>
+          <div class="authors">Junyeol Ryu, Yujin Jeong, Daeyoung Park, Jinpyo Kim, Heehoon Kim, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Language models</span></div>
+          <div class="links"><a href="https://doi.org/10.1109/PACT65351.2025.00014" rel="noopener">DOI</a></div>
         </div>
-        <div class="venue"><em>Quantum venue</em> &#183; 2025</div>
+        <div class="venue"><em>PACT</em> &#183; 2025</div>
       </article>
 
-      <article class="pub" data-div="cs" data-reveal>
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm" data-reveal>
         <div class="year">2025</div>
         <div>
-          <div class="title">Elastic inference serving under a shifting request mix</div>
-          <div class="authors">Author, Author, <b>Your Name</b></div>
-          <div class="links"><a href="#">PDF</a><a href="#">Artifact</a></div>
+          <div class="title">Thunder-DeID: Accurate and Efficient De-identification Framework for Korean Court Judgments</div>
+          <div class="authors">Sungeun Hahm, Heejin Kim, Gyuseong Lee, Hyunji M. Park, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Language models</span></div>
+          
         </div>
-        <div class="venue"><em>Systems venue</em> &#183; 2025</div>
+        <div class="venue"><em>EMNLP</em> &#183; 2025</div>
       </article>
 
-      <article class="pub" data-div="ds" data-reveal>
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm" data-reveal>
         <div class="year">2025</div>
         <div>
-          <div class="title">When the second modality stops mattering: a study of cross-modal shortcuts</div>
-          <div class="authors"><b>Your Name</b>, Author, Author</div>
-          <div class="links"><a href="#">PDF</a><a href="#">Code</a></div>
+          <div class="title">Assessing Socio-Cultural Alignment and Technical Safety of Sovereign LLMs</div>
+          <div class="authors">Kyubyung Chae, Gihoon Kim, Gyuseong Lee, Taesup Kim, <b>Jaejin Lee</b>, and Heejin Kim.</div>
+          <div class="pub-areas"><span class="tag">Language models</span></div>
+          
         </div>
-        <div class="venue"><em>Vision/NLP venue</em> &#183; 2025</div>
+        <div class="venue"><em>EMNLP</em> &#183; 2025</div>
       </article>
 
-      <article class="pub" data-div="ds" data-reveal>
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm" data-reveal>
+        <div class="year">2025</div>
+        <div>
+          <div class="title">KLAAD: Refining Attention Mechanisms to Reduce Societal Bias in Generative Language Models</div>
+          <div class="authors">Seorin Kim, Dongyoung Lee, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Language models</span></div>
+          
+        </div>
+        <div class="venue"><em>EMNLP</em> &#183; 2025</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="vision" data-tags="vision" data-reveal>
+        <div class="year">2025</div>
+        <div>
+          <div class="title">UDC-VIT: A Real-World Video Dataset for Under-Display Cameras</div>
+          <div class="authors">Kyusu Ahn, JiSoo Kim, Sangik Lee, HyunGyu Lee, Byeonghyun Ko, Chanwoo Park, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Under-display camera</span></div>
+          
+        </div>
+        <div class="venue"><em>ICCV</em> &#183; 2025</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="vision" data-tags="vision" data-reveal>
+        <div class="year">2025</div>
+        <div>
+          <div class="title">Integrating spatial and frequency information for Under-Display Camera image restoration</div>
+          <div class="authors">Kyusu Ahn, Jinpyo Kim, Chanwoo Park, JiSoo Kim, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Under-display camera</span></div>
+          <div class="links"><a href="https://doi.org/10.1007/s10044-025-01549-z" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PAA</em> &#183; 2025</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm theses" data-reveal>
+        <div class="year">2025</div>
+        <div>
+          <div class="title">Aligning Attention Distributions to Mitigate Social Bias in Generative Language Models</div>
+          <div class="authors">Seorin Kim.</div>
+          <div class="pub-areas"><span class="tag">Language models</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesisDS</em> &#183; 2025</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm theses" data-reveal>
+        <div class="year">2025</div>
+        <div>
+          <div class="title">Word Reasoning Based Approach to Jailbreaking Large Language Models</div>
+          <div class="authors">Yelim Ahn.</div>
+          <div class="pub-areas"><span class="tag">Language models</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesisDS</em> &#183; 2025</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm theses" data-reveal>
+        <div class="year">2025</div>
+        <div>
+          <div class="title">Establishing Personal Information Categories and Constructing Datasets for the De-identification of Korean Court Judgments</div>
+          <div class="authors">Sungeun Hahm.</div>
+          <div class="pub-areas"><span class="tag">Language models</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesisDS</em> &#183; 2025</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm theses" data-reveal>
+        <div class="year">2025</div>
+        <div>
+          <div class="title">Towards Higher Generative Question-Answering Accuracy:Punctuation Mark Pattern-based Line Filtering on Korean Web Text</div>
+          <div class="authors">Chanwoo Park.</div>
+          <div class="pub-areas"><span class="tag">Language models</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2025</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2025</div>
+        <div>
+          <div class="title">SnuSOLVER: Optimizing Sparse Direct Solvers for Heterogeneous Systems</div>
+          <div class="authors">Chaewon Kim.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2025</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2025</div>
+        <div>
+          <div class="title">SnuSOLVER: Optimizing Sparse Direct Solvers for Heterogeneous Systems</div>
+          <div class="authors">Chaewon Kim, Jaehwan Lee, Jinpyo Kim, Dohyun Kim, Kyusu Ahn, Hyung Uk Cho, Seungin Baek, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="https://doi.org/10.1145/3721145.3734531" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>ICS</em> &#183; 2025</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm" data-reveal>
+        <div class="year">2025</div>
+        <div>
+          <div class="title">Thunder-LLM: Efficiently Adapting LLMs to Korean with Minimal Resources. June 2025</div>
+          <div class="authors">Jinpyo Kim, Gyeongje Cho, Chanwoo Park, Jongwon Park, Jongmin Kim, Yeonkyoun So, <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Language models</span></div>
+          
+        </div>
+        <div class="venue"><em>arXiv</em> &#183; 2025</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm" data-reveal>
+        <div class="year">2025</div>
+        <div>
+          <div class="title">Thunder-Tok: Minimizing Tokens per Word in Tokenizing Korean Texts for Generative Language Models. June 2025</div>
+          <div class="authors">Gyeongje Cho, Yeonkyoung So, Chanwoo Park, Sangmin Lee, Sungmok Jung, <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Language models</span></div>
+          
+        </div>
+        <div class="venue"><em>arXiv</em> &#183; 2025</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="vision" data-tags="vision" data-reveal>
+        <div class="year">2025</div>
+        <div>
+          <div class="title">Enhancing Face Recognition Accuracy for Under-Display Cameras via Image Restoration</div>
+          <div class="authors">Kyusu Ahn, Chanwoo Park, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Under-display camera</span></div>
+          <div class="links"><a href="https://doi.org/10.1002/sdtp.18400" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>SID</em> &#183; 2025</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="vision" data-tags="vision" data-reveal>
+        <div class="year">2025</div>
+        <div>
+          <div class="title">Investigating the Effects of Degradation and Restoration on Face Recognition in Under-Display Cameras</div>
+          <div class="authors">Kyusu Ahn, Chanwoo Park, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Under-display camera</span></div>
+          <div class="links"><a href="https://doi.org/10.1002/jsid.2090" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>JSID</em> &#183; 2025</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="vision" data-tags="vision theses" data-reveal>
+        <div class="year">2025</div>
+        <div>
+          <div class="title">Generation of the Degradation for Under-Display Cameras</div>
+          <div class="authors">JiSoo Kim.</div>
+          <div class="pub-areas"><span class="tag">Under-display camera</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MsThesisDS</em> &#183; 2025</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="vision" data-tags="vision theses" data-reveal>
+        <div class="year">2025</div>
+        <div>
+          <div class="title">Image and Video Restoration for Under-Display Cameras using Deep Neural Networks</div>
+          <div class="authors">Kyusu Ahn.</div>
+          <div class="pub-areas"><span class="tag">Under-display camera</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>PhDThesisDS</em> &#183; 2025</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2025</div>
+        <div>
+          <div class="title">Optimizing Communication for AI Models on GPUs and NPUs</div>
+          <div class="authors">Heehoon Kim.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>PhDThesis</em> &#183; 2025</div>
+      </article>
+
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm" data-reveal>
         <div class="year">2024</div>
         <div>
-          <div class="title">Distillation with the serving system in view</div>
-          <div class="authors">Author, <b>Your Name</b></div>
-          <div class="links"><a href="#">PDF</a></div>
+          <div class="title">Generalizing Clinical De-identification Models by Privacy-safe Data Augmentation using GPT-4</div>
+          <div class="authors">Woojin Kim, Sungeun Hahm, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Language models</span></div>
+          
         </div>
-        <div class="venue"><em>ML venue</em> &#183; 2024</div>
+        <div class="venue"><em>EMNLP</em> &#183; 2024</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2024</div>
+        <div>
+          <div class="title">TCCL: Discovering Better Communication Paths for PCIe GPU Clusters</div>
+          <div class="authors">Heehoon Kim, Junyeol Ryu, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="https://doi.org/10.1145/3620666.3651362" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>ASPLOS</em> &#183; 2024</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm theses" data-reveal>
+        <div class="year">2024</div>
+        <div>
+          <div class="title">Outlier-Aware Quantization for Language Models</div>
+          <div class="authors">Sangsoo Im.</div>
+          <div class="pub-areas"><span class="tag">Language models</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesisDS</em> &#183; 2024</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm theses" data-reveal>
+        <div class="year">2024</div>
+        <div>
+          <div class="title">Efficient and Scalable Retraining of Autoregressive Language Models for Mitigating Bias</div>
+          <div class="authors">Dongyoung Lee.</div>
+          <div class="pub-areas"><span class="tag">Language models</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesisDS</em> &#183; 2024</div>
+      </article>
+
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm theses" data-reveal>
+        <div class="year">2024</div>
+        <div>
+          <div class="title">Efficient Two-staged Pre-training of Decoder-based Language Models</div>
+          <div class="authors">Gyuseong Lee.</div>
+          <div class="pub-areas"><span class="tag">Language models</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesisDS</em> &#183; 2024</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm theses" data-reveal>
+        <div class="year">2024</div>
+        <div>
+          <div class="title">Deep Learning-based Text De-identification Model via Augmentation of De-identified Data</div>
+          <div class="authors">Woojin Kim.</div>
+          <div class="pub-areas"><span class="tag">Language models</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesisDS</em> &#183; 2024</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="vision" data-tags="vision" data-reveal>
+        <div class="year">2023</div>
+        <div>
+          <div class="title">UDC-SIT: A Real-World Dataset for Under-Display Cameras</div>
+          <div class="authors">Kyusu Ahn, Byeonghyun Ko, HyunGyu Lee, Chanwoo Park, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Under-display camera</span></div>
+          
+        </div>
+        <div class="venue"><em>NeurIPS</em> &#183; 2023</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm theses" data-reveal>
+        <div class="year">2023</div>
+        <div>
+          <div class="title">Prompt-Guided Dataset Generation to Mitigate Bias in a Language Model</div>
+          <div class="authors">Youngeun Choi.</div>
+          <div class="pub-areas"><span class="tag">Language models</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesisDS</em> &#183; 2023</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2023</div>
+        <div>
+          <div class="title">DeepUM: Tensor Migration and Prefetching in Unified Memory</div>
+          <div class="authors">Jaehoon Jung, Jinpyo Kim, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="https://doi.org/10.1145/3575693.3575736" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>ASPLOS</em> &#183; 2023</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2023</div>
+        <div>
+          <div class="title">Greedy-K: A New Local Optimization Algorithm for Solving 1D Circuit Placement Problems</div>
+          <div class="authors">Hyungdal Kwon.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2023</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm theses" data-reveal>
+        <div class="year">2023</div>
+        <div>
+          <div class="title">Shaking Attention Scores in Pretrained Transformers</div>
+          <div class="authors">Jongwon Kim.</div>
+          <div class="pub-areas"><span class="tag">Language models</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesisDS</em> &#183; 2023</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm theses" data-reveal>
+        <div class="year">2023</div>
+        <div>
+          <div class="title">Analysis of Tokenizers for Various Korean NLP Tasks</div>
+          <div class="authors">Soram Lee.</div>
+          <div class="pub-areas"><span class="tag">Language models</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesisDS</em> &#183; 2023</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm theses" data-reveal>
+        <div class="year">2023</div>
+        <div>
+          <div class="title">Effects of duplicated data in language modeling</div>
+          <div class="authors">Dayeon Kang.</div>
+          <div class="pub-areas"><span class="tag">Language models</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesisDS</em> &#183; 2023</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2023</div>
+        <div>
+          <div class="title">Efficient Methods for Integer only Quantization</div>
+          <div class="authors">Gyeongje Jo.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesisDS</em> &#183; 2023</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2022</div>
+        <div>
+          <div class="title">Data Management and Prefetching Techniques for CUDA Unified Memory</div>
+          <div class="authors">Jaehoon Jung.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>PhDThesis</em> &#183; 2022</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2022</div>
+        <div>
+          <div class="title">Improving the Embedding Representation and Reducing Learning Time for Sequential Recommendation</div>
+          <div class="authors">Minhye Park.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesisDS</em> &#183; 2022</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2022</div>
+        <div>
+          <div class="title">Reducing the Cost of Training a Transformer Model by Using a Trained Model</div>
+          <div class="authors">Minhee Han.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2022</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2022</div>
+        <div>
+          <div class="title">Memory Management and Optimization for Deep Learning Model Inference on Mobile GPU</div>
+          <div class="authors">Sooyeon Kang.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2022</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="quantum" data-tags="quantum" data-reveal>
+        <div class="year">2022</div>
+        <div>
+          <div class="title">SnuQS: Scaling Quantum Circuit Simulation using Storage Sevices</div>
+          <div class="authors">Daeyoung Park, Heehoon Kim, Jinpyo Kim, Taehyun Kim, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Quantum computing</span></div>
+          <div class="links"><a href="https://doi.org/10.1145/3524059.3532375" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>ICS</em> &#183; 2022</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2022</div>
+        <div>
+          <div class="title">SnuHPL: High Performance LINPACK for Heterogeneous GPUs</div>
+          <div class="authors">Jinpyo Kim, Hyungdal Kwon, Jintaek Kang, Jihwan Park, Seungwook Lee, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="https://doi.org/10.1145/3524059.3532370" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>ICS</em> &#183; 2022</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2022</div>
+        <div>
+          <div class="title">Offloading Encryption Overhead for Distributed Filesystem using SmartNIC</div>
+          <div class="authors">Jaeki Hong.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2022</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2022</div>
+        <div>
+          <div class="title">Contrastive Learning with Graph Neural Networks for Session-based Recommendation</div>
+          <div class="authors">Youngjun Son.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesisDS</em> &#183; 2022</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="lm" data-tags="lm theses" data-reveal>
+        <div class="year">2022</div>
+        <div>
+          <div class="title">A Transformer Model for Korean Morphological Analysis</div>
+          <div class="authors">Sunyoo Kim.</div>
+          <div class="pub-areas"><span class="tag">Language models</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesisDS</em> &#183; 2022</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2021</div>
+        <div>
+          <div class="title">FARNN: FPGA-GPU Hybrid Acceleration Platform for Recurrent Neural Networks</div>
+          <div class="authors">Hyungmin Cho, Jeesoo Lee, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="https://doi.org/10.1109/TPDS.2021.3124125" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>TPDS</em> &#183; 2021</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2021</div>
+        <div>
+          <div class="title">Turnpike: Lightweight Soft Error Resilience for In-Order Cores. MICRO’21:</div>
+          <div class="authors">Jianping Zeng, Hongjune Kim, <b>Jaejin Lee</b>, and Changhee Jung.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="https://doi.org/10.1145/3466752.3480042" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>MICRO</em> &#183; 2021</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2021</div>
+        <div>
+          <div class="title">Inference Method for Password Guessing Model with Tree Search</div>
+          <div class="authors">Hyunjae Lee.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2021</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2021</div>
+        <div>
+          <div class="title">DeepCuts: a deep learning optimization framework for versatile GPU workloads</div>
+          <div class="authors">Wookeun Jung, Thanh Tuan Dao, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="https://doi.org/10.1145/3453483.3454038" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PLDI</em> &#183; 2021</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2021</div>
+        <div>
+          <div class="title">SnuRHAC: A Runtime for Heterogeneous Accelerator Clusters with CUDA Unified Memory</div>
+          <div class="authors">Jaehoon Jung, Daeyoung Park, Gangwon Jo, Jungho Park, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="https://doi.org/10.1145/3431379.3460647" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>HPDC</em> &#183; 2021</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2021</div>
+        <div>
+          <div class="title">Memory management technique for deep learning training with GPU</div>
+          <div class="authors">Jeesoo Lee.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2021</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2021</div>
+        <div>
+          <div class="title">Techniques to accelerate on-device inference of transformer models using Google Edge TPUs</div>
+          <div class="authors">Dongjin Na.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2021</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2020</div>
+        <div>
+          <div class="title">Translating OpenMP Device Constructs for NVIDIA GPUs</div>
+          <div class="authors">Daeyoung Park.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2020</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2020</div>
+        <div>
+          <div class="title">Optimizing ELF Binaries on NUMA Systems</div>
+          <div class="authors">Jungwook Kim.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2020</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2020</div>
+        <div>
+          <div class="title">CyCNN: A Rotation Invariant CNN using Polar Mapping and Cylindrical Convolution Layers. July 2020</div>
+          <div class="authors">Jinpyo Kim, Wookeun Jung, Hyungmo Kim, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="https://arxiv.org/abs/2007.10588" rel="noopener">arXiv</a></div>
+        </div>
+        <div class="venue"><em>arXiv</em> &#183; 2020</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2020</div>
+        <div>
+          <div class="title">Compiler-Directed Soft Error Resilience for Lightweight GPU Register File Protection</div>
+          <div class="authors">Hongjune Kim, Jianping Zeng, Qingrui Liu, Mohammad Abdel-Majeed, <b>Jaejin Lee</b>, and Changhee Jung.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="https://doi.org/10.1145/3385412.3386033" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PLDI</em> &#183; 2020</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2020</div>
+        <div>
+          <div class="title">SOFF: An OpenCL High-Level Synthesis Framework for FPGAs</div>
+          <div class="authors">Gangwon Jo, Heehoon Kim, Jeesoo Lee, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="https://doi.org/10.1109/ISCA45697.2020.00034" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>ISCA</em> &#183; 2020</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2020</div>
+        <div>
+          <div class="title">Overlapping Host-to-Device Copy and Computation using Hidden Unified Memory</div>
+          <div class="authors">Jaehoon Jung, Daeyoung Park, Youngdong Do, Jungho Park, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="https://doi.org/10.1145/3332466.3374531" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PPoPP</em> &#183; 2020</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2020</div>
+        <div>
+          <div class="title">Optimizing GPU-accelerated Applications using Workload Scheduling and Memory Management</div>
+          <div class="authors">Jungho Park.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>PhDThesis</em> &#183; 2020</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2020</div>
+        <div>
+          <div class="title">High Level Synthesis of OpenCL Kernels for FPGAs</div>
+          <div class="authors">Gangwon Jo.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>PhDThesis</em> &#183; 2020</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2020</div>
+        <div>
+          <div class="title">Library-level Distributed Processing Method for CNN Training using GPU Clusters</div>
+          <div class="authors">Hyungmo Kim.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2020</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2020</div>
+        <div>
+          <div class="title">A Semantic Segmentation Network and Synthetic Data Generation for Defects Detection</div>
+          <div class="authors">Janghyun Son.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2020</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2019</div>
+        <div>
+          <div class="title">SNU-NPB 2019: Parallelizing and Optimizing NPB in OpenCL and CUDA for Modern GPUs</div>
+          <div class="authors">Youngdong Do, Hyungmo Kim, Pyeongseok Oh, Daeyoung Park, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="https://doi.org/10.1109/IISWC47752.2019.9041954" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>IISWC</em> &#183; 2019</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2019</div>
+        <div>
+          <div class="title">Collective Learning Techniques using Ensembles of Generators and Discriminators for GANs</div>
+          <div class="authors">PyeongSeok Oh.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2019</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2019</div>
+        <div>
+          <div class="title">FA3C: FPGA-Accelerated Deep Reinforcement Learning</div>
+          <div class="authors">Hyungmin Cho, Pyeongseok Oh, Jiyoung Park, Wookeun Jung, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/3297858.3304058" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>ASPLOS</em> &#183; 2019</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2019</div>
+        <div>
+          <div class="title">Performance Characterization of High-Performance Computing Applications</div>
+          <div class="authors">Youngdong Do.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2019</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2018</div>
+        <div>
+          <div class="title">Transparent GPU Memory Management for DNNs</div>
+          <div class="authors">Jungho Park, Hyungmin Cho, Wookeun Jung, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/3178487.3178531" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PPoPP-Poster</em> &#183; 2018</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2018</div>
+        <div>
+          <div class="title">An Auto-tuner for OpenCL Work-Group Size on GPUs</div>
+          <div class="authors">Thanh Tuan Dao and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/TPDS.2017.2755657" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>TPDS</em> &#183; 2018</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2018</div>
+        <div>
+          <div class="title">FPGA Accelerator Design of a Deep Reinforcement Learning Model for Playing Atari Games</div>
+          <div class="authors">Jiyoung Park.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2018</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2017</div>
+        <div>
+          <div class="title">Memory-Access-Pattern Analysis Techniques for OpenCL Kernels</div>
+          <div class="authors">Gangwon Jo, Jaehoon Jung, Jiyoung Park, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="https://doi.org/10.1007/978-3-030-35225-7_9" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>LCPC</em> &#183; 2017</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="vision" data-tags="vision" data-reveal>
+        <div class="year">2017</div>
+        <div>
+          <div class="title">Performance Analysis of CNN Frameworks for GPUs</div>
+          <div class="authors">Heehoon Kim, Hyoungwook Nam, Wookeun Jung, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Under-display camera</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/ISPASS.2017.7975270" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>ISPASS</em> &#183; 2017</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2017</div>
+        <div>
+          <div class="title">MAPA: An Automatic Memory Access Pattern Analyzer for GPU Applications</div>
+          <div class="authors">Gangwon Jo, Jaehoon Jung, Jiyoung Park, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/3018743.3019034" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PPoPP-Poster</em> &#183; 2017</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2017</div>
+        <div>
+          <div class="title">Auto-Optimization of Image Processing Program using OpenCL Through Dynamic Work-load Distribution</div>
+          <div class="authors">Jaeho Shin.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2017</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2016</div>
+        <div>
+          <div class="title">Translating OpenMP Device Constructs to OpenCL Using Unnecessary Data Transfer Elimination</div>
+          <div class="authors">Junghyun Kim, Yong-Jun Lee, Jungho Park, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/SC.2016.50" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>SC</em> &#183; 2016</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2016</div>
+        <div>
+          <div class="title">PIPSEA: A Practical IPsec Gateway on Embedded APUs</div>
+          <div class="authors">Jungho Park, Wookeun Jung, Gangwon Jo, Ilkoo Lee, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/2976749.2978329" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>CCS</em> &#183; 2016</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2016</div>
+        <div>
+          <div class="title">Efficient Checkpointing of Live Virtual Machines</div>
+          <div class="authors">Bernhard Egger, Eunbyung Park, Younghyun Jo, Changyeon Jo, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/TC.2016.2519890" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>TC</em> &#183; 2016</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2016</div>
+        <div>
+          <div class="title">SnuCL: A unified OpenCL framework for heterogeneous clusters</div>
+          <div class="authors"><b>Jaejin Lee</b>, Gangwon Jo, Wookeun Jung, Hongjune Kim, Junghyun Kim, Yong-Jun Lee, and Jungho Park.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          
+        </div>
+        <div class="venue"><em>BookChapter</em> &#183; 2016</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2016</div>
+        <div>
+          <div class="title">Reducing memory usage by sharing code on V8 JavaScript Engine</div>
+          <div class="authors">Bojun Seo.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2016</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2016</div>
+        <div>
+          <div class="title">A Distributed OpenCL Framework using Redundant Computation and Data Replication</div>
+          <div class="authors">Junghyun Kim, Gangwon Jo, Jaehoon Jung, Jungwon Kim, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/2908080.2908094" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PLDI</em> &#183; 2016</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2016</div>
+        <div>
+          <div class="title">Techniques for Ease of OpenCL Programming</div>
+          <div class="authors">Junghyun Kim.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>PhDThesis</em> &#183; 2016</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2015</div>
+        <div>
+          <div class="title">Bridging OpenCL and CUDA: A Comparative Analysis and Translation</div>
+          <div class="authors">Junghyun Kim, Thanh Tuan Dao, Jaehoon Jung, Jinyoung Joo, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/2807591.2807621" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>SC</em> &#183; 2015</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2015</div>
+        <div>
+          <div class="title">Accelerating LINPACK with MPI-OpenCL on Clusters of Multi-GPU Nodes</div>
+          <div class="authors">Gangwon Jo, Jeongho Nah, Jun Lee, Jungwon Kim, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/TPDS.2014.2321742" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>TPDS</em> &#183; 2015</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2015</div>
+        <div>
+          <div class="title">A Performance Model for GPUs with Caches</div>
+          <div class="authors">Thanh Tuan Dao, Jungwon Kim, Sangmin Seo, Bernhard Egger, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/TPDS.2014.2333526" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>TPDS</em> &#183; 2015</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2014</div>
+        <div>
+          <div class="title">Versatile and Scalable Parallel Histogram Construction</div>
+          <div class="authors">Wookeun Jung, Jongsoo Park, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/2628071.2628108" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PACT</em> &#183; 2014</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2014</div>
+        <div>
+          <div class="title">Lightweight and Block-level Concurrent Sweeping for JavaScript Garbage Collection</div>
+          <div class="authors">Hongjune Kim, Seonmyeong Bak, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/2597809.2597824" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>LCTES</em> &#183; 2014</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2014</div>
+        <div>
+          <div class="title">OpenCL Framework for ARM Processors with NEON Support</div>
+          <div class="authors">Gangwon Jo, Won Jong Jeon, Wookeun Jung, Gordon Taft, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/2568058.2568064" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>WPMVP</em> &#183; 2014</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2014</div>
+        <div>
+          <div class="title">Bi-directional Source-to-source Translator Between CUDA and OpenCL</div>
+          <div class="authors">Jinyoung Joo.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2014</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2014</div>
+        <div>
+          <div class="title">Lightweight Block-level Concurrent Sweeping for JavaScript Garbage Collection</div>
+          <div class="authors">Seonmyeong Bak.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2014</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2013</div>
+        <div>
+          <div class="title">Automatic OpenCL Work-Group Size Selection for Multicore CPUs</div>
+          <div class="authors">Sangmin Seo, Jun Lee, Gangwon Jo, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/PACT.2013.6618834" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PACT</em> &#183; 2013</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2013</div>
+        <div>
+          <div class="title">An OpenCL Framework for Heterogeneous Clusters</div>
+          <div class="authors">Jungwon Kim.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>PhDThesis</em> &#183; 2013</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2013</div>
+        <div>
+          <div class="title">Enhancing Performance Portability of OpenCL for Multicore CPUs</div>
+          <div class="authors">Sangmin Seo.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>PhDThesis</em> &#183; 2013</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2013</div>
+        <div>
+          <div class="title">Automatic Code Overlay Generation and Partially Redundant Code Fetch Elimination. HiPEAC 2013, Berlin, Germany, January 2013.</div>
+          <div class="authors">Choonki Jang, <b>Jaejin Lee</b>, Bernhard Egger, and Soojung Ryu.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          
+        </div>
+        <div class="venue"><em>HiPEAC</em> &#183; 2013</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2012</div>
+        <div>
+          <div class="title">SnuCL: an OpenCL Framework for Heterogeneous CPU/GPU Clusters</div>
+          <div class="authors">Jungwon Kim, Sangmin Seo, Jun Lee, Jeongho Nah, Gangwon Jo, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/2304576.2304623" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>ICS</em> &#183; 2012</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2012</div>
+        <div>
+          <div class="title">Automatic Code Overlay Generation and Partially Redundant Code Fetch Elimination</div>
+          <div class="authors">Choonki Jang, <b>Jaejin Lee</b>, Bernhard Egger, and Soojung Ryu.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/2207222.2207226" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>TACO</em> &#183; 2012</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2012</div>
+        <div>
+          <div class="title">An Automatic Code Overlaying Technique for Multicores with Explicitly-Managed Memory Hierarchies</div>
+          <div class="authors">Choonki Jang, Jun Lee, Sangmin Seo, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/2259016.2259045" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>CGO</em> &#183; 2012</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2012</div>
+        <div>
+          <div class="title">OpenCL as a Unified Programming Model for Heterogeneous CPU/GPU Clusters</div>
+          <div class="authors">Jungwon Kim, Sangmin Seo, Jun Lee, Jeongho Nah, Gangwon Jo, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/2145816.2145863" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PPoPP-Poster</em> &#183; 2012</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2012</div>
+        <div>
+          <div class="title">Implementation of a Reigster Allocator for a Javascript JIT Compiler</div>
+          <div class="authors">Jeongho Nah.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2012</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">Performance Characterization of the NAS Parallel Benchmarks in OpenCL</div>
+          <div class="authors">Sangmin Seo, Gangwon Jo, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/IISWC.2011.6114174" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>IISWC</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">Demand Paging Techniques for Flash Memory Using Compiler Post-pass Optimizations</div>
+          <div class="authors">Seungkyun Kim, Kiwon Kwon, Chihun Kim, Choonki Jang, <b>Jaejin Lee</b>, and Sang Lyul Min.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/2043662.2043664" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>TECS</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">SFMalloc: A Lock-Free and Mostly Synchronization-Free Dynamic Memory Allocator for Manycores</div>
+          <div class="authors">Sangmin Seo, Junghyun Kim, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/PACT.2011.57" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PACT</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">An OpenCL Framework for Homogeneous Manycores with no Hardware Cache Coherence</div>
+          <div class="authors">Jun Lee, Jungwon Kim, Junghyun Kim, Sangmin Seo, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/PACT.2011.12" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PACT</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">A Software-Managed Coherent Memory Architecture for Manycores</div>
+          <div class="authors">Jungho Park, Choonki Jang, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/PACT.2011.46" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PACT-Poster</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">OpenCL as a Programming Model for GPU Clusters</div>
+          <div class="authors">Jungwon Kim, Sangmin Seo, Jun Lee, Jeongho Nah, Gangwon Jo, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1007/978-3-642-36036-7_6" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>LCPC</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">Optimization and Management Techniques for Local Memeory Architectures</div>
+          <div class="authors">Choonki Jang.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>PhDThesis</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">JavaScript Compilation and Optimization Techniques for Multicores</div>
+          <div class="authors">Hongjune Kim.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">Reducing JavaScript Compilation Time by Caching Code in Flash Memory</div>
+          <div class="authors">Joo Hwan Lee.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">A Machine Learning Approach to Select Appropriate Target Computer Devices in Heterogeneous Parallel Computing</div>
+          <div class="authors">Thanh Tuan Dao.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">An Efficient Software Shared Virtual Memory for the Single-chip Cloud Computer</div>
+          <div class="authors">Junghyun Kim, Sangmin Seo, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/2103799.2103804" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>APSys</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">SRC: An Automatic Code Overlaying Technique for Multicores with Explicitly-Managed Memory Hierarchies</div>
+          <div class="authors">Choonki Jang.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1995896.1995960" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>ICS-Poster</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">An Instruction-Scheduling-Aware Data Partitioning Technique for Coarse-Grained Reconfigurable Architectures</div>
+          <div class="authors">Choonki Jang, Jungwon Kim, <b>Jaejin Lee</b>, Hee-Seok Kim, Dong-Hoon Yoo, Sukjin Kim, Hong-Seok Kim, and Soojung Ryu.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1967677.1967699" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>LCTES</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">Fast and Space Efficient Virtual Machine Checkpointing</div>
+          <div class="authors">Eunbyung Park, Bernhard Egger, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1952682.1952694" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>VEE</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">Achieving a Single Compute Device Image in OpenCL for Multiple GPUs</div>
+          <div class="authors">Jungwon Kim, Honggyu Kim, Joo Hwan Lee, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1941553.1941591" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PPoPP</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">Fast and Space-Efficient Virtual Machine Checkpointing</div>
+          <div class="authors">Eunbyung Park.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2011</div>
+        <div>
+          <div class="title">A Stub Inlining Technique for JavaScript Engines in Multi-core Embedded Platforms</div>
+          <div class="authors">Yong-Jun Lee.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2011</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2010</div>
+        <div>
+          <div class="title">Parallelizing the H.264 Decoder on the Cell BE Processor</div>
+          <div class="authors">Yongjin Cho, Seungkyun Kim, <b>Jaejin Lee</b>, and Heonshik Shin.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1879021.1879029" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>EMSoft</em> &#183; 2010</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2010</div>
+        <div>
+          <div class="title">An OpenCL Framework for Heterogeneous Multicores with Local Memory</div>
+          <div class="authors"><b>Jaejin Lee</b>, Jungwon Kim, Sangmin Seo, Seungkyun Kim, Jungho Park, Honggyu Kim, Thanh Tuan Dao, Yongjin Cho, Sung Jong Seo, Seung Hak Lee, Seung Mo Cho, Hyo Jung Song, Sang-Bum Suh, and Jong-Deok Choi.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1854273.1854301" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PACT</em> &#183; 2010</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2010</div>
+        <div>
+          <div class="title">A Software-SVM-based Transactional Memory for Multicore Accelerator Architectures with Local Memory</div>
+          <div class="authors">Jun Lee, Sangmin Seo, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1854273.1854355" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PACT-Poster</em> &#183; 2010</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2010</div>
+        <div>
+          <div class="title">Scratchpad Memory Management Techniques for Code in Embedded Systems without an MMU</div>
+          <div class="authors">Bernhard Egger, Seungkyun Kim, Choonki Jang, <b>Jaejin Lee</b>, Sang Lyul Min, and Heonshik Shin.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/TC.2009.188" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>TC</em> &#183; 2010</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2010</div>
+        <div>
+          <div class="title">Hydra: A Block-Mapped Parallel Flash Memory Solid State Disk Architecture</div>
+          <div class="authors">Yoon Jae Seong, Eyee Hyun Nam, Jin Hyuk Yoon, Hongseok Kim, Jin-yong Choi, Sookwan Lee, Young Hyun Bae, <b>Jaejin Lee</b>, Yookun Cho, and Sang Lyul Min.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/TC.2010.63" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>TC</em> &#183; 2010</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2010</div>
+        <div>
+          <div class="title">Adaptive Execution Techniques of Parallel Programs for Multiprocessors</div>
+          <div class="authors"><b>Jaejin Lee</b>, Jung-Ho Park, Honggyu Kim, Changhee Jung, Daeseob Lim, and SangYong Han.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1016/j.jpdc.2009.10.008" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>JPDC</em> &#183; 2010</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2010</div>
+        <div>
+          <div class="title">The Design and Implementation of UI for Architecture Simulator</div>
+          <div class="authors">Jinho Pak.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2010</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">2010</div>
+        <div>
+          <div class="title">Adaptive Execution Techniques of Parallel Programs for SMT Multicore Processors</div>
+          <div class="authors">Honggyu Kim.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2010</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2010</div>
+        <div>
+          <div class="title">COMIC++: A Software SVM System for Heterogeneous Multicore Accelerator Clusters</div>
+          <div class="authors"><b>Jaejin Lee</b>, Jun Lee, Sangmin Seo, Jungwon Kim, Seungkyun Kim, and Zehra Sura.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/HPCA.2010.5416633" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>HPCA</em> &#183; 2010</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2009</div>
+        <div>
+          <div class="title">Prefetching with Helper Threads for Loosely-Coupled Multiprocessor Systems</div>
+          <div class="authors"><b>Jaejin Lee</b>, Changhee Jung, Daeseob Lim, and Yan Solihin.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/TPDS.2008.224" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>TPDS</em> &#183; 2009</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2009</div>
+        <div>
+          <div class="title">Design and Implementation of Software-Managed Caches for Multicores with Local Memory</div>
+          <div class="authors">Sangmin Seo, <b>Jaejin Lee</b>, and Zehra Sura.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/HPCA.2009.4798237" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>HPCA</em> &#183; 2009</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2008</div>
+        <div>
+          <div class="title">COMIC: A Coherent Shared Memory Interface for Cell BE</div>
+          <div class="authors"><b>Jaejin Lee</b>, Sangmin Seo, Chihun Kim, Junghyun Kim, Posung Chun, Zehra Sura, Jungwon Kim, and SangYong Han.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1454115.1454157" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PACT</em> &#183; 2008</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2008</div>
+        <div>
+          <div class="title">Scratchpad Memory Management in a Multitasking Environment</div>
+          <div class="authors">Bernhard Egger, <b>Jaejin Lee</b>, and Heonshik Shin.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1450058.1450094" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>EMSoft</em> &#183; 2008</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2008</div>
+        <div>
+          <div class="title">A Practical Improvement to the Partial Redundancy Elimination in SSA Form</div>
+          <div class="authors">Jongsoo Park and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.5626/JCSE.2008.2.3.301" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>JCSE</em> &#183; 2008</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2008</div>
+        <div>
+          <div class="title">FaCSim: A Fast and Cycle-Accurate Architecture Simulator for Embedded Systems</div>
+          <div class="authors"><b>Jaejin Lee</b>, Junghyun Kim, Choonki Jang, Seungkyun Kim, Bernhard Egger, Kwangsub Kim, and SangYong Han.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1379023.1375670" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>LCTES</em> &#183; 2008</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2008</div>
+        <div>
+          <div class="title">Dynamic Scratchpad Memory Management for Code in Portable Systems with an MMU</div>
+          <div class="authors">Bernhard Egger, <b>Jaejin Lee</b>, and Heonshik Shin.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1331331.1331335" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>TECS</em> &#183; 2008</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2008</div>
+        <div>
+          <div class="title">Dynamic Scratchpad Memory Management</div>
+          <div class="authors">Bernhard Egger.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>PhDThesis</em> &#183; 2008</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2008</div>
+        <div>
+          <div class="title">An Automatic Memory Subsystem Parameter Detection Program</div>
+          <div class="authors">Taejun Ha.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2008</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2008</div>
+        <div>
+          <div class="title">A Dynamic Code Placement Technique for Scratchpad Memory Using Postpass Optimization</div>
+          <div class="authors">Chihun Kim.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2008</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2008</div>
+        <div>
+          <div class="title">Optimization Techniques for Cycle-Accurate Instruction Set Simulator</div>
+          <div class="authors">Kwangsub Kim.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2008</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2007</div>
+        <div>
+          <div class="title">Dynamic Data Scratchpad Memory Management for a Memory Subsystem with an MMU</div>
+          <div class="authors">Hyeongmin Cho, Bernhard Egger, <b>Jaejin Lee</b>, and Heonshik Shin.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1273444.1254804" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>LCTES</em> &#183; 2007</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2007</div>
+        <div>
+          <div class="title">Selective Code Transformation for Dual Instruction Set Processors</div>
+          <div class="authors">Sheayun Lee, <b>Jaejin Lee</b>, Chang Yun Park, and Sang Lyul Min.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1234675.1234677" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>TECS</em> &#183; 2007</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2007</div>
+        <div>
+          <div class="title">Cycle-Accurate and Fast Simulation Techniques for ARM Processors</div>
+          <div class="authors">Yoonsung Nam.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2007</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2006</div>
+        <div>
+          <div class="title">Scratchpad Memory Management for Portable Systems with a Memory Management Unit</div>
+          <div class="authors">Bernhard Egger, <b>Jaejin Lee</b>, and Heonshik Shin.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1176887.1176933" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>EMSoft</em> &#183; 2006</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2006</div>
+        <div>
+          <div class="title">A Dynamic Code Placement Technique for Scratchpad Memory using Postpass Optimization</div>
+          <div class="authors">Bernhard Egger, Chihun Kim, Choonki Jang, Yoonsung Nam, <b>Jaejin Lee</b>, and Sang Lyul Min.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1176760.1176788" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>CASES</em> &#183; 2006</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2006</div>
+        <div>
+          <div class="title">Reducing Execution Time of Memory Test Programs using SIMD Instructions and Caches in 64-bit Computing Environments</div>
+          <div class="authors">Jongyoung Lee.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2006</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2006</div>
+        <div>
+          <div class="title">Helper Thread Prefetching for Loosely-Coupled Multiprocessor Systems</div>
+          <div class="authors">Changhee Jung, Daesub Lim, <b>Jaejin Lee</b>, and Yan Solihin.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/IPDPS.2006.1639375" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>IPDPS</em> &#183; 2006</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2005</div>
+        <div>
+          <div class="title">Evaluating the Impact of Thread Escape Analysis on a Memory Consistency Model-Aware Compiler</div>
+          <div class="authors">Chi-Leung Wong, Zehra Sura, Xing Fang, Kyungwoo Lee, Samuel P. Midkiff, <b>Jaejin Lee</b>, and David Padua.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1007/978-3-540-69330-7_12" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>LCPC</em> &#183; 2005</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2005</div>
+        <div>
+          <div class="title">An Intermediate Representation for Preserving Source Level Information and Optimization</div>
+          <div class="authors">Seokho Choi.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2005</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2005</div>
+        <div>
+          <div class="title">Techniques for High Performance Sequentially Consistent Java Programs</div>
+          <div class="authors">Zehra Sura, Xing Fang, Chi-Leung Wong, Samuel P. Midkiff, <b>Jaejin Lee</b>, and David Padua.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1065944.1065947" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PPoPP</em> &#183; 2005</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2005</div>
+        <div>
+          <div class="title">Adaptive Execution Techniques for SMT Multiprocessor Architectures</div>
+          <div class="authors">Changhee Jung, Daeseob Lim, <b>Jaejin Lee</b>, and SangYong Han.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1065944.1065976" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PPoPP</em> &#183; 2005</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2005</div>
+        <div>
+          <div class="title">Eliminating Conflict Misses Using Prime Number-Based Cache Indexing</div>
+          <div class="authors">Mazen Kharbutli, Yan Solihin, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/TC.2005.79" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>TC</em> &#183; 2005</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2005</div>
+        <div>
+          <div class="title">SNACK-pop: A Postpass Optimizer for Embedded Systems</div>
+          <div class="authors">Kiwon Kwon.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2005</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2005</div>
+        <div>
+          <div class="title">Helper Thread Prefetching for a Loosely-Coupled Multiprocessor System</div>
+          <div class="authors">Changhee Jung.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2005</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2004</div>
+        <div>
+          <div class="title">Compiler Assisted Demand Paging for Embedded Systems with Flash Memory</div>
+          <div class="authors">Chanik Park, Junghee Lim, Kiwon Kwon, <b>Jaejin Lee</b>, and Sang Lyul Min.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/1017753.1017775" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>EMSoft</em> &#183; 2004</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2004</div>
+        <div>
+          <div class="title">An Application-Specific and Adaptive Power Management Technique</div>
+          <div class="authors">Bernhard Egger, <b>Jaejin Lee</b>, and Heonshik Shin.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          
+        </div>
+        <div class="venue"><em>PARC</em> &#183; 2004</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2004</div>
+        <div>
+          <div class="title">Flexible Tradeoff between Code Size and WCET Using a Dual Instruction Set Processor</div>
+          <div class="authors">Sheayun Lee, <b>Jaejin Lee</b>, Chang Yun Park, and Sang Lyul Min.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1007/b99901" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>SCOPE</em> &#183; 2004</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2004</div>
+        <div>
+          <div class="title">Using Prime Numbers for Cache Indexing to Eliminate Conflict Misses</div>
+          <div class="authors">Mazen Kharbutli, Yan Solihin, and <b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/HPCA.2004.10015" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>HPCA</em> &#183; 2004</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2004</div>
+        <div>
+          <div class="title">A Compiler for Multiple Memory Models</div>
+          <div class="authors">Samuel P. Midkiff, <b>Jaejin Lee</b>, and David A. Padua.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1002/cpe.771" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>CPE</em> &#183; 2004</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2003</div>
+        <div>
+          <div class="title">Code Generation for a Dual Instruction Set Processor Based on Selective Code Transformation</div>
+          <div class="authors">Sheayun Lee, <b>Jaejin Lee</b>, Sang Lyul Min, Jason Hiser, and Jack W. Davidson.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1007/b13482" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>SCOPE</em> &#183; 2003</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2003</div>
+        <div>
+          <div class="title">A Flexible Tradeoff between Code Size and WCET Employing Dual Instruction Set Processors</div>
+          <div class="authors">Sheayun Lee, <b>Jaejin Lee</b>, Chang Yun Park, and Sang Lyul Min.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          
+        </div>
+        <div class="venue"><em>WCET</em> &#183; 2003</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2003</div>
+        <div>
+          <div class="title">Automatic Fence Insertion for Shared Memory Multiprocessing</div>
+          <div class="authors">Xing Fang, <b>Jaejin Lee</b>, and Samuel P. Midkiff.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/782814.782854" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>ICS</em> &#183; 2003</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2003</div>
+        <div>
+          <div class="title">Correlation Prefetching with a User Level Memory Thread</div>
+          <div class="authors">Yan Solihin, <b>Jaejin Lee</b>, and Josep Torrellas.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/TPDS.2003.1206504" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>TPDS</em> &#183; 2003</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2002</div>
+        <div>
+          <div class="title">Inserting Fences to Guarantee Sequential Consistency</div>
+          <div class="authors">Xing Fang.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2002</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers theses" data-reveal>
+        <div class="year">2002</div>
+        <div>
+          <div class="title">M.S. Thesis, August 2002.</div>
+          <div class="authors">H. D. K. Moonesinghe.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>MSThesis</em> &#183; 2002</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2002</div>
+        <div>
+          <div class="title">Adaptively Increasing Performance and Scalability of Automatically Parallelized Programs</div>
+          <div class="authors"><b>Jaejin Lee</b> and H. D. K. Moonesinghe.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1007/11596110_14" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>LCPC</em> &#183; 2002</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2002</div>
+        <div>
+          <div class="title">Automatic Implementation of Programming Language Consistency Models</div>
+          <div class="authors">Zehra Sura, Chi-Leung Wong, Xing Fang, <b>Jaejin Lee</b>, Samuel P. Midkiff, and David Padua.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1007/11596110_12" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>LCPC</em> &#183; 2002</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2002</div>
+        <div>
+          <div class="title">Optimizing the Java Pipe I/O Stream Library for Performance</div>
+          <div class="authors">Ji Zhang, <b>Jaejin Lee</b>, and Philip K. McKinley.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1007/11596110_16" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>LCPC</em> &#183; 2002</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="vision" data-tags="vision" data-reveal>
+        <div class="year">2002</div>
+        <div>
+          <div class="title">The Pensieve Project: A Compiler Infrastructure for Memory Models</div>
+          <div class="authors">Chi-Leung Wong, Zehra Sura, Xing Fang, Samuel P. Midkiff, <b>Jaejin Lee</b>, and David Padua.</div>
+          <div class="pub-areas"><span class="tag">Under-display camera</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/ISPAN.2002.1004288" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>ISPAN</em> &#183; 2002</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2002</div>
+        <div>
+          <div class="title">Using a User-Level Memory Thread for Correlation Prefetching. Using a User-Level Memory Thread for Correlation Prefetching</div>
+          <div class="authors">Yan Solihin, <b>Jaejin Lee</b>, and Josep Torrellas.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/ISCA.2002.1003576" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>ISCA</em> &#183; 2002</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2001</div>
+        <div>
+          <div class="title">Prefetching in an Intelligent Memory Architecture Using a Helper Thread. MTEAC-5:</div>
+          <div class="authors">Yan Solihin, <b>Jaejin Lee</b>, and Josep Torrellas.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          
+        </div>
+        <div class="venue"><em>MTEAC</em> &#183; 2001</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2001</div>
+        <div>
+          <div class="title">Automatic Code Mapping on an Intelligent Memory Architecture</div>
+          <div class="authors">Yan Solihin, <b>Jaejin Lee</b>, and Josep Torrellas.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/12.966498" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>TC</em> &#183; 2001</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2001</div>
+        <div>
+          <div class="title">Hiding Relaxed Memory Consistency with a Compiler</div>
+          <div class="authors"><b>Jaejin Lee</b> and David A. Padua.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/12.947002" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>TC</em> &#183; 2001</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2001</div>
+        <div>
+          <div class="title">A Compiler for Multiple Memory Models</div>
+          <div class="authors">Samuel P. Midkiff, <b>Jaejin Lee</b>, and David A. Padua.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          
+        </div>
+        <div class="venue"><em>CPC</em> &#183; 2001</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2001</div>
+        <div>
+          <div class="title">A Compiler Technique to Hide Relaxed Memory Consistency</div>
+          <div class="authors"><b>Jaejin Lee</b> and David A. Padua.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          
+        </div>
+        <div class="venue"><em>TR</em> &#183; 2001</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2001</div>
+        <div>
+          <div class="title">Basic Compilation Techniques for Explicitly Parallel Programs</div>
+          <div class="authors"><b>Jaejin Lee</b>, David A. Padua, and Samuel P. Midkiff.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          
+        </div>
+        <div class="venue"><em>TR</em> &#183; 2001</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2001</div>
+        <div>
+          <div class="title">Automatically Mapping Code on an Intelligent Memory Architecture</div>
+          <div class="authors"><b>Jaejin Lee</b>, Yan Solihin, and Josep Torrellas.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/HPCA.2001.903257" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>HPCA</em> &#183; 2001</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2000</div>
+        <div>
+          <div class="title">Hiding the Java Memory Model with Compilers</div>
+          <div class="authors"><b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          
+        </div>
+        <div class="venue"><em>TR</em> &#183; 2000</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">2000</div>
+        <div>
+          <div class="title">Adaptively Mapping Code in an Intelligent Memory Architecture</div>
+          <div class="authors">Yan Solihin, <b>Jaejin Lee</b>, and Josep Torrellas.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1007/3-540-44570-6_5" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>IMS</em> &#183; 2000</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">2000</div>
+        <div>
+          <div class="title">Hiding Relaxed Memory Consistency with Compilers</div>
+          <div class="authors"><b>Jaejin Lee</b> and David A. Padua.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/PACT.2000.888336" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PACT</em> &#183; 2000</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems theses" data-reveal>
+        <div class="year">1999</div>
+        <div>
+          <div class="title">Compilation Techniques for Explicitly Parallel Programs</div>
+          <div class="authors"><b>Jaejin Lee</b>.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span><span class="tag">Thesis</span></div>
+          
+        </div>
+        <div class="venue"><em>PhDThesis</em> &#183; 1999</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">1999</div>
+        <div>
+          <div class="title">Basic Compiler Algorithms for Parallel Programs</div>
+          <div class="authors"><b>Jaejin Lee</b>, David A. Padua, and Samuel P. Midkiff.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1145/329366.301105" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>PPoPP</em> &#183; 1999</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">1998</div>
+        <div>
+          <div class="title">A Constant Propagation Algorithm for Explicitly Parallel Programs</div>
+          <div class="authors"><b>Jaejin Lee</b>, Samuel P. Midkiff, and David A. Padua.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1023/A:1018772514882" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>IJPP</em> &#183; 1998</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">1997</div>
+        <div>
+          <div class="title">Concurrent Static Single Assignment Form and Constant Propagation for Explicitly Parallel Programs</div>
+          <div class="authors"><b>Jaejin Lee</b>, Samuel P. Midkiff, and David A. Padua.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1007/BFb0032687" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>LCPC</em> &#183; 1997</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">1997</div>
+        <div>
+          <div class="title">Concurrent Static Single Assignment Form and Concurrent Sparse Conditional Constant Propagation for Explicitly Parallel Programs</div>
+          <div class="authors"><b>Jaejin Lee</b>, Samuel P. Midkiff, and David A. Padua.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          
+        </div>
+        <div class="venue"><em>TR</em> &#183; 1997</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">1997</div>
+        <div>
+          <div class="title">Parallel Static Single Assignment Form and Constant Propagation for Explicitly Parallel Programs. INTERACT-2:</div>
+          <div class="authors"><b>Jaejin Lee</b> and David A. Padua.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          
+        </div>
+        <div class="venue"><em>INTERACT</em> &#183; 1997</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">1996</div>
+        <div>
+          <div class="title">Parallel Programming with Polaris</div>
+          <div class="authors">William Blume, Ramon Doallo, Rudolf Eigenmann, John Grout, Jay Hoeflinger, Thomas Lawrence, <b>Jaejin Lee</b>, David Padua, Yunheung Paek, Bill Pottenger, Lawrence Rauchwerger, and Peng Tu.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          <div class="links"><a href="http://dx.doi.org/10.1109/2.546612" rel="noopener">DOI</a></div>
+        </div>
+        <div class="venue"><em>COMPUTER</em> &#183; 1996</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">1996</div>
+        <div>
+          <div class="title">Restructuring Programs for High-Speed Computers with Polaris</div>
+          <div class="authors">William Blume, Rudolf Eigenman, K. Faigin, John Grout, Thomas Lawrence, <b>Jaejin Lee</b>, Jay Hoeflinger, David Padua, Yunheung Paek, Paul Petersen, William Pottenger, Lawrence Rauchwerger, Stephen Weatherford, and Peng Tu.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          
+        </div>
+        <div class="venue"><em>WCPP</em> &#183; 1996</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="systems" data-tags="systems" data-reveal>
+        <div class="year">1996</div>
+        <div>
+          <div class="title">Advanced Program Restructuring for High-Performance Computers with Polaris</div>
+          <div class="authors">William Blume, Rudolf Eigenman, K. Faigin, John Grout, Thomas Lawrence, <b>Jaejin Lee</b>, Jay Hoeflinger, David Padua, Yunheung Paek, Paul Petersen, William Pottenger, Lawrence Rauchwerger, Stephen Weatherford, and Peng Tu.</div>
+          <div class="pub-areas"><span class="tag">Execution platforms</span></div>
+          
+        </div>
+        <div class="venue"><em>TR</em> &#183; 1996</div>
+      </article>
+
+      <article class="pub" data-div="pub" data-area="compilers" data-tags="compilers" data-reveal>
+        <div class="year">1995</div>
+        <div>
+          <div class="title">STeP: The Stanford Temporal Prover</div>
+          <div class="authors">Zohar Manna, Nikolaj Bjorner, Anca Browne, Edward Chang, Michael Colon, Luca de Alfaro, Harish Devarajan, Arjun Kapur, <b>Jaejin Lee</b>, Henny Sipma, and Tomas E. Uribe.</div>
+          <div class="pub-areas"><span class="tag">Compilers & architecture</span></div>
+          
+        </div>
+        <div class="venue"><em>TAPSOFT</em> &#183; 1995</div>
       </article>
     </div>
 
     <p style="margin-top:34px;color:var(--ink-3);font-size:.9rem">
-      A complete list is on <a href="#" style="color:var(--ink-2);border-bottom:1px solid var(--line-2)">Google Scholar</a>.
+      Domestic (Korean) papers and patents are listed separately on the group's
+      <a href="https://thunder.snu.ac.kr/?page_id=204" rel="noopener" style="color:var(--ink-2);border-bottom:1px solid var(--line-2)">previous site</a>.
     </p>
   </div>
 </section>
@@ -165,12 +2194,13 @@
             <path d="M13 2.5 4.5 14.2h5.8L9.2 21.5 19.5 9.6h-6.2z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
             <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
           </svg>
-          <b>Thunder Research Group</b>
+          <b>THUNDER Research Group</b>
         </a>
         <p class="addr">
-          Department of Computer Science<br>
-          University Name, Building &amp; Room<br>
-          City, Country
+          Room 651, Building 303<br>
+          Seoul National University<br>
+          Seoul 08826, South Korea<br>
+          +82-2-880-1837
         </p>
       </div>
       <div>
@@ -185,15 +2215,15 @@
       <div>
         <h5>Elsewhere</h5>
         <ul>
-          <li><a href="mailto:contact@example.edu">contact@example.edu</a></li>
-          <li><a href="#">Google Scholar</a></li>
-          <li><a href="#">GitHub</a></li>
+          <li><a href="mailto:chief@aces.snu.ac.kr">chief@aces.snu.ac.kr</a></li>
+          <li><a href="https://cse.snu.ac.kr/" rel="noopener">SNU CSE</a></li>
+          <li><a href="https://gsds.snu.ac.kr/" rel="noopener">SNU Data Science</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-base">
-      <span>&copy; <span data-year>2026</span> Thunder Research Group</span>
-      <span>Computer Science &nbsp;·&nbsp; Data Science</span>
+      <span>&copy; 2023&#8211;<span data-year>2026</span> THUNDER Research Group</span>
+      <span>Computer Science and Engineering &nbsp;·&nbsp; Data Science</span>
     </div>
   </div>
 </footer>

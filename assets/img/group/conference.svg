@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Placeholder">
+  <rect width="1200" height="900" fill="#1b1e22"/>
+  <g fill="none" stroke="#2c3137" stroke-width="1">
+    <path d="M0 225H1200M0 450H1200M0 675H1200M300 0V900M600 0V900M900 0V900"/>
+  </g>
+  <g fill="none" stroke="#4a525a" stroke-width="2">
+    <rect x="336" y="270" width="528" height="360" rx="3"/>
+    <circle cx="480" cy="405" r="54"/>
+    <path d="M336 594l120 -126 108 90 132 -144 168 180"/>
+  </g>
+  <text x="600" y="774" font-family="ui-monospace, Menlo, monospace" font-size="49"
+        fill="#6b757c" letter-spacing="3" text-anchor="middle">CONFERENCE</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" width="1600" height="600" role="img" aria-label="Placeholder">
+  <rect width="1600" height="600" fill="#1b1e22"/>
+  <g fill="none" stroke="#2c3137" stroke-width="1">
+    <path d="M0 150H1600M0 300H1600M0 450H1600M400 0V600M800 0V600M1200 0V600"/>
+  </g>
+  <g fill="none" stroke="#4a525a" stroke-width="2">
+    <rect x="448" y="180" width="704" height="240" rx="3"/>
+    <circle cx="640" cy="270" r="36"/>
+    <path d="M448 396l160 -84 144 60 176 -96 224 120"/>
+  </g>
+  <text x="800" y="516" font-family="ui-monospace, Menlo, monospace" font-size="33"
+        fill="#6b757c" letter-spacing="3" text-anchor="middle">GROUP PHOTO</text>
+</svg>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research &#8212; Thunder Research Group</title>
-<meta name="description" content="Execution platforms for deep learning and quantum computing; large language and multimodal models.">
+<title>Research &#8212; THUNDER Research Group</title>
+<meta name="description" content="Execution platforms for deep learning, large language models, quantum computing and under-display camera image restoration.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=JetBrains+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 <!-- ================= Header ================= -->
 <header class="header">
   <div class="wrap header-in">
-    <a class="brand" href="index.html" aria-label="Thunder Research Group — home">
+    <a class="brand" href="index.html" aria-label="THUNDER Research Group — home">
       <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
         <path d="M13 2.5 4.5 14.2h5.8L9.2 21.5 19.5 9.6h-6.2z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
         <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
@@ -49,12 +49,13 @@
   <div class="hero-grid" aria-hidden="true" style="opacity:.35"></div>
   <div class="wrap" style="position:relative;z-index:1">
     <div class="eyebrow">Research programme</div>
-    <h1>Building the substrate, and the workloads that test it.</h1>
+    <h1>Overcoming the programming wall.</h1>
     <p class="lede">
-      Our two divisions ask the same question from opposite ends: what does it take to run a
-      computation that did not exist a few years ago. The computer science division builds
-      execution platforms for deep learning and quantum hardware. The data science division
-      builds and studies the language and multimodal models that keep moving the target.
+      A heterogeneous system uses more than one kind of processor: a general-purpose CPU to run an
+      operating system, and accelerators such as GPUs and FPGAs to do specific work faster and more
+      efficiently. In the post-Moore era these machines carry the largest applications we have —
+      deep learning and quantum software platforms among them. Extracting performance proportional
+      to the resources in such a system is the problem we work on.
     </p>
   </div>
 </section>
@@ -63,161 +64,217 @@
   <div class="wrap">
     <div class="divisions">
       <article class="division cs" data-reveal>
-        <div class="division-idx">DIVISION 01 &nbsp;— &nbsp;COMPUTER SCIENCE</div>
-        <h3>Execution platforms</h3>
-        <p class="desc">Deep learning and quantum computing, approached as one compilation-and-scheduling problem against two very different machines.</p>
+        <div class="division-idx">RESEARCH GOALS</div>
+        <h3>Accelerate large-scale applications, pragmatically</h3>
+        <p class="desc">The programming wall is an obstacle for general programmers and deep learning
+        model designers who want to parallelize and optimize their applications across the processor
+        resources they already have. We attack it with deep learning models together with compiler,
+        runtime, architecture and operating system techniques at every level.</p>
         <ul>
-          <li><i>&#8595;</i><span><a href="#cs-01">Compiler stacks</a></span></li>
-          <li><i>&#8595;</i><span><a href="#cs-02">Distributed execution</a></span></li>
-          <li><i>&#8595;</i><span><a href="#cs-03">Quantum toolchains</a></span></li>
-          <li><i>&#8595;</i><span><a href="#cs-04">Hybrid orchestration</a></span></li>
+          <li><i>&#8595;</i><span><a href="#a-01">Execution platforms for deep learning</a></span></li>
+          <li><i>&#8595;</i><span><a href="#a-02">Large language models</a></span></li>
+          <li><i>&#8595;</i><span><a href="#a-03">Quantum computing</a></span></li>
+          <li><i>&#8595;</i><span><a href="#a-04">Under-display camera image restoration</a></span></li>
         </ul>
       </article>
       <article class="division ds" data-reveal style="--d:110ms">
-        <div class="division-idx">DIVISION 02 &nbsp;— &nbsp;DATA SCIENCE</div>
-        <h3>Language &amp; multimodal models</h3>
-        <p class="desc">What models learn, where they break, and what it costs to run them once they are worth running.</p>
+        <div class="division-idx">IN PARTICULAR</div>
+        <h3>Four topics</h3>
+        <p class="desc">Each of these is a standing project with students, released code and published
+        results behind it.</p>
         <ul>
-          <li><i>&#8595;</i><span><a href="#ds-01">Language model training</a></span></li>
-          <li><i>&#8595;</i><span><a href="#ds-02">Multimodal representation</a></span></li>
-          <li><i>&#8595;</i><span><a href="#ds-03">Efficiency</a></span></li>
-          <li><i>&#8595;</i><span><a href="#ds-04">Evaluation</a></span></li>
+          <li><i>01</i><span>Parallelization and optimization of deep learning frameworks</span></li>
+          <li><i>02</i><span>Parallelization and optimization of large language models</span></li>
+          <li><i>03</i><span>Programming systems of heterogeneous machines (GPUs and FPGAs)</span></li>
+          <li><i>04</i><span>Programming and simulation environments for quantum computing</span></li>
         </ul>
       </article>
     </div>
   </div>
 </section>
 
-<section class="section" id="cs">
+<section class="section" id="areas">
   <div class="wrap">
     <div class="sec-head" data-reveal>
       <div class="rule" aria-hidden="true"></div>
-      <div class="eyebrow">Division 01</div>
+      <div class="eyebrow">Areas</div>
       <div>
-        <h2 class="sec-title">Computer science &#8212; execution platforms</h2>
+        <h2 class="sec-title">Execution platforms for deep learning</h2>
         <p class="sec-lede" style="margin-top:14px">
-          A model or a circuit is a description of intent. Everything between that description
-          and a finished result is our subject: what is decided ahead of time, what is decided
-          while running, and what it costs to be wrong.
+          As the computation and memory requirements of deep neural networks grow, multi-GPU and
+          multi-node training and inference have become essential &#8212; and parallelizing that work
+          requires sophisticated knowledge of the underlying architecture. We build the systems that
+          remove that requirement.
         </p>
       </div>
     </div>
 
     <div class="areas">
-      <article class="area cs" id="cs-01" data-reveal>
+      <article class="area" id="a-01" data-area="systems" data-reveal>
         <div class="n">01</div>
-        <h3>Compiler stacks for deep learning</h3>
+        <h3>Automatic parallelization of DNN models</h3>
         <div class="body">
-          <p>Graph capture, operator fusion, kernel selection and memory planning. We are interested
-          in decisions that survive a change of model family &#8212; and in the cases where the compiler
-          should hand control back to the runtime rather than guess.</p>
-          <p style="margin-top:14px;color:var(--ink-3);font-size:.9rem">Typical questions: when does fusion stop paying? What does a scheduler need to know about a shape it will only see at run time?</p>
-          <div class="tags"><span class="tag">IR design</span><span class="tag">Fusion</span><span class="tag">Autotuning</span><span class="tag">Memory planning</span></div>
+          <p>Parallelizing a DNN training workload across multiple GPUs is challenging: it requires sophisticated knowledge of the underlying system architecture, which hinders users from developing large DNN models. We develop methods to find the best parallelization scheme automatically on a multi-node, multi-GPU system.</p>
+          <p style="margin-top:14px">We also develop a performance model that predicts how DNN workloads will run on heterogeneous GPUs in a cluster.</p>
+          <div class="tags"><span class="tag">Parallelization</span><span class="tag">Performance models</span><span class="tag">Clusters</span></div>
         </div>
       </article>
 
-      <article class="area cs" id="cs-02" data-reveal>
+      <article class="area" id="a-01b" data-area="systems" data-reveal>
         <div class="n">02</div>
-        <h3>Distributed training and serving</h3>
+        <h3>DeepUM and SnuRHAC</h3>
         <div class="body">
-          <p>Parallelism strategy, collective communication, checkpointing and elasticity on clusters
-          that are shared, heterogeneous and occasionally unreliable. We measure end to end, including
-          the failures, because the tail is where the cost lives.</p>
-          <p style="margin-top:14px;color:var(--ink-3);font-size:.9rem">Typical questions: how should a serving system trade latency against utilisation when the request mix shifts hourly?</p>
-          <div class="tags"><span class="tag">Parallelism</span><span class="tag">Collectives</span><span class="tag">Elasticity</span><span class="tag">Inference serving</span></div>
+          <p>DeepUM exploits CUDA Unified Memory to allow GPU memory oversubscription for DNNs. Conventional UM allows oversubscription through page faults, but page migration introduces enormous overhead; DeepUM uses a new correlation prefetching technique to hide it, fully automatically and transparently to the user. We evaluated it on nine large-scale DNNs from MLPerf, PyTorch examples and Hugging Face against six state-of-the-art GPU memory swapping approaches.</p>
+          <p style="margin-top:14px">SnuRHAC provides the illusion of a single GPU for multiple GPUs in a cluster, distributing workload and managing data across nodes automatically. Evaluated on 18 applications, it achieves scalable performance while significantly reducing the programmer&#8217;s burden.</p>
+          <div class="tags"><span class="tag">Unified memory</span><span class="tag">Prefetching</span><span class="tag">Oversubscription</span></div>
         </div>
       </article>
 
-      <article class="area cs" id="cs-03" data-reveal>
+      <article class="area" id="a-01c" data-area="systems" data-reveal>
         <div class="n">03</div>
-        <h3>Quantum compilation and control</h3>
+        <h3>Deep learning frameworks for FPGAs and GPUs</h3>
         <div class="body">
-          <p>Circuit synthesis, qubit mapping and routing under real device topologies, noise-aware
-          scheduling, and the software layer that turns a scheduled circuit into pulses. The constraints
-          are harsher than in classical compilation, which makes the trade-offs easier to see.</p>
-          <p style="margin-top:14px;color:var(--ink-3);font-size:.9rem">Typical questions: what does a compiler do differently when every additional gate costs fidelity?</p>
-          <div class="tags"><span class="tag">Mapping &amp; routing</span><span class="tag">Noise-aware</span><span class="tag">Pulse control</span><span class="tag">Error mitigation</span></div>
+          <p>As energy efficiency becomes a first-order issue, FPGAs are emerging as promising accelerators for HPC systems &#8212; but low-level hardware description languages and vendor toolchains keep them out of reach. We presented SOFF, a high-level synthesis framework for OpenCL and CUDA on FPGAs that requires no explicit user annotations, and we are building an NPU and a deep learning framework that generates an optimal circuit for a given model.</p>
+          <p style="margin-top:14px">DeepCuts takes the same argument to GPUs: rather than relying on libraries with fixed implementations such as cuDNN, it generates kernels optimized for the target workload and hardware, reaching state-of-the-art performance against TVM, TensorRT and TensorFlow XLA.</p>
+          <div class="tags"><span class="tag">SOFF</span><span class="tag">DeepCuts</span><span class="tag">NPU</span><span class="tag">High-level synthesis</span></div>
         </div>
       </article>
 
-      <article class="area cs" id="cs-04" data-reveal>
+      <article class="area" id="a-01d" data-area="systems" data-reveal>
         <div class="n">04</div>
-        <h3>Hybrid classical&#8211;quantum orchestration</h3>
+        <h3>Mobile ISP replacement through model compression</h3>
         <div class="body">
-          <p>Variational and iterative workloads put a QPU inside a classical loop. We work on
-          scheduling, queueing and cost models that treat both resources as one system rather than
-          a fast machine waiting on a slow one.</p>
-          <p style="margin-top:14px;color:var(--ink-3);font-size:.9rem">Typical questions: where should the loop live, and what is the right unit of work to send across the boundary?</p>
-          <div class="tags"><span class="tag">Schedulers</span><span class="tag">Cost models</span><span class="tag">Runtime systems</span></div>
+          <p>Deep learning models such as PyNET can replace a mobile image signal processor, but they are expensive to compute and hard to deploy on a phone. We combine Tucker decomposition, quantization, pruning and knowledge distillation to cut computation and memory cost substantially without sacrificing accuracy.</p>
+          <div class="tags"><span class="tag">Quantization</span><span class="tag">Pruning</span><span class="tag">Distillation</span></div>
         </div>
       </article>
+
     </div>
   </div>
 </section>
 
-<section class="section" id="ds">
+<section class="section" id="llm">
   <div class="wrap">
     <div class="sec-head" data-reveal>
       <div class="rule" aria-hidden="true"></div>
-      <div class="eyebrow">Division 02</div>
+      <div class="eyebrow">Areas</div>
       <div>
-        <h2 class="sec-title">Data science &#8212; language and multimodal models</h2>
+        <h2 class="sec-title">Large language models</h2>
         <p class="sec-lede" style="margin-top:14px">
-          We train models, take them apart, and try to say precisely what changed and why.
-          The work is empirical by temperament: a claim that cannot be measured on something
-          other than the benchmark it was tuned on is not yet a result.
+          Large language models are trained mostly on English, and datasets biased toward English
+          produce models that degrade badly on other languages. Much of our work is about closing
+          that gap for Korean, and about making the training affordable enough to do it at all.
         </p>
       </div>
     </div>
 
     <div class="areas">
-      <article class="area ds" id="ds-01" data-reveal>
+      <article class="area" id="a-02" data-area="lm" data-reveal>
         <div class="n">01</div>
-        <h3>Training and steering language models</h3>
+        <h3>Korean datasets, tokenizers and models</h3>
         <div class="body">
-          <p>Data curation, pre-training and post-training recipes, and the reasoning behaviour they
-          produce. We are especially interested in separating genuine generalisation from the
-          well-dressed memorisation that looks just like it on a leaderboard.</p>
-          <p style="margin-top:14px;color:var(--ink-3);font-size:.9rem">Typical questions: which post-training choices move capability, and which only move the score?</p>
-          <div class="tags"><span class="tag">Pre-training data</span><span class="tag">Post-training</span><span class="tag">Reasoning</span><span class="tag">Alignment</span></div>
+          <p>We are building a massive Korean dataset using web crawling, de-identification and de-duplication, and a deep learning tokenizer for Korean NLP &#8212; Korean tokenization involves decomposing words into morphemes (&#54805;&#53468;&#49548;) and tagging their parts of speech (&#54408;&#49324;).</p>
+          <p style="margin-top:14px">On top of that data and tokenizer we train Korean language models from scratch, rather than accepting the latency and quality penalty that English-centric models pay on Korean tasks.</p>
+          <div class="tags"><span class="tag">Web crawling</span><span class="tag">De-identification</span><span class="tag">Morphemes</span><span class="tag">Thunder-LLM</span></div>
         </div>
       </article>
 
-      <article class="area ds" id="ds-02" data-reveal>
+      <article class="area" id="a-02b" data-area="lm" data-reveal>
         <div class="n">02</div>
-        <h3>Multimodal representation</h3>
+        <h3>Training LLMs under real constraints</h3>
         <div class="body">
-          <p>Speech, vision and text in a single model: how modalities are aligned, how much transfers
-          across languages, and what breaks first in the low-resource setting. Multilingual speech is a
-          recurring test bed because it exposes shortcuts quickly.</p>
-          <p style="margin-top:14px;color:var(--ink-3);font-size:.9rem">Typical questions: is the model reasoning across modalities, or has one modality quietly become decorative?</p>
-          <div class="tags"><span class="tag">Speech</span><span class="tag">Vision-language</span><span class="tag">Cross-modal alignment</span><span class="tag">Low-resource</span></div>
+          <p>Training a model with more than a hundred billion parameters on a cluster runs into the capacity of GPU memory. Parallelizing across GPUs is one answer; using main memory, NVMe SSDs and HDDs as backup space is another. The interaction between the two is non-trivial, so we are building a cluster-targeting framework that uses all of them and a performance model that finds the optimal parallelization.</p>
+          <p style="margin-top:14px">We also work on training techniques &#8212; auto-encoders, layer-wise training, mixtures of experts, better datasets &#8212; that make large model training possible without big-tech resources.</p>
+          <div class="tags"><span class="tag">GPU memory wall</span><span class="tag">NVMe</span><span class="tag">Mixture of experts</span></div>
         </div>
       </article>
 
-      <article class="area ds" id="ds-03" data-reveal>
+      <article class="area" id="a-02c" data-area="lm" data-reveal>
         <div class="n">03</div>
-        <h3>Efficiency as a research variable</h3>
+        <h3>Energy efficiency and model compression</h3>
         <div class="body">
-          <p>Distillation, quantisation, sparsity and caching &#8212; studied with the serving system in
-          view rather than as isolated tricks. This is where the two divisions meet most often, and
-          where a systems result and a modelling result are usually the same result.</p>
-          <p style="margin-top:14px;color:var(--ink-3);font-size:.9rem">Typical questions: what does a quality/latency curve look like when the deployment is honest about batch size?</p>
-          <div class="tags"><span class="tag">Distillation</span><span class="tag">Quantisation</span><span class="tag">Inference cost</span></div>
+          <p>Energy consumption has become a serious issue in training large language models. We characterise performance and energy on GPUs at the granularity of hardware modules &#8212; FPU, tensor core, cache, shared memory &#8212; and of deep learning layers, then propose energy-aware parallelization and optimal underclocking.</p>
+          <p style="margin-top:14px">Separately, we study quantization, pruning and knowledge distillation in depth, and how to combine them properly, so that large models can be deployed on devices with limited computation and memory.</p>
+          <div class="tags"><span class="tag">Energy</span><span class="tag">Underclocking</span><span class="tag">Quantization</span></div>
         </div>
       </article>
 
-      <article class="area ds" id="ds-04" data-reveal>
-        <div class="n">04</div>
-        <h3>Evaluation and failure analysis</h3>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="quantum">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">Areas</div>
+      <div>
+        <h2 class="sec-title">Quantum computing</h2>
+      </div>
+    </div>
+
+    <div class="areas">
+      <article class="area" id="a-03" data-area="quantum" data-reveal>
+        <div class="n">01</div>
+        <h3>Software stacks for quantum computing</h3>
         <div class="body">
-          <p>Benchmarks that keep meaning something after release: contamination, construct validity,
-          and evaluations designed so that a failure tells you which assumption was wrong. We publish
-          the cases we could not fix along with the ones we could.</p>
-          <p style="margin-top:14px;color:var(--ink-3);font-size:.9rem">Typical questions: what does this number predict about behaviour outside the test set &#8212; and how would we know?</p>
-          <div class="tags"><span class="tag">Benchmark design</span><span class="tag">Contamination</span><span class="tag">Error analysis</span></div>
+          <p>We are developing an end-to-end software stack for quantum computing: a compiler, a runtime system and a classical quantum-circuit simulator. The current focus is high-performance, scalable simulation and tensor network contraction.</p>
+          <p style="margin-top:14px">We simulated the 42-qubit quantum supremacy circuit on a workstation-level system with many NVMe SSDs and HDDs. The conventional limit for workstation-level full-state simulation is around 34 qubits, which makes our simulator&#8217;s capability 256 times larger. We also built a small cluster with SSDs and HDDs to reach supercomputer-level circuits.</p>
+          <div class="tags"><span class="tag">Compiler</span><span class="tag">Runtime</span><span class="tag">Tensor networks</span></div>
         </div>
       </article>
+
+      <article class="area" id="a-03b" data-area="quantum" data-reveal>
+        <div class="n">02</div>
+        <h3>SnuQS</h3>
+        <div class="body">
+          <p>SnuQS is a full-state quantum-circuit simulation framework that uses storage devices to enlarge the available main memory capacity at small cost. It partitions circuits automatically based on qubit permutation and amplitude layout, and prefetches amplitudes to overlap computation with I/O.</p>
+          <p style="margin-top:14px">Combining circuit partitioning with a three-step qubit permutation guarantees that I/O operations are grouped into contiguous blocks large enough to achieve high bandwidth. The result scales full-state simulation of large circuits at about 300&#215; lower cost than a DRAM-only system.</p>
+          <div class="tags"><span class="tag">Full-state simulation</span><span class="tag">Storage I/O</span><span class="tag">Partitioning</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="udc">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">Areas</div>
+      <div>
+        <h2 class="sec-title">Under-display camera image restoration</h2>
+      </div>
+    </div>
+
+    <div class="areas">
+      <article class="area" id="a-04" data-area="vision" data-reveal>
+        <div class="n">01</div>
+        <h3>Real-world datasets and restoration</h3>
+        <div class="body">
+          <p>An under-display camera sits beneath the display, allowing a larger screen-to-body ratio and better eye tracking. Image quality degrades badly in exchange: light transmittance drops and diffraction takes over.</p>
+          <p style="margin-top:14px">Previous work relied on synthetic datasets that fail to capture how the degradation actually behaves. We build real-world datasets &#8212; UDC-SIT for still images and UDC-VIT for video &#8212; and deep learning restoration methods that address the conditions those datasets record.</p>
+          <div class="tags"><span class="tag">UDC-SIT</span><span class="tag">UDC-VIT</span><span class="tag">Diffraction</span><span class="tag">Restoration</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="history">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">History</div>
+      <div><h2 class="sec-title">Where the group came from</h2></div>
+    </div>
+    <div class="news">
+      <div class="news-item" data-reveal><time>2002&#8211;2009</time><p>Advanced Compiler Research Laboratory, Dept. of Computer Science and Engineering.</p></div>
+      <div class="news-item" data-reveal><time>2009&#8211;2018</time><p>Multicore Computing Research Laboratory and the Center for Manycore Programming, supported by the Ministry of Science and ICT.</p></div>
+      <div class="news-item" data-reveal><time>2018&#8211;2021</time><p>Multicore Computing Research Laboratory in CSE, and the Scalable Deep Learning Research Laboratory in the Dept. of Data Science.</p></div>
+      <div class="news-item" data-reveal><time>2021&#8211;</time><p>THUNDER Research Group, spanning the Dept. of Computer Science and Engineering and the Dept. of Data Science.</p></div>
     </div>
   </div>
 </section>
@@ -239,7 +296,7 @@
         <p>Code, configurations and traces are released with the paper. If a result cannot be reproduced from the repository, it is not finished.</p>
       </div>
       <div class="card" data-reveal>
-        <h4>Two divisions, one review</h4>
+        <h4>Two departments, one review</h4>
         <p>Systems drafts get read by model people and the reverse. It is slower, and it catches the assumptions each side forgot it was making.</p>
       </div>
     </div>
@@ -274,12 +331,13 @@
             <path d="M13 2.5 4.5 14.2h5.8L9.2 21.5 19.5 9.6h-6.2z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
             <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
           </svg>
-          <b>Thunder Research Group</b>
+          <b>THUNDER Research Group</b>
         </a>
         <p class="addr">
-          Department of Computer Science<br>
-          University Name, Building &amp; Room<br>
-          City, Country
+          Room 651, Building 303<br>
+          Seoul National University<br>
+          Seoul 08826, South Korea<br>
+          +82-2-880-1837
         </p>
       </div>
       <div>
@@ -294,15 +352,15 @@
       <div>
         <h5>Elsewhere</h5>
         <ul>
-          <li><a href="mailto:contact@example.edu">contact@example.edu</a></li>
-          <li><a href="#">Google Scholar</a></li>
-          <li><a href="#">GitHub</a></li>
+          <li><a href="mailto:chief@aces.snu.ac.kr">chief@aces.snu.ac.kr</a></li>
+          <li><a href="https://cse.snu.ac.kr/" rel="noopener">SNU CSE</a></li>
+          <li><a href="https://gsds.snu.ac.kr/" rel="noopener">SNU Data Science</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-base">
-      <span>&copy; <span data-year>2026</span> Thunder Research Group</span>
-      <span>Computer Science &nbsp;·&nbsp; Data Science</span>
+      <span>&copy; 2023&#8211;<span data-year>2026</span> THUNDER Research Group</span>
+      <span>Computer Science and Engineering &nbsp;·&nbsp; Data Science</span>
     </div>
   </div>
 </footer>
