@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>천둥 연구실 — 서울대학교 THUNDER Research Group</title>
+<meta name="description" content="천둥 연구실은 딥러닝과 양자 컴퓨팅을 위한 실행 플랫폼을 만들고, 한국어 대규모 언어 모델을 연구합니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=JetBrains+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=Noto+Sans+KR:wght@400;500&family=Noto+Serif+KR:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13 2 4 14h6l-1 8 9-12h-6z' fill='%237fd7e6'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ================= Header ================= -->
+<header class="header">
+  <div class="wrap header-in">
+    <a class="brand" href="index.html" aria-label="천둥 연구실 — 홈">
+      <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M13 2.5 4.5 14.2h5.8L9.2 21.5 19.5 9.6h-6.2z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+        <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
+      </svg>
+      <b>Thunder</b>
+      <span>연구실</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="research.html">연구</a>
+      <a href="people.html">구성원</a>
+      <a href="publications.html">논문</a>
+      <a href="join.html">지원 · 연락</a>
+    </nav>
+
+    <div class="hdr-tools">
+      <a class="lang-btn" href="../index.html" hreflang="en" lang="en">EN</a>
+      <button class="icon-btn" data-theme-toggle aria-label="색상 테마 전환">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" data-menu aria-expanded="false" aria-controls="nav" aria-label="메뉴">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= Hero ================= -->
+<section class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <canvas class="hero-canvas" aria-hidden="true"></canvas>
+
+  <div class="wrap hero-in">
+    <div class="hero-meta">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="eyebrow">서울대학교</span>
+      <span class="eyebrow" style="color:var(--ink-4)">/</span>
+      <span class="eyebrow">컴퓨터공학부 &#183; 데이터사이언스대학원</span>
+    </div>
+
+    <h1 class="display"><em>대규모 AI</em>를 실용적으로 가속합니다.</h1>
+
+    <p class="hero-lede">
+      천둥 연구실은 서울대학교 공과대학 컴퓨터공학부와 데이터사이언스대학원에 함께 속해 있는
+      연구실입니다. 대규모 AI 모델의 학습과 추론을 가속하고 모델의 크기를 줄이는 것을 목표로 하며,
+      딥러닝의 관점에서 자연어 처리도 함께 연구합니다. 실용적인 접근을 지향합니다.
+    </p>
+
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="research.html">
+        연구 살펴보기
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="join.html">함께 연구하기</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="hero-strip">
+      <div class="strip-cell"><b>두 학과</b><p>컴퓨터공학부와 데이터사이언스대학원에 걸친 하나의 연구실.</p></div>
+      <div class="strip-cell"><b>프로그래밍 장벽 너머</b><p>이기종 기계를 실제로 쓸 수 있게 만드는 컴파일러와 런타임, 시스템.</p></div>
+      <div class="strip-cell"><b>한국어를 위한 LLM</b><p>한국어를 위한 데이터셋과 토크나이저, 그리고 모델을 처음부터.</p></div>
+      <div class="strip-cell"><b>공개된 소프트웨어</b><p>SnuCL, SnuQS, SnuRHAC, SOFF, HUM과 UDC 데이터셋을 공개하고 있습니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Divisions ================= -->
+<section class="section" id="divisions">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">01 &nbsp;/&nbsp; 학과</div>
+      <div>
+        <h2 class="sec-title">하나의 연구실, 두 학과</h2>
+        <p class="sec-lede" style="margin-top:14px">
+          가속기 기반 이기종 시스템은 대규모 응용을 실행하는 사실상의 표준이 되었지만,
+          모델 설계자와 기계 사이에는 여전히 프로그래밍 장벽이 놓여 있습니다.
+          우리는 그 장벽의 양쪽을 모두 연구합니다.
+        </p>
+      </div>
+    </div>
+
+    <div class="divisions">
+
+      <!-- CS -->
+      <article class="division cs" data-reveal>
+        <div class="division-idx">컴퓨터공학부</div>
+        <h3>딥러닝과 양자 컴퓨팅을 위한 실행 플랫폼</h3>
+        <p class="desc">
+          GPU와 FPGA, 클러스터를 위한 컴파일러와 런타임 시스템, 프로그래밍 환경.
+          모델 설계자가 기계를 속속들이 알지 못해도 기계를 온전히 쓸 수 있도록 만듭니다.
+        </p>
+
+        <div class="figure" aria-hidden="true">
+          <svg viewBox="0 0 380 108" fill="none" stroke="var(--cs)" stroke-width="1">
+            <g opacity=".85">
+              <rect x="1" y="18" width="78" height="34" rx="2" opacity=".45"/>
+              <rect x="99" y="18" width="78" height="34" rx="2" opacity=".6"/>
+              <rect x="197" y="18" width="78" height="34" rx="2" opacity=".75"/>
+              <rect x="295" y="18" width="80" height="34" rx="2"/>
+              <path d="M79 35h20M177 35h20M275 35h20" stroke-dasharray="3 3" opacity=".7"/>
+              <path d="M40 52v22M138 52v22M236 52v22M335 52v22" opacity=".35"/>
+              <path d="M12 84h352" opacity=".25"/>
+              <circle cx="40" cy="84" r="2.5" fill="var(--cs)" stroke="none" opacity=".8"/>
+              <circle cx="138" cy="84" r="2.5" fill="var(--cs)" stroke="none" opacity=".8"/>
+              <circle cx="236" cy="84" r="2.5" fill="var(--cs)" stroke="none" opacity=".8"/>
+              <circle cx="335" cy="84" r="2.5" fill="var(--cs)" stroke="none" opacity=".8"/>
+            </g>
+          </svg>
+        </div>
+
+        <ul>
+          <li><i>01</i><span><b>자동 병렬화</b> — 다중 노드·다중 GPU 시스템에서 DNN에 가장 적합한 병렬화 기법을 자동으로 찾습니다.</span></li>
+          <li><i>02</i><span><b>GPU 메모리 너머</b> — DeepUM과 SnuRHAC은 CUDA Unified Memory와 호스트 메모리, SSD를 활용해 GPU 용량을 넘어선 실행을 가능하게 합니다.</span></li>
+          <li><i>03</i><span><b>FPGA를 위한 프레임워크</b> — SOFF는 사용자 주석 없이 OpenCL과 CUDA를 FPGA로 합성합니다.</span></li>
+          <li><i>04</i><span><b>양자 시뮬레이션</b> — SnuQS는 저장장치를 이용해 전체 상태 회로 시뮬레이션을 확장합니다.</span></li>
+        </ul>
+      </article>
+
+      <!-- DS -->
+      <article class="division ds" data-reveal style="--d:110ms">
+        <div class="division-idx">데이터사이언스대학원</div>
+        <h3>한국어를 위한 대규모 언어 모델</h3>
+        <p class="desc">
+          리더보드가 염두에 두지 않았던 언어를 위한 데이터셋과 토크나이저, 모델.
+          그리고 그것이 실제로 작동했는지 말할 수 있게 해 주는 평가.
+        </p>
+
+        <div class="figure" aria-hidden="true">
+          <svg viewBox="0 0 380 108" fill="none" stroke="var(--ds)" stroke-width="1">
+            <g opacity=".85">
+              <circle cx="128" cy="54" r="40" opacity=".55"/>
+              <circle cx="190" cy="54" r="40" opacity=".75"/>
+              <circle cx="252" cy="54" r="40" opacity=".55"/>
+              <path d="M190 14v80" opacity=".2"/>
+              <path d="M8 54h60M312 54h60" stroke-dasharray="3 3" opacity=".45"/>
+              <circle cx="190" cy="54" r="3" fill="var(--ds)" stroke="none"/>
+              <circle cx="159" cy="54" r="1.6" fill="var(--ds)" stroke="none" opacity=".7"/>
+              <circle cx="221" cy="54" r="1.6" fill="var(--ds)" stroke="none" opacity=".7"/>
+            </g>
+          </svg>
+        </div>
+
+        <ul>
+          <li><i>01</i><span><b>한국어 데이터셋</b> — LLM 학습을 위한 대규모 웹 크롤링과 비식별화, 중복 제거.</span></li>
+          <li><i>02</i><span><b>한국어 토크나이저</b> — 형태소를 고려해 단어당 토큰 수를 줄이는 Thunder-Tok.</span></li>
+          <li><i>03</i><span><b>한국어 언어 모델</b> — 최소한의 자원으로 한국어에 적응시킨 Thunder-LLM.</span></li>
+          <li><i>04</i><span><b>벤치마크</b> — 모델이 아직 하지 못하는 것을 재는 Thunder-NUBench와 Thunder-KoNUBench.</span></li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= Research index ================= -->
+<section class="section" id="research">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">02 &nbsp;/&nbsp; 현재 연구</div>
+      <div>
+        <h2 class="sec-title">네 가지 연구 분야</h2>
+        <p class="sec-lede" style="margin-top:14px">
+          각 분야마다 학생과 코드, 발표된 결과가 뒤에 있습니다.
+          <a href="research.html" style="color:var(--ink-2);border-bottom:1px solid var(--line-2)">연구 페이지</a>에
+          자세히 적어 두었습니다.
+        </p>
+      </div>
+    </div>
+
+    <div class="areas">
+      <article class="area" data-area="systems" data-reveal>
+        <div class="n">01</div>
+        <h3>딥러닝을 위한 실행 플랫폼</h3>
+        <div class="body">
+          <p>다중 노드·다중 GPU 시스템에서의 DNN 자동 병렬화, 메모리와 클러스터를 투명하게 다루는
+          DeepUM과 SnuRHAC, 커널을 생성하는 DeepCuts, 그리고 FPGA를 위한 풀스택 딥러닝 프레임워크.</p>
+          <div class="tags"><span class="tag">병렬화</span><span class="tag">통합 메모리</span><span class="tag">FPGA</span><span class="tag">커널</span></div>
+        </div>
+      </article>
+
+      <article class="area" data-area="lm" data-reveal>
+        <div class="n">02</div>
+        <h3>대규모 언어 모델</h3>
+        <div class="body">
+          <p>처음부터 만든 한국어 데이터셋과 토크나이저, 언어 모델. 그리고 그것을 감당할 수 있게 만드는
+          학습 기법과 에너지 특성 분석, 모델 압축.</p>
+          <div class="tags"><span class="tag">한국어 데이터</span><span class="tag">토크나이저</span><span class="tag">모델 압축</span><span class="tag">에너지</span></div>
+        </div>
+      </article>
+
+      <article class="area" data-area="quantum" data-reveal>
+        <div class="n">03</div>
+        <h3>양자 컴퓨팅</h3>
+        <div class="body">
+          <p>컴파일러와 런타임, 시뮬레이터로 이어지는 소프트웨어 스택. SnuQS는 NVMe SSD와 HDD를 갖춘
+          워크스테이션에서 42큐비트 양자 우위 회로를 시뮬레이션했으며, 이는 기존 전체 상태 시뮬레이터보다
+          256배 큰 규모입니다.</p>
+          <div class="tags"><span class="tag">SnuQS</span><span class="tag">전체 상태 시뮬레이션</span><span class="tag">저장장치 I/O</span></div>
+        </div>
+      </article>
+
+      <article class="area" data-area="vision" data-reveal>
+        <div class="n">04</div>
+        <h3>언더디스플레이 카메라 영상 복원</h3>
+        <div class="body">
+          <p>디스플레이 아래에 놓인 카메라는 빛을 잃고 회절을 얻습니다. 우리는 합성 열화가 아니라
+          실제 환경을 담은 데이터셋 UDC-SIT과 UDC-VIT을 만들고, 그 위에서 동작하는 딥러닝 복원 기법을
+          연구합니다.</p>
+          <div class="tags"><span class="tag">UDC-SIT</span><span class="tag">UDC-VIT</span><span class="tag">영상 복원</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= News ================= -->
+<!-- PLACEHOLDER CONTENT: replace these entries with the group's real news. -->
+<section class="section" id="news">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">03 &nbsp;/&nbsp; 소식</div>
+      <div>
+        <h2 class="sec-title">연구실 소식</h2>
+      </div>
+    </div>
+
+    <div class="news">
+      <div class="news-item" data-reveal><time>2025</time><p><b>이재진 교수 연구팀, 법원 판결문 내 개인정보 비식별화하는 AI 개발</b> <a href="https://cse.snu.ac.kr/community/news/1192" rel="noopener" style="border-bottom:1px solid var(--line-2)">서울대 컴퓨터공학부 소식</a></p></div>
+      <div class="news-item" data-reveal><time>2025</time><p><b>한국판 &#8216;딥시크&#8217; 만들 수 있다&#8230; 서울대 연구진 &#8216;고성능 한국어 LLM&#8217; 개발</b> <a href="https://n.news.naver.com/article/584/0000033143" rel="noopener" style="border-bottom:1px solid var(--line-2)">기사</a></p></div>
+      <div class="news-item" data-reveal><time>2024</time><p><b>이재진 교수 연구진 창업기업 모레, &#8216;최강 한국어 성능&#8217; 갖춘 102B 오픈 소스 모델 공개</b> <a href="https://cse.snu.ac.kr/community/news/1182" rel="noopener" style="border-bottom:1px solid var(--line-2)">서울대 컴퓨터공학부 소식</a></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Spinouts & funding ================= -->
+<section class="section" id="around">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">04 &nbsp;/&nbsp; 연구실 주변</div>
+      <div><h2 class="sec-title">창업과 소프트웨어, 그리고 지원</h2></div>
+    </div>
+
+    <div class="cards">
+      <div class="card" data-reveal>
+        <h4>동문 창업</h4>
+        <p><a href="http://manycoresoft.co.kr/" rel="noopener">ManyCoreSoft</a> — 딥러닝 시스템<br>
+        <a href="https://moreh.io/" rel="noopener">모레(Moreh)</a> — 딥러닝 컴파일러와 클라우드 솔루션</p>
+      </div>
+      <div class="card" data-reveal>
+        <h4>소프트웨어와 시스템</h4>
+        <p>저비용 고효율 이기종 슈퍼컴퓨터 천둥(Chundoong), UDC-SIT과 UDC-VIT 데이터셋,
+        그리고 GitHub에 공개된 SnuQS, SnuRHAC, SOFF, HUM, SnuCL, SFMalloc, FaCSim, COMIC.</p>
+      </div>
+      <div class="card" data-reveal>
+        <h4>연구비 지원</h4>
+        <p>과학기술정보통신부(한국연구재단), 초대규모 AI 모델 및 플랫폼 최적화 공학연구센터(ERC),
+        SW스타랩, 창의연구단(멀티코어 프로그래밍 연구센터), 지식경제부.</p>
+      </div>
+      <div class="card" data-reveal>
+        <h4>산학 협력</h4>
+        <p>삼성전자, 삼성디스플레이, LG전자, SK하이닉스, 한글과컴퓨터, 모레, SK텔레콤, 마이크로소프트.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="section">
+  <div class="wrap">
+    <div class="cta" data-reveal>
+      <div>
+        <h2>아무도 보지 않는 계층을 함께 만들 분을 찾습니다.</h2>
+        <p>
+          두 학과 모두에서 대학원생과 인턴, 공동 연구자를 받고 있습니다. 모델이 무엇을 필요로 하는지
+          알고 싶은 시스템 연구자와, 기계가 무엇을 할 수 있는지 알고 싶은 모델 연구자 모두를 환영합니다.
+        </p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a class="btn btn-primary" href="join.html">
+          모집 안내
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="mailto:chief@aces.snu.ac.kr">연구실에 메일 보내기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= Footer ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M13 2.5 4.5 14.2h5.8L9.2 21.5 19.5 9.6h-6.2z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+            <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
+          </svg>
+          <b>천둥 연구실 <span lang="en">THUNDER</span></b>
+        </a>
+        <p class="addr">
+          서울특별시 관악구 관악로 1<br>
+          서울대학교 303동 651호 천둥 연구실<br>
+          우편번호 08826<br>
+          +82-2-880-1837
+        </p>
+      </div>
+      <div>
+        <h5>사이트</h5>
+        <ul>
+          <li><a href="research.html">연구</a></li>
+          <li><a href="people.html">구성원</a></li>
+          <li><a href="publications.html">논문</a></li>
+          <li><a href="join.html">지원 · 연락</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>관련 링크</h5>
+        <ul>
+          <li><a href="mailto:chief@aces.snu.ac.kr">chief@aces.snu.ac.kr</a></li>
+          <li><a href="https://cse.snu.ac.kr/" rel="noopener">서울대 컴퓨터공학부</a></li>
+          <li><a href="https://gsds.snu.ac.kr/" rel="noopener">서울대 데이터사이언스대학원</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>&copy; 2023&#8211;<span data-year>2026</span> 천둥 연구실</span>
+      <span>컴퓨터공학부 &nbsp;·&nbsp; 데이터사이언스대학원</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

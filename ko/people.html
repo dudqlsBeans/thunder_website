@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>구성원 &#8212; 천둥 연구실</title>
+<meta name="description" content="천둥 연구실의 교수와 연구원, 학생들.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=JetBrains+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=Noto+Sans+KR:wght@400;500&family=Noto+Serif+KR:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13 2 4 14h6l-1 8 9-12h-6z' fill='%237fd7e6'/%3E%3C/svg%3E">
+</head>
+<body>
+<!-- ================= Header ================= -->
+<header class="header">
+  <div class="wrap header-in">
+    <a class="brand" href="index.html" aria-label="천둥 연구실 — 홈">
+      <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M13 2.5 4.5 14.2h5.8L9.2 21.5 19.5 9.6h-6.2z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+        <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
+      </svg>
+      <b>Thunder</b>
+      <span>연구실</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="research.html">연구</a>
+      <a href="people.html" aria-current="page">구성원</a>
+      <a href="publications.html">논문</a>
+      <a href="join.html">지원 · 연락</a>
+    </nav>
+
+    <div class="hdr-tools">
+      <a class="lang-btn" href="../people.html" hreflang="en" lang="en">EN</a>
+      <button class="icon-btn" data-theme-toggle aria-label="색상 테마 전환">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" data-menu aria-expanded="false" aria-controls="nav" aria-label="메뉴">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="page-head">
+  <div class="hero-grid" aria-hidden="true" style="opacity:.35"></div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="eyebrow">구성원</div>
+    <h1>303동 651호 사람들.</h1>
+    <p class="lede">
+      천둥 연구실은 서울대학교 컴퓨터공학부와 데이터사이언스대학원에 걸쳐 있습니다.
+      구성원은 소속 팀별로 정리했으며, 여러 팀에 걸쳐 연구하는 사람도 있습니다.
+    </p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="filters" data-filters>
+      <button class="filter" data-filter="all" aria-pressed="true">전체</button>
+      <button class="filter" data-filter="cse" aria-pressed="false">컴퓨터공학부</button>
+      <button class="filter" data-filter="ds" aria-pressed="false">데이터사이언스</button>
+      <button class="filter" data-filter="ep" aria-pressed="false">실행 플랫폼</button>
+    </div>
+
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">교수진</div>
+      <div><h2 class="sec-title">지도교수</h2></div>
+    </div>
+
+    <div class="people" style="margin-bottom:64px">
+      <div class="person cse" data-div="cse" data-tags="cse ds ep" data-reveal>
+        <div class="avatar">JL</div><h4>이재진 <span class="kr" lang="en">Jaejin Lee</span></h4>
+        <div class="role">교수 &#183; 컴퓨터공학부 · 데이터사이언스대학원</div>
+        <p>컴퓨터공학부와 데이터사이언스대학원에 걸친 천둥 연구실을 이끌고 있습니다.</p>
+        <div class="links"><a href="mailto:chief@aces.snu.ac.kr">이메일</a></div>
+      </div>
+    </div>
+
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">컴퓨터공학부 팀</div>
+      <div><h2 class="sec-title">컴퓨터공학부</h2></div>
+    </div>
+
+    <div class="people" style="margin-bottom:64px">
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">DK</div><h4>김도현 <span class="kr" lang="en">Dohyun Kim</span></h4>
+        <div class="role">박사후연구원 &#183; 컴퓨터공학부</div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">DP</div><h4>박대영 <span class="kr" lang="en">Daeyoung Park</span></h4>
+        <div class="role">박사과정 &#183; 컴퓨터공학부</div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">JK</div><h4>김진표 <span class="kr" lang="en">Jinpyo Kim</span></h4>
+        <div class="role">박사과정 &#183; 컴퓨터공학부</div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">BK</div><h4>고병현 <span class="kr" lang="en">Byeonghyun Ko</span></h4>
+        <div class="role">박사과정 &#183; 컴퓨터공학부</div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">JS</div><h4>신준식 <span class="kr" lang="en">Junsik Shin</span></h4>
+        <div class="role">박사과정 &#183; 컴퓨터공학부</div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">JL</div><h4>이재환 <span class="kr" lang="en">Jaehwan Lee</span></h4>
+        <div class="role">박사과정 &#183; 컴퓨터공학부</div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">JP</div><h4>박종원 <span class="kr" lang="en">Jongwon Park</span></h4>
+        <div class="role">박사과정 &#183; 컴퓨터공학부</div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">HK</div><h4>김한별 <span class="kr" lang="en">Hanbeul Kim</span></h4>
+        <div class="role">박사과정 &#183; 컴퓨터공학부</div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">HL</div><h4>이현규 <span class="kr" lang="en">Hyungyu Lee</span></h4>
+        <div class="role">석사과정 &#183; 컴퓨터공학부</div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">SL</div><h4>이성민 <span class="kr" lang="en">Songmin Lee</span></h4>
+        <div class="role">석사과정 &#183; 컴퓨터공학부</div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">MK</div><h4>강민규 <span class="kr" lang="en">Mingyu Kang</span></h4>
+        <div class="role">석사과정 &#183; 컴퓨터공학부</div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">SB</div><h4>배수민 <span class="kr" lang="en">Sumin Bae</span></h4>
+        <div class="role">석사과정 &#183; 컴퓨터공학부</div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">YS</div><h4>서영호 <span class="kr" lang="en">Yeongho Seo</span></h4>
+        <div class="role">석사과정 &#183; 컴퓨터공학부</div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">SL</div><h4>이상민 <span class="kr" lang="en">Sangmin Lee</span></h4>
+        <div class="role">석사과정 &#183; 컴퓨터공학부</div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">SY</div><h4>윤소영 <span class="kr" lang="en">Soyoung Yoon</span></h4>
+        <div class="role">석사과정 &#183; 컴퓨터공학부</div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">WS</div><h4>송원영 <span class="kr" lang="en">Wonyoung Song</span></h4>
+        <div class="role">석사과정 &#183; 컴퓨터공학부</div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar">CK</div><h4>김채원 <span class="kr" lang="en">Chaewon Kim</span></h4>
+        <div class="role">석사후연구원 &#183; 컴퓨터공학부</div>
+      </div>
+    </div>
+
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">데이터사이언스대학원 팀</div>
+      <div><h2 class="sec-title">데이터사이언스대학원</h2></div>
+    </div>
+
+    <div class="people" style="margin-bottom:64px">
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">YS</div><h4>손영준 <span class="kr" lang="en">Youngjun Son</span></h4>
+        <div class="role">박사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">GJ</div><h4>조경제 <span class="kr" lang="en">Gyeongje Jo</span></h4>
+        <div class="role">박사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">GL</div><h4>이규성 <span class="kr" lang="en">Gyuseong Lee</span></h4>
+        <div class="role">박사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">DL</div><h4>이동영 <span class="kr" lang="en">Dongyoung Lee</span></h4>
+        <div class="role">박사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">JS</div><h4>석지헌 <span class="kr" lang="en">Jiheon Seok</span></h4>
+        <div class="role">박사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">JK</div><h4>김종민 <span class="kr" lang="en">Jongmin Kim</span></h4>
+        <div class="role">박사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">DK</div><h4>강다연 <span class="kr" lang="en">Dayeon Kang</span></h4>
+        <div class="role">박사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">YS</div><h4>소연경 <span class="kr" lang="en">Yeonkyoung So</span></h4>
+        <div class="role">박사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">SJ</div><h4>정성목 <span class="kr" lang="en">Sungmok Jung</span></h4>
+        <div class="role">박사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">SP</div><h4>박수영 <span class="kr" lang="en">Suyoung Park</span></h4>
+        <div class="role">석사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">SK</div><h4>김상호 <span class="kr" lang="en">Sangho Kim</span></h4>
+        <div class="role">석사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">JK</div><h4>강지아 <span class="kr" lang="en">Jia Kang</span></h4>
+        <div class="role">석사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">MK</div><h4>김민수 <span class="kr" lang="en">Minsu Kim</span></h4>
+        <div class="role">석사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">CL</div><h4>이창진 <span class="kr" lang="en">Changjin Lee</span></h4>
+        <div class="role">석사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">YP</div><h4>박윤희 <span class="kr" lang="en">Yoonhee Park</span></h4>
+        <div class="role">석사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">HJ</div><h4>전형근 <span class="kr" lang="en">Hyunggeun Jeon</span></h4>
+        <div class="role">석사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">YP</div><h4>표영빈 <span class="kr" lang="en">Youngbin Pyo</span></h4>
+        <div class="role">석사과정 &#183; 데이터사이언스</div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar">HL</div><h4>이형준 <span class="kr" lang="en">Hyoungjoon Lee</span></h4>
+        <div class="role">석사과정 &#183; 데이터사이언스</div>
+      </div>
+    </div>
+
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">실행 플랫폼 팀</div>
+      <div><h2 class="sec-title">실행 플랫폼</h2></div>
+    </div>
+
+    <div class="people" style="margin-bottom:64px">
+      <div class="person ep" data-div="ep" data-reveal>
+        <div class="avatar">TK</div><h4>권택민 <span class="kr" lang="en">Taekmin Kwon</span></h4>
+        <div class="role">석사과정 &#183; 실행 플랫폼</div>
+      </div>
+      <div class="person ep" data-div="ep" data-reveal>
+        <div class="avatar">SH</div><h4>황세연 <span class="kr" lang="en">Seyeon Hwang</span></h4>
+        <div class="role">석사과정 &#183; 실행 플랫폼</div>
+      </div>
+      <div class="person ep" data-div="ep" data-reveal>
+        <div class="avatar">JK</div><h4>김종헌 <span class="kr" lang="en">Jongheon Kim</span></h4>
+        <div class="role">석사과정 &#183; 실행 플랫폼</div>
+      </div>
+      <div class="person ep" data-div="ep" data-reveal>
+        <div class="avatar">SY</div><h4>유성민 <span class="kr" lang="en">Sungmin Yoo</span></h4>
+        <div class="role">석사과정 &#183; 실행 플랫폼</div>
+      </div>
+      <div class="person ep" data-div="ep" data-reveal>
+        <div class="avatar">TJ</div><h4>장태원 <span class="kr" lang="en">Taewon Jang</span></h4>
+        <div class="role">석사과정 &#183; 실행 플랫폼</div>
+      </div>
+    </div>
+
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">동문</div>
+      <div><h2 class="sec-title">졸업 후의 행보</h2></div>
+    </div>
+    <div class="news" style="margin-bottom:64px">
+      <div class="news-item" data-reveal><time>박사 2025년 2월</time><p><b>안규수</b> <span lang="en">Kyusu Ahn</span> &#8212; &#8220;Image and Video Restoration for Under-Display Cameras using Deep Neural Networks&#8221; &#183; Samsung Display</p></div>
+      <div class="news-item" data-reveal><time>박사 2025년 2월</time><p><b>김희훈</b> <span lang="en">Heehoon Kim</span> &#8212; &#8220;Optimizing Communication for AI Models on GPUs and NPUs&#8221; &#183; Moreh, Inc.</p></div>
+      <div class="news-item" data-reveal><time>박사 2022년 8월</time><p><b>정재훈</b> <span lang="en">Jaehoon Jung</span> &#8212; &#8220;Data Management and Prefetching Techniques for CUDA Unified Memory&#8221; &#183; Moreh, Inc.</p></div>
+      <div class="news-item" data-reveal><time>박사 2021년 8월</time><p><b>정우근</b> <span lang="en">Wookeun Jung</span> &#8212; &#8220;DeepCuts: a deep learning optimization framework for versatile GPU workloads&#8221; &#183; Moreh, Inc.</p></div>
+      <div class="news-item" data-reveal><time>박사 2021년 8월</time><p><b>다오탄뚜안</b> <span lang="en">Thanh Tuan Dao</span> &#8212; &#8220;Performance Modeling, Performance Tuning and Quantization for GPU Programs&#8221; &#183; Moreh, Inc.</p></div>
+      <div class="news-item" data-reveal><time>박사 2020년 8월</time><p><b>김홍준</b> <span lang="en">Hongjune Kim</span> &#8212; &#8220;Compiler Driven Soft Error Protection Techniques for GPUs&#8221; &#183; Postdoctoral Research Associate, Purdue University</p></div>
+      <div class="news-item" data-reveal><time>박사 2020년 2월</time><p><b>조강원</b> <span lang="en">Gangwon Jo</span> &#8212; &#8220;High Level Synthesis of OpenCL Kernels for FPGAs&#8221; &#183; CTO, ManyCoreSoft</p></div>
+      <div class="news-item" data-reveal><time>박사 2020년 2월</time><p><b>박정호</b> <span lang="en">Jungho Park</span> &#8212; &#8220;Optimizing GPU-accelerated Applications Using Workload Scheduling and Memory Management&#8221; &#183; CEO, ManyCoreSoft</p></div>
+      <div class="news-item" data-reveal><time>박사 2016년 2월</time><p><b>김정현</b> <span lang="en">Junghyun Kim</span> &#8212; &#8220;Techniques for Ease of OpenCL Programming&#8221; &#183; Senior Research Staff Member, Samsung Electronics</p></div>
+      <div class="news-item" data-reveal><time>박사 2013년 8월</time><p><b>서상민</b> <span lang="en">Sangmin Seo</span> &#8212; &#8220;Enhancing Performance Portability of OpenCL for Multicore CPUs&#8221; &#183; Postdoctoral Research Associate, Argonne National Laboratory</p></div>
+      <div class="news-item" data-reveal><time>박사 2013년 8월</time><p><b>김정원</b> <span lang="en">Jungwon Kim</span> &#8212; &#8220;An OpenCL Framework for Heterogeneous Clusters&#8221; &#183; Postdoctoral Research Associate, Oak Ridge National Laboratory</p></div>
+      <div class="news-item" data-reveal><time>박사 2011년 8월</time><p><b>장춘기</b> <span lang="en">Choonki Jang</span> &#8212; &#8220;Optimization and Management Techniques for Local Memeory Architectures&#8221; &#183; Senior Research Staff Member, Samsung Advanced Institute of Technology</p></div>
+      <div class="news-item" data-reveal><time>박사 2008년 2월</time><p><b>Bernhard Egger</b> &#8212; &#8220;Dynamic Scratchpad Memory Management&#8221; &#183; Associate Professor Seoul National University</p></div>
+      <div class="news-item" data-reveal><time>석사 2026년 2월</time><p><b>박현지</b> <span lang="en">Hyunji Park</span> &#8212; &#8220;Developing Korean Legal LLMs: An Empirical Study on Data and Architecture&#8221; &#183; Kim &amp; Chang</p></div>
+      <div class="news-item" data-reveal><time>석사 2026년 2월</time><p><b>이준학</b> <span lang="en">Joonhak Lee</span> &#8212; &#8220;Automatic Routing Between Symbol-Prediction and Cloze Scoring&#8221;</p></div>
+      <div class="news-item" data-reveal><time>석사 2026년 2월</time><p><b>표세호</b> <span lang="en">Seho Pyo</span> &#8212; &#8220;Reasoning by Commented Code for Table Question Answering&#8221;</p></div>
+      <div class="news-item" data-reveal><time>석사 2026년 2월</time><p><b>박종연</b> <span lang="en">Jongyeon Park</span> &#8212; &#8220;Analysis of NoPE Replacement for Rotational Positional Embeddings in Transformer Architectures&#8221; &#183; Hanwha Systems</p></div>
+      <div class="news-item" data-reveal><time>석사 2025년 8월</time><p><b>김지수</b> <span lang="en">JiSoo Kim</span> &#8212; &#8220;Generation of the Degradation for Under-Display Cameras&#8221; &#183; Hanwha Vision</p></div>
+      <div class="news-item" data-reveal><time>석사 2025년 8월</time><p><b>안예림</b> <span lang="en">Yelim Ahn</span> &#8212; &#8220;Word Reasoning Based Approach to Jailbreaking Large Language Models&#8221; &#183; LG H&amp;H</p></div>
+      <div class="news-item" data-reveal><time>석사 2025년 8월</time><p><b>김서린</b> <span lang="en">Seorin Kim</span> &#8212; &#8220;Aligning Attention Distributions to Mitigate Social Bias in Generative Language Models&#8221; &#183; HD Korea Shipbuilding &amp; Offshore Engineering Co Ltd</p></div>
+      <div class="news-item" data-reveal><time>석사 2025년 8월</time><p><b>함성은</b> <span lang="en">Sungeun Hahm</span> &#8212; &#8220;Establishing Personal Information Categories and Constructing Datasets for the De-identification of Korean Court Judgments&#8221;</p></div>
+      <div class="news-item" data-reveal><time>석사 2025년 8월</time><p><b>박찬우</b> <span lang="en">Chanwoo Park</span> &#8212; &#8220;Towards Higher Generative Question-Answering Accuracy:Punctuation Mark Pattern-based Line Filtering on Korean Web Text&#8221; &#183; SK Telecom</p></div>
+      <div class="news-item" data-reveal><time>석사 2025년 2월</time><p><b>정유진</b> <span lang="en">Yujin Jung</span> &#8212; &#8220;Overlapping CPU Optimizer with GPU Computation for Accelerated LLM Training&#8221; &#183; Samsung Research</p></div>
+      <div class="news-item" data-reveal><time>석사 2025년 2월</time><p><b>최동훈</b> <span lang="en">Donghun Choi</span> &#8212; &#8220;PEQuant: Practical and Empirical Method for Minimizing LLMs Quantization Errors&#8221; &#183; ROK Army</p></div>
+      <div class="news-item" data-reveal><time>석사 2024년 8월</time><p><b>유준열</b> <span lang="en">Junyeol Ryu</span> &#8212; &#8220;Optimization of Pipeline Parallelism using CPU Memory&#8221; &#183; Ph.D. Student, University of Wisconsin-Madison</p></div>
+      <div class="news-item" data-reveal><time>석사 2024년 8월</time><p><b>이상익</b> <span lang="en">Sangik Lee</span> &#8212; &#8220;Reusing Attention Map for Denoising High Resolution Images&#8221; &#183; Samsung Display</p></div>
+      <div class="news-item" data-reveal><time>석사 2024년 2월</time><p><b>고민정</b> <span lang="en">Minjung Ko</span> &#8212; &#8220;GPU Server Workload Prediction using Deep Learning for Cloud Gaming&#8221; &#183; TDB</p></div>
+      <div class="news-item" data-reveal><time>석사 2024년 2월</time><p><b>성연우</b> <span lang="en">Yonwoo Seong</span> &#8212; &#8220;Deep Learning Model Quantization and Heterogeneous Computing for Mobile ISP Optimization&#8221; &#183; SK Hynix</p></div>
+      <div class="news-item" data-reveal><time>석사 2024년 2월</time><p><b>김우진</b> <span lang="en">Woojin Kim</span> &#8212; &#8220;Deep Learning-based Text De-identification Model via Augmentation of De-identified Data&#8221; &#183; Korean National Police Agency</p></div>
+      <div class="news-item" data-reveal><time>석사 2024년 2월</time><p><b>임상수</b> <span lang="en">Sangsoo Im</span> &#8212; &#8220;Outlier-Aware Quantization for Language Models&#8221; &#183; Ministry of National Defense</p></div>
+      <div class="news-item" data-reveal><time>석사 2024년 2월</time><p><b>최광호</b> <span lang="en">Gwangho Choi</span> &#8212; &#8220;TBD&#8221; &#183; Moreh, Inc.</p></div>
+      <div class="news-item" data-reveal><time>석사 2023년 8월</time><p><b>최영은</b> <span lang="en">Youngeun Choi</span> &#8212; &#8220;Prompt-Guided dataset Generation to Mitigate Bias in a Language Model&#8221; &#183; TBD</p></div>
+      <div class="news-item" data-reveal><time>석사 2023년 2월</time><p><b>이소람</b> <span lang="en">Soram Lee</span> &#8212; &#8220;Analysis of Tokenizers for Various Korean NLP Tasks&#8221; &#183; LG CNS</p></div>
+      <div class="news-item" data-reveal><time>석사 2023년 2월</time><p><b>김종원</b> <span lang="en">Jongwon Kim</span> &#8212; &#8220;Shaking Attention Scores in Pretrained Transformers&#8221; &#183; TBD</p></div>
+      <div class="news-item" data-reveal><time>석사 2023년 2월</time><p><b>권형달</b> <span lang="en">Hyungdal Kwon</span> &#8212; &#8220;Greedy-K: A New Local Optimization Algorithm for Solving 1D Circuit Placement Problems&#8221; &#183; Samsung Advanced Institute of Technology</p></div>
+      <div class="news-item" data-reveal><time>석사 2022년 8월</time><p><b>박민혜</b> <span lang="en">Minhye Park</span> &#8212; &#8220;Improving the Embedding Representation and Reducing Learning Time for Sequential Recommendation&#8221; &#183; Pozalabs</p></div>
+      <div class="news-item" data-reveal><time>석사 2022년 8월</time><p><b>한민희</b> <span lang="en">Minhee Han</span> &#8212; &#8220;Reducing the Cost of Training a Transformer Model by Using a Trained Model&#8221; &#183; Creatz Inc.</p></div>
+      <div class="news-item" data-reveal><time>석사 2022년 8월</time><p><b>강수연</b> <span lang="en">Sooyeon Kang</span> &#8212; &#8220;Memory Management and Optimization for Deep Learning Model Inference on Mobile GPU&#8221; &#183; TBD</p></div>
+      <div class="news-item" data-reveal><time>석사 2022년 2월</time><p><b>김선유</b> <span lang="en">Sunyoo Kim</span> &#8212; &#8220;A Transformer Model for Korean Morphological Analysis&#8221; &#183; Ph.D. student at Graduate School of Data Science, Seoul National University</p></div>
+      <div class="news-item" data-reveal><time>석사 2022년 2월</time><p><b>홍재기</b> <span lang="en">Jaeki Hong</span> &#8212; &#8220;Offloading Encryption Overhead for Distributed Filesystem using SmartNIC&#8221; &#183; Samsung Advanced Institute of Technology</p></div>
+      <div class="news-item" data-reveal><time>석사 2021년 8월</time><p><b>임현재</b> <span lang="en">Hyunjae Lim</span> &#8212; &#8220;Inference Method for Password Guessing Model with Tree Search&#8221; &#183; TBD</p></div>
+      <div class="news-item" data-reveal><time>석사 2021년 2월</time><p><b>이지수</b> <span lang="en">Jeesoo Lee</span> &#8212; &#8220;Memory management technique for deep learning training with GPU&#8221; &#183; Moreh, Inc.</p></div>
+      <div class="news-item" data-reveal><time>석사 2021년 2월</time><p><b>나동진</b> <span lang="en">Dongjin Na</span> &#8212; &#8220;Techniques to accelerate on-device inference of transformer models using Google Edge TPUs&#8221; &#183; Moreh, Inc.</p></div>
+      <div class="news-item" data-reveal><time>석사 2020년 8월</time><p><b>김정욱</b> <span lang="en">Jungwook Kim</span> &#8212; &#8220;Optimizing ELF Binaries on NUMA Systems&#8221; &#183; TmaxSoft</p></div>
+      <div class="news-item" data-reveal><time>석사 2020년 2월</time><p><b>손장현</b> <span lang="en">Janghyun Son</span> &#8212; &#8220;A Semantic Segmentation Network and Synthesis Data Generation for Defects Detection&#8221; &#183; TmaxSoft</p></div>
+      <div class="news-item" data-reveal><time>석사 2020년 2월</time><p><b>김형모</b> <span lang="en">Hyungmo Kim</span> &#8212; &#8220;Library-level Distributed Processing Method for CNN Training Using GPU Clusters&#8221; &#183; Hyperconnect</p></div>
+      <div class="news-item" data-reveal><time>석사 2019년 8월</time><p><b>오평석</b> <span lang="en">PyeongSeok Oh</span> &#8212; &#8220;Collective Learning Techniques using Ensembles of Generators and Discriminators for GANs&#8221; &#183; CookApps</p></div>
+      <div class="news-item" data-reveal><time>석사 2019년 2월</time><p><b>도영동</b> <span lang="en">Youngdong Do</span> &#8212; &#8220;Performance Characterization of High-Performance Computing Applications&#8221; &#183; ManyCoreSoft</p></div>
+      <div class="news-item" data-reveal><time>석사 2018년 2월</time><p><b>박지영</b> <span lang="en">Jiyoung Park</span> &#8212; &#8220;FPGA Accelerator Design of Deep Reinforcement Learning Model for Playing Atari Games&#8221; &#183; Moreh, Inc.</p></div>
+      <div class="news-item" data-reveal><time>석사 2017년 2월</time><p><b>신재호</b> <span lang="en">Jaeho Shin</span> &#8212; &#8220;Auto-Optimization of Image Processing Program using OpenCL Through Dynamic Work-load Distribution&#8221; &#183; SK Hynix</p></div>
+      <div class="news-item" data-reveal><time>석사 2016년 8월</time><p><b>서보준</b> <span lang="en">Bojun Seo</span> &#8212; &#8220;Reducing memory usage by sharing code on V8 JavaScript Engine&#8221; &#183; LG Electronics</p></div>
+      <div class="news-item" data-reveal><time>석사 2014년 8월</time><p><b>주진영</b> <span lang="en">Jinyoung Joo</span> &#8212; &#8220;Bi-directional Source-to-source Translator Between CUDA and OpenCL&#8221; &#183; Moreh, Inc.</p></div>
+      <div class="news-item" data-reveal><time>석사 2014년 8월</time><p><b>박선명</b> <span lang="en">Seonmyeong Bak</span> &#8212; &#8220;Lightweight Block-level Concurrent Sweeping for JavaScript Garbage Collection&#8221; &#183; Ph.D. Student, University of Illinois Urbana-Champaign</p></div>
+      <div class="news-item" data-reveal><time>박사과정 수료 후 2014년 2월</time><p><b>나정호</b> <span lang="en">Jeongho Nah</span> &#8212; &#8220;Implementation of a Reigster Allocator for a Javascript JIT Compiler&#8221; &#183; TmaxSoft</p></div>
+      <div class="news-item" data-reveal><time>박사과정 수료 후 2014년 2월</time><p><b>이준</b> <span lang="en">Jun Lee</span> &#8212; Moreh, Inc.</p></div>
+      <div class="news-item" data-reveal><time>박사과정 수료 후 2013년 2월</time><p><b>김홍규</b> <span lang="en">Honggyu Kim</span> &#8212; &#8220;Adaptive Execution Techniques of Parallel Programs for SMT Multicore Processors&#8221; &#183; LG Electronics</p></div>
+      <div class="news-item" data-reveal><time>박사과정 수료 후 2012년 5월</time><p><b>김승균</b> <span lang="en">Seungkyun Kim</span> &#8212; LG Electronics</p></div>
+      <div class="news-item" data-reveal><time>석사 2011년 8월</time><p><b>이주환</b> <span lang="en">Joo Hwan Lee</span> &#8212; &#8220;Reducing JavaScript Compilation Time by Caching Code in Flash Memory&#8221; &#183; Ph.D. Student, Georgia Institute of Technology</p></div>
+      <div class="news-item" data-reveal><time>석사 2011년 2월</time><p><b>박은병</b> <span lang="en">Eunbyung Park</span> &#8212; &#8220;Fast and Space-Efficient Virtual Machine Checkpointing&#8221; &#183; Assistant Professor, Sungkyunkwan University</p></div>
+      <div class="news-item" data-reveal><time>석사 2010년 2월</time><p><b>박진호</b> <span lang="en">Jinho Pak</span> &#8212; &#8220;The Design and Implementation of UI for Architecture Simulator&#8221; &#183; NCsoft</p></div>
+      <div class="news-item" data-reveal><time>석사 2009년 2월</time><p><b>전보성</b> <span lang="en">Posung Chun</span> &#8212; &#8220;Coherent Distributed Shared Memory Interface for Cell BE Cluster&#8221; &#183; Tibero</p></div>
+      <div class="news-item" data-reveal><time>석사 2008년 2월</time><p><b>김지훈</b> <span lang="en">Chihun Kim</span> &#8212; &#8220;A Dynamic Code Placement Techniques for Scratchpad Memory using Postpass Optimization&#8221; &#183; Nexon</p></div>
+      <div class="news-item" data-reveal><time>석사 2008년 2월</time><p><b>하태준</b> <span lang="en">Taejun Ha</span> &#8212; &#8220;An Automatic Memory Subsystem Parameter Detection Program&#8221; &#183; S-Core</p></div>
+      <div class="news-item" data-reveal><time>석사 2008년 2월</time><p><b>김광섭</b> <span lang="en">Kwangseob Kim</span> &#8212; &#8220;Optimization Techniques for Cycle-Accurate Instruction Set Simulator&#8221; &#183; LG Electronics</p></div>
+      <div class="news-item" data-reveal><time>석사 2007년 2월</time><p><b>남윤성</b> <span lang="en">Yoonsung Nam</span> &#8212; &#8220;Cycle-Accurate and Fast Simulation Techniques for ARM Processors&#8221; &#183; Samsung Electronics, Digital Media &amp; Communications division</p></div>
+      <div class="news-item" data-reveal><time>석사 2006년 8월</time><p><b>이종영</b> <span lang="en">Jongyoung Lee</span> &#8212; &#8220;Reducing Execution Time of Memory Test Programs using SIMD Instructions and Caches in 64-bit Computing Environments&#8221; &#183; Samsung Electronics, Memory division</p></div>
+      <div class="news-item" data-reveal><time>석사 2005년 8월</time><p><b>최석호</b> <span lang="en">Seokho Choi</span> &#8212; &#8220;An Intermediate Representation for Preserving Source Level Information and Optimization&#8221; &#183; PANTECH</p></div>
+      <div class="news-item" data-reveal><time>석사 2005년 2월</time><p><b>정창희</b> <span lang="en">Changhee Jung</span> &#8212; &#8220;Helper Thread Prefetching for a Loosely-Coupled Multiprocessor System&#8221; &#183; Associate Professor, Purdue University</p></div>
+      <div class="news-item" data-reveal><time>석사 2005년 2월</time><p><b>권기원</b> <span lang="en">Kiwon Kwon</span> &#8212; &#8220;SNACK-pop: A Postpass Optimizer for Embedded Systems&#8221; &#183; Qualcomm Korea</p></div>
+      <div class="news-item" data-reveal><time>2020년 9월 – 2021년 6월</time><p><b>김홍준</b> <span lang="en">Hongjune Kim</span> &#8212; Postdoctoral Research Associate, Purdue University</p></div>
+      <div class="news-item" data-reveal><time>2011년 12월 – 2012년 5월</time><p><b>Dr. Christophe Dubach</b> &#8212; Associate Professor, McGill University</p></div>
+    </div>
+
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">수상</div>
+      <div><h2 class="sec-title">학생 수상 실적</h2></div>
+    </div>
+    <div class="news">
+      <div class="news-item" data-reveal><time>2025</time><p>Hanbeul Kim and Junsik Shin, Best paper award in Korea Software Congress (KSC)</p></div>
+      <div class="news-item" data-reveal><time>2025</time><p>Kyusu Ahn and Chanwoo Park, Distinguished Paper Award at the Society for Information Display (SID) International Symposium</p></div>
+      <div class="news-item" data-reveal><time>2024</time><p>Kyusu Ahn, Byeonghyun Ko, HyunGyu Lee, Chanwoo Park, Jinpyo Kim, and JiSoo Kim, 1st place in the Soft Power Division in Samsung Display Technology Symposium</p></div>
+      <div class="news-item" data-reveal><time>2023</time><p>Kyusu Ahn, Byeonghyun Ko, HyunGyu Lee, and Chanwoo Park, Creative Award, K-Data Science Conference</p></div>
+      <div class="news-item" data-reveal><time>2023</time><p>Heehoon Kim, and Junyeol Ryu, 1st place in Samsung Computer Engineering Challenge</p></div>
+      <div class="news-item" data-reveal><time>2023</time><p>Daeyoung Park, Jinpyo Kim, and Junsik Shin, 2nd place in Samsung Computer Engineering Challenge</p></div>
+      <div class="news-item" data-reveal><time>2023</time><p>Woojin Kim, Grand Prize in Korean National Police Agency Big Data Analysis Competition</p></div>
+      <div class="news-item" data-reveal><time>2022</time><p>Heehoon Kim, Daeyoung Park, Jinpyo Kim, and Junsik Shin, 1st place in Open Innovation Contest for AXDIMM Technology</p></div>
+      <div class="news-item" data-reveal><time>2021</time><p>Jaehoon Jung, Best presentation award in Korea Computer Congress (KCC)</p></div>
+      <div class="news-item" data-reveal><time>2021</time><p>Sooyeon Kang, Best presentation award in Korea Computer Congress (KCC)</p></div>
+      <div class="news-item" data-reveal><time>2020</time><p>Daeyoung Park, Best presentation award in Korea Computer Congress (KCC)</p></div>
+      <div class="news-item" data-reveal><time>2020</time><p>Heehoon Kim, Best paper award in Korea Computer Congress (KCC)</p></div>
+      <div class="news-item" data-reveal><time>2019</time><p>Jaehoon Jung, Best presentation award in Korea Software Congress (KSC)</p></div>
+      <div class="news-item" data-reveal><time>2018</time><p>Daeyoung Park and Janghyun Son, 5th place in Korea Supercomputing Challenge</p></div>
+      <div class="news-item" data-reveal><time>2017</time><p>Korea Supercomputing Challenge</p></div>
+      <div class="news-item" data-reveal><time></time><p>Heehoon Kim and PyeongSeok Oh, Grand prize</p></div>
+      <div class="news-item" data-reveal><time></time><p>Hyungmo Kim and Youngdong Do, 2nd prize</p></div>
+      <div class="news-item" data-reveal><time></time><p>Jiyoung Park and Jungwook Kim, 6th prize</p></div>
+      <div class="news-item" data-reveal><time>2017</time><p>Jaehoon Jung and Jiyoung Park, Best presentation award in Korea Computer Congress (KCC)</p></div>
+      <div class="news-item" data-reveal><time>2016</time><p>Jiyoung Park and Jungwook Kim, 2nd place in Korea Supercomputing Challenge</p></div>
+      <div class="news-item" data-reveal><time>2016</time><p>Jaeho Shin, Best presentation award in Korea Computer Congress (KCC)</p></div>
+      <div class="news-item" data-reveal><time>2015</time><p>Bojun Seo and Jaehoon Jung, Grand prize in Korea Supercomputing Challenge</p></div>
+      <div class="news-item" data-reveal><time>2015</time><p>Jaehoon Jung, Best paper award in Korea Computer Congress (KCC)</p></div>
+      <div class="news-item" data-reveal><time>2014</time><p>Korea Supercomputing Challenge</p></div>
+      <div class="news-item" data-reveal><time></time><p>Gangwon Jo and Wookeun Jung, Grand prize</p></div>
+      <div class="news-item" data-reveal><time></time><p>Junghyun Kim and Jungho Park, 2nd place</p></div>
+      <div class="news-item" data-reveal><time></time><p>Jaeho Shin and Jaehoon Jung, 4th place</p></div>
+      <div class="news-item" data-reveal><time>2012</time><p>Sooyeon Kang, Global Ph.D. fellowship, National Research Foundation of Korea</p></div>
+      <div class="news-item" data-reveal><time>2011</time><p>Choonki Jang, Third place in ICS ’11 ACM Student Research Competition</p></div>
+      <div class="news-item" data-reveal><time>2011</time><p>Eunbyung Park, Bronze prize in the 17th SAMSUNG HumanTech Thesis Competition</p></div>
+      <div class="news-item" data-reveal><time>2015</time><p>Gangwon Jo, Doctoral fellowship, Korea Foundation for Advanced Studies, 2010 –</p></div>
+      <div class="news-item" data-reveal><time>2010</time><p>Choonki Jang, Gold prize in the 16th SAMSUNG HumanTech Thesis Competition</p></div>
+      <div class="news-item" data-reveal><time>2009</time><p>Sangmin Seo, Bronze prize in the 15th SAMSUNG HumanTech Thesis Competition</p></div>
+      <div class="news-item" data-reveal><time>2012</time><p>Sangmin Seo, Doctoral fellowship, Korea Foundation for Advanced Studies, 2008 –</p></div>
+      <div class="news-item" data-reveal><time>2010</time><p>Sangmin Seo, Graduate student fellowship, Sinyang Cultural Foundation, 2008 –</p></div>
+      <div class="news-item" data-reveal><time>2008</time><p>Bernhard Egger, Bronze prize in the 14th SAMSUNG HumanTech Thesis Competition</p></div>
+      <div class="news-item" data-reveal><time>2006</time><p>Bernhard Egger, ACM SIGBED/SIGSOFT Frank Anger Memorial Student Award</p></div>
+      <div class="news-item" data-reveal><time>2005</time><p>Chihun Kim, Best presentation award in Korea Computer Congress (KCC)</p></div>
+      <div class="news-item" data-reveal><time>2005</time><p>Changhee Jung, Silver prize in the 11th SAMSUNG HumanTech Thesis Competition</p></div>
+    </div>
+
+    <div class="sec-head" data-reveal>
+      <div class="rule" aria-hidden="true"></div>
+      <div class="eyebrow">사진</div>
+      <div>
+        <h2 class="sec-title">연구실의 다른 얼굴</h2>
+        <p class="sec-lede" style="margin-top:14px">
+          워크숍과 논문 세미나, 학회 출장, 그리고 사진으로 남을 만큼 오래 지워지지 않았던 화이트보드.
+        </p>
+      </div>
+    </div>
+
+    <div class="gallery" style="margin-bottom:64px">
+      <figure class="wide" data-reveal>
+        <div class="shot">
+          <!-- 실제 사진으로 교체하세요 (assets/img/group/README.md 참고) -->
+          <img src="../assets/img/group/group-photo.svg" alt="2026년 봄, 천둥 연구실" loading="lazy" width="1600" height="600">
+        </div>
+        <figcaption><time>2026</time><span>그날 오후 건물에 있던 사람들 모두.</span></figcaption>
+      </figure>
+
+      <figure data-reveal>
+        <div class="shot">
+          <!-- 실제 사진으로 교체하세요 (assets/img/group/README.md 참고) -->
+          <img src="../assets/img/group/retreat.svg" alt="연례 워크숍의 연구실 구성원" loading="lazy" width="1200" height="900">
+        </div>
+        <figcaption><time>2026</time><span>슬라이드 없이 이틀 동안 이어진 발표.</span></figcaption>
+      </figure>
+
+      <figure data-reveal>
+        <div class="shot">
+          <!-- 실제 사진으로 교체하세요 (assets/img/group/README.md 참고) -->
+          <img src="../assets/img/group/whiteboard.svg" alt="논문 세미나 중 화이트보드 앞의 구성원들" loading="lazy" width="1200" height="900">
+        </div>
+        <figcaption><time>2026</time><span>목요일 논문 세미나, 논쟁이 한창일 때.</span></figcaption>
+      </figure>
+
+      <figure data-reveal>
+        <div class="shot">
+          <!-- 실제 사진으로 교체하세요 (assets/img/group/README.md 참고) -->
+          <img src="../assets/img/group/lab.svg" alt="워크스테이션과 클러스터 랙이 있는 연구실 공간" loading="lazy" width="1200" height="900">
+        </div>
+        <figcaption><time>2025</time><span>클러스터 작업이 시작되는 자리.</span></figcaption>
+      </figure>
+
+      <figure data-reveal>
+        <div class="shot">
+          <!-- 실제 사진으로 교체하세요 (assets/img/group/README.md 참고) -->
+          <img src="../assets/img/group/conference.svg" alt="학회 포스터 세션에서 발표 중인 구성원들" loading="lazy" width="1200" height="900">
+        </div>
+        <figcaption><time>2025</time><span>포스터 세션. 두 사람에게는 첫 논문이었습니다.</span></figcaption>
+      </figure>
+
+      <figure data-reveal>
+        <div class="shot">
+          <!-- 실제 사진으로 교체하세요 (assets/img/group/README.md 참고) -->
+          <img src="../assets/img/group/demo.svg" alt="데모 데이에서 프로젝트를 시연하는 학생들" loading="lazy" width="1200" height="900">
+        </div>
+        <figcaption><time>2025</time><span>학기말, 학과 전체를 대상으로 한 데모.</span></figcaption>
+      </figure>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta" data-reveal>
+      <div>
+        <h2>새로운 구성원을 찾고 있습니다.</h2>
+        <p>대학원생은 서울대학교 컴퓨터공학부 또는 데이터사이언스대학원의 입학 절차를 통해 합류합니다. 우리 논문 중 무엇을 읽었는지 간단히 적어 메일을 보내 주세요.</p>
+      </div>
+      <div><a class="btn btn-primary" href="join.html">모집 안내 보기
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= Footer ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <svg class="mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M13 2.5 4.5 14.2h5.8L9.2 21.5 19.5 9.6h-6.2z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+            <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
+          </svg>
+          <b>천둥 연구실 <span lang="en">THUNDER</span></b>
+        </a>
+        <p class="addr">
+          서울특별시 관악구 관악로 1<br>
+          서울대학교 303동 651호 천둥 연구실<br>
+          우편번호 08826<br>
+          +82-2-880-1837
+        </p>
+      </div>
+      <div>
+        <h5>사이트</h5>
+        <ul>
+          <li><a href="research.html">연구</a></li>
+          <li><a href="people.html">구성원</a></li>
+          <li><a href="publications.html">논문</a></li>
+          <li><a href="join.html">지원 · 연락</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>관련 링크</h5>
+        <ul>
+          <li><a href="mailto:chief@aces.snu.ac.kr">chief@aces.snu.ac.kr</a></li>
+          <li><a href="https://cse.snu.ac.kr/" rel="noopener">서울대 컴퓨터공학부</a></li>
+          <li><a href="https://gsds.snu.ac.kr/" rel="noopener">서울대 데이터사이언스대학원</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>&copy; 2023&#8211;<span data-year>2026</span> 천둥 연구실</span>
+      <span>컴퓨터공학부 &nbsp;·&nbsp; 데이터사이언스대학원</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

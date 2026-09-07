@@ -35,8 +35,8 @@
   --area-compilers: #93b4e0;   /* compilers & architecture */
 
   /* type */
-  --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
-  --sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, "Noto Serif KR", "Nanum Myeongjo", serif;
+  --sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", Helvetica, Arial, sans-serif;
   --mono:  "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
 
   /* metrics */
@@ -195,6 +195,17 @@ body::after {
 .nav a[aria-current="page"]::after { transform: scaleX(1); opacity: 1; background: var(--cs); }
 
 .hdr-tools { display: flex; align-items: center; gap: 8px; }
+.lang-btn {
+  display: grid; place-items: center; height: 34px; padding: 0 10px;
+  font-family: var(--mono); font-size: .66rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink-3); border: var(--rule) solid var(--line); border-radius: 3px;
+  transition: color .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease);
+}
+.lang-btn:hover { color: var(--ink); border-color: var(--line-2); background: var(--panel); }
+html[lang="ko"] .sec-title, html[lang="ko"] h1.display, html[lang="ko"] .page-head h1 { letter-spacing: -.02em; }
+html[lang="ko"] .lede, html[lang="ko"] .sec-lede, html[lang="ko"] .hero-lede { word-break: keep-all; }
+/* Korean serif faces have no true italic — synthesised oblique looks wrong, so keep it upright */
+html[lang="ko"] h1.display em, html[lang="ko"] .sec-title em, html[lang="ko"] .page-head h1 em { font-style: normal; }
 .icon-btn {
   width: 34px; height: 34px; display: grid; place-items: center;
   border: var(--rule) solid var(--line); border-radius: 3px;
