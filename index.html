@@ -57,14 +57,13 @@
       <span class="dot" aria-hidden="true"></span>
       <span class="eyebrow">Seoul National University</span>
       <span class="eyebrow" style="color:var(--ink-4)">/</span>
-      <span class="eyebrow">CSE &#183; Data Science</span>
+      <span class="eyebrow">CSE &#183; Graduate School of AI</span>
     </div>
 
     <h1 class="display">Accelerating <em>large-scale AI</em>, pragmatically.</h1>
 
     <p class="hero-lede">
-      THUNDER belongs to both the Department of Computer Science and Engineering in the College
-      of Engineering and the Department of Data Science in the Graduate School of Data Science at
+      THUNDER Research Group belongs to both the Department of Computer Science and Engineering and the Graduate School of AI at
       Seoul National University. Our goal is to accelerate the training and inference of large-scale
       AI models and to reduce their size. We also work on natural language processing from the
       perspective of deep learning. We emphasise pragmatic approaches.
@@ -81,7 +80,7 @@
 
   <div class="wrap">
     <div class="hero-strip">
-      <div class="strip-cell"><b>Two departments</b><p>Computer Science and Engineering, and Data Science, in one group.</p></div>
+      <div class="strip-cell"><b>Two departments</b><p>Computer Science and Engineering and the Graduate School of AI, in one group.</p></div>
       <div class="strip-cell"><b>Beyond the programming wall</b><p>Compilers, runtimes and systems that make heterogeneous machines usable.</p></div>
       <div class="strip-cell"><b>Korean-first LLMs</b><p>Datasets, tokenizers and models built for Korean from the ground up.</p></div>
       <div class="strip-cell"><b>Released software</b><p>SnuCL, SnuQS, SnuRHAC, SOFF, HUM and the UDC datasets are public.</p></div>
@@ -135,16 +134,16 @@
         </div>
 
         <ul>
-          <li><i>01</i><span><b>Automatic parallelization</b> — finding the best parallelization scheme for a DNN on multi-node, multi-GPU systems.</span></li>
-          <li><i>02</i><span><b>Memory beyond the GPU</b> — DeepUM and SnuRHAC use CUDA Unified Memory, host memory and SSDs to run past GPU capacity.</span></li>
-          <li><i>03</i><span><b>Frameworks for FPGAs</b> — SOFF synthesises OpenCL and CUDA for FPGAs without user annotations.</span></li>
-          <li><i>04</i><span><b>Quantum simulation</b> — SnuQS scales full-state circuit simulation using storage devices.</span></li>
+          <li><i>01</i><span><b>Heterogeneous accelerators</b> — communication across mixed NVIDIA and AMD GPUs, CUDA Unified Memory, and AI computation on NPUs and FPGAs.</span></li>
+          <li><i>02</i><span><b>Kernel-level optimization</b> — Tensor Core FFT and convolution, GEMM on NPUs, and FPGA–GPU hybrid execution.</span></li>
+          <li><i>03</i><span><b>Distributed inference</b> — MoE serving, cluster energy tracking, and scheduling tuned to real usage patterns.</span></li>
+          <li><i>04</i><span><b>Quantum–classical hybrid</b> — exact simulation of large circuits on classical resources, with storage offloading.</span></li>
         </ul>
       </article>
 
       <!-- DS -->
       <article class="division ds" data-reveal style="--d:110ms">
-        <div class="division-idx">DATA SCIENCE</div>
+        <div class="division-idx">Graduate School of AI</div>
         <h3>Large language models, in Korean</h3>
         <p class="desc">
           Datasets, tokenizers and models for a language the leaderboards were not built for —
@@ -167,10 +166,10 @@
         </div>
 
         <ul>
-          <li><i>01</i><span><b>Korean datasets</b> — web crawling, de-identification and de-duplication at scale for LLM training.</span></li>
-          <li><i>02</i><span><b>Korean tokenizers</b> — Thunder-Tok and morpheme-aware tokenization that cuts tokens per word.</span></li>
-          <li><i>03</i><span><b>Korean language models</b> — Thunder-LLM, adapted to Korean with minimal resources.</span></li>
-          <li><i>04</i><span><b>Benchmarks</b> — Thunder-NUBench and Thunder-KoNUBench for what the models still cannot do.</span></li>
+          <li><i>01</i><span><b>Efficient generation</b> — parallel token generation, diffusion language models, and tokenizers that cut token counts.</span></li>
+          <li><i>02</i><span><b>Long context &amp; multimodal</b> — positional encoding and attention sinks, extended to medical imaging, ECG and EMR.</span></li>
+          <li><i>03</i><span><b>Evaluation</b> — Korean benchmarks, and negation understanding in language and vision-language models.</span></li>
+          <li><i>04</i><span><b>Domain-specific models</b> — legal LLMs, de-identification, RAG over statutes, and clinical biomarkers.</span></li>
         </ul>
       </article>
 
@@ -199,10 +198,8 @@
         <div class="n">01</div>
         <h3>Execution platforms for deep learning</h3>
         <div class="body">
-          <p>Automatic parallelization of DNN models across multi-node, multi-GPU systems; DeepUM and
-          SnuRHAC for memory and cluster transparency; DeepCuts for kernel generation; and a full-stack
-          deep learning framework for FPGAs.</p>
-          <div class="tags"><span class="tag">Parallelization</span><span class="tag">Unified memory</span><span class="tag">FPGA</span><span class="tag">Kernels</span></div>
+          <p>Communication across mixed NVIDIA and AMD GPUs, CPU and GPU memory through CUDA Unified Memory, AI computation on NPUs and FPGAs, and distributed inference on clusters that are shared and metered.</p>
+          <div class="tags"><span class="tag">Heterogeneous accelerators</span><span class="tag">Tensor Core</span><span class="tag">MoE inference</span><span class="tag">Scheduling</span></div>
         </div>
       </article>
 
@@ -210,9 +207,8 @@
         <div class="n">02</div>
         <h3>Large language models</h3>
         <div class="body">
-          <p>Korean datasets, tokenizers and language models built from scratch, along with the training
-          techniques, energy characterisation and compression needed to make them affordable.</p>
-          <div class="tags"><span class="tag">Korean data</span><span class="tag">Tokenizers</span><span class="tag">Compression</span><span class="tag">Energy</span></div>
+          <p>Parallel token generation and diffusion language models, long-context and multimodal training, tokenizers that cut token counts, and benchmarks that still mean something next year.</p>
+          <div class="tags"><span class="tag">Parallel decoding</span><span class="tag">Long context</span><span class="tag">Tokenizers</span><span class="tag">Evaluation</span></div>
         </div>
       </article>
 
@@ -220,23 +216,20 @@
         <div class="n">03</div>
         <h3>Quantum computing</h3>
         <div class="body">
-          <p>An end-to-end software stack — compiler, runtime and simulator. SnuQS simulated a 42-qubit
-          quantum supremacy circuit on a workstation with NVMe SSDs and HDDs, 256 times larger than a
-          conventional full-state simulator.</p>
-          <div class="tags"><span class="tag">SnuQS</span><span class="tag">Full-state simulation</span><span class="tag">Storage I/O</span></div>
+          <p>Simulating large quantum circuits exactly on classical resources, with storage offloading and a compiler that decides qubit placement and data movement ahead of time.</p>
+          <div class="tags"><span class="tag">Simulation</span><span class="tag">Storage offloading</span><span class="tag">Compiler</span></div>
         </div>
       </article>
 
       <article class="area" data-area="vision" data-reveal>
         <div class="n">04</div>
-        <h3>Under-display camera image restoration</h3>
+        <h3>Domain-specific language models</h3>
         <div class="body">
-          <p>Cameras placed beneath a display lose light and gain diffraction. We build real-world
-          datasets — UDC-SIT and UDC-VIT — and deep learning restoration methods that work on them
-          rather than on synthetic degradation.</p>
-          <div class="tags"><span class="tag">UDC-SIT</span><span class="tag">UDC-VIT</span><span class="tag">Restoration</span></div>
+          <p>The same models pointed at domains where being wrong is expensive — legal LLMs, de-identification of sensitive documents, retrieval over statutes and precedents, and clinical biomarkers.</p>
+          <div class="tags"><span class="tag">Legal</span><span class="tag">De-identification</span><span class="tag">RAG</span><span class="tag">Biomarkers</span></div>
         </div>
       </article>
+
     </div>
   </div>
 </section>
@@ -289,8 +282,7 @@
       </div>
       <div class="card" data-reveal>
         <h4>Industry partners</h4>
-        <p>Samsung Electronics, Samsung Display, LG Electronics, SK Hynix, Hancom
-        (&#54620;&#44544;&#44284; &#52964;&#54364;&#53552;), Moreh Inc., SK Telecom and Microsoft.</p>
+        <p>Samsung Electronics, Samsung Display, LG Electronics, SK Hynix, Hancom, Moreh Inc., SK Telecom and Microsoft.</p>
       </div>
     </div>
   </div>
@@ -301,10 +293,9 @@
   <div class="wrap">
     <div class="cta" data-reveal>
       <div>
-        <h2>Come work on the layer nobody sees.</h2>
+        <h2>Join us!</h2>
         <p>
-          We take graduate students, interns and collaborators in both departments — systems people
-          who want to know what the models need, and model people who want to know what the machine can do.
+          We take graduate students, interns and collaborators in both departments. If you're interested, please email us, and we will get in touch.
         </p>
       </div>
       <div style="display:flex;flex-wrap:wrap;gap:12px">
@@ -353,13 +344,13 @@
         <ul>
           <li><a href="mailto:chief@aces.snu.ac.kr">chief@aces.snu.ac.kr</a></li>
           <li><a href="https://cse.snu.ac.kr/" rel="noopener">SNU CSE</a></li>
-          <li><a href="https://gsds.snu.ac.kr/" rel="noopener">SNU Data Science</a></li>
+          <li><a href="https://gsds.snu.ac.kr/" rel="noopener">SNU Graduate School of AI</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-base">
       <span>&copy; 2023&#8211;<span data-year>2026</span> THUNDER Research Group</span>
-      <span>Computer Science and Engineering &nbsp;·&nbsp; Data Science</span>
+      <span>Computer Science and Engineering &nbsp;·&nbsp; Graduate School of AI</span>
     </div>
   </div>
 </footer>

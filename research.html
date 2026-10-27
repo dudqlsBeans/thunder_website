@@ -72,10 +72,10 @@
         resources they already have. We attack it with deep learning models together with compiler,
         runtime, architecture and operating system techniques at every level.</p>
         <ul>
-          <li><i>&#8595;</i><span><a href="#a-01">Execution platforms for deep learning</a></span></li>
-          <li><i>&#8595;</i><span><a href="#a-02">Large language models</a></span></li>
-          <li><i>&#8595;</i><span><a href="#a-03">Quantum computing</a></span></li>
-          <li><i>&#8595;</i><span><a href="#a-04">Under-display camera image restoration</a></span></li>
+          <li><i>&#8595;</i><span><a href="#areas">Execution platforms for deep learning</a></span></li>
+          <li><i>&#8595;</i><span><a href="#llm">Large language models</a></span></li>
+          <li><i>&#8595;</i><span><a href="#quantum">Quantum computing</a></span></li>
+          <li><i>&#8595;</i><span><a href="#applied">Domain-specific language models</a></span></li>
         </ul>
       </article>
       <article class="division ds" data-reveal style="--d:110ms">
@@ -102,51 +102,48 @@
       <div>
         <h2 class="sec-title">Execution platforms for deep learning</h2>
         <p class="sec-lede" style="margin-top:14px">
-          As the computation and memory requirements of deep neural networks grow, multi-GPU and
-          multi-node training and inference have become essential &#8212; and parallelizing that work
-          requires sophisticated knowledge of the underlying architecture. We build the systems that
-          remove that requirement.
+          As the computation and memory requirements of deep neural networks grow, multi-GPU and multi-node training and inference have become essential &#8212; and parallelizing that work requires sophisticated knowledge of the underlying architecture. We build the systems that remove that requirement.
         </p>
       </div>
     </div>
 
-    <div class="areas">
-      <article class="area" id="a-01" data-area="systems" data-reveal>
-        <div class="n">01</div>
-        <h3>Automatic parallelization of DNN models</h3>
-        <div class="body">
-          <p>Parallelizing a DNN training workload across multiple GPUs is challenging: it requires sophisticated knowledge of the underlying system architecture, which hinders users from developing large DNN models. We develop methods to find the best parallelization scheme automatically on a multi-node, multi-GPU system.</p>
-          <p style="margin-top:14px">We also develop a performance model that predicts how DNN workloads will run on heterogeneous GPUs in a cluster.</p>
-          <div class="tags"><span class="tag">Parallelization</span><span class="tag">Performance models</span><span class="tag">Clusters</span></div>
+    <div class="projects">
+      <article class="project" id="heterogeneous" data-area="systems" data-reveal>
+        <div class="project-side">
+          <div class="project-idx">01</div>
+          <h3>Heterogeneous accelerators and system optimization</h3>
+          <p class="project-role">Making a mixed pile of accelerators behave like one machine</p>
+          <div class="project-links"><a href="publications.html#pub-tccl" class="is-paper">TCCL &#183; ASPLOS 2024</a><a href="publications.html#pub-deepum" class="is-paper">DeepUM &#183; ASPLOS 2023</a><a href="publications.html#pub-soff" class="is-paper">SOFF &#183; ISCA 2020</a></div>
+        </div>
+        <div>
+          <div class="project-body">
+            <ul>
+            <li>Efficient communication across mixed NVIDIA and AMD GPU environments (HetCCL)</li>
+            <li>Using CPU and GPU memory together through CUDA Unified Memory</li>
+            <li>Optimizing AI computation on accelerators of every kind, NPUs and FPGAs among them</li>
+            <li>Tensor Core-based FFT and convolution optimization</li>
+            <li>GEMM optimization on NPUs</li>
+            <li>FPGA&#8211;GPU hybrid execution</li>
+            </ul>
+          </div>
         </div>
       </article>
 
-      <article class="area" id="a-01b" data-area="systems" data-reveal>
-        <div class="n">02</div>
-        <h3>DeepUM and SnuRHAC</h3>
-        <div class="body">
-          <p>DeepUM exploits CUDA Unified Memory to allow GPU memory oversubscription for DNNs. Conventional UM allows oversubscription through page faults, but page migration introduces enormous overhead; DeepUM uses a new correlation prefetching technique to hide it, fully automatically and transparently to the user. We evaluated it on nine large-scale DNNs from MLPerf, PyTorch examples and Hugging Face against six state-of-the-art GPU memory swapping approaches.</p>
-          <p style="margin-top:14px">SnuRHAC provides the illusion of a single GPU for multiple GPUs in a cluster, distributing workload and managing data across nodes automatically. Evaluated on 18 applications, it achieves scalable performance while significantly reducing the programmer&#8217;s burden.</p>
-          <div class="tags"><span class="tag">Unified memory</span><span class="tag">Prefetching</span><span class="tag">Oversubscription</span></div>
+      <article class="project" id="distributed-inference" data-area="systems" data-reveal>
+        <div class="project-side">
+          <div class="project-idx">02</div>
+          <h3>Distributed inference and cluster operation</h3>
+          <p class="project-role">Serving large models on clusters that are shared, and metered</p>
+          <div class="project-links"><a href="publications.html#pub-spipe" class="is-paper">SPipe &#183; PACT 2025</a></div>
         </div>
-      </article>
-
-      <article class="area" id="a-01c" data-area="systems" data-reveal>
-        <div class="n">03</div>
-        <h3>Deep learning frameworks for FPGAs and GPUs</h3>
-        <div class="body">
-          <p>As energy efficiency becomes a first-order issue, FPGAs are emerging as promising accelerators for HPC systems &#8212; but low-level hardware description languages and vendor toolchains keep them out of reach. We presented SOFF, a high-level synthesis framework for OpenCL and CUDA on FPGAs that requires no explicit user annotations, and we are building an NPU and a deep learning framework that generates an optimal circuit for a given model.</p>
-          <p style="margin-top:14px">DeepCuts takes the same argument to GPUs: rather than relying on libraries with fixed implementations such as cuDNN, it generates kernels optimized for the target workload and hardware, reaching state-of-the-art performance against TVM, TensorRT and TensorFlow XLA.</p>
-          <div class="tags"><span class="tag">SOFF</span><span class="tag">DeepCuts</span><span class="tag">NPU</span><span class="tag">High-level synthesis</span></div>
-        </div>
-      </article>
-
-      <article class="area" id="a-01d" data-area="systems" data-reveal>
-        <div class="n">04</div>
-        <h3>Mobile ISP replacement through model compression</h3>
-        <div class="body">
-          <p>Deep learning models such as PyNET can replace a mobile image signal processor, but they are expensive to compute and hard to deploy on a phone. We combine Tucker decomposition, quantization, pruning and knowledge distillation to cut computation and memory cost substantially without sacrificing accuracy.</p>
-          <div class="tags"><span class="tag">Quantization</span><span class="tag">Pruning</span><span class="tag">Distillation</span></div>
+        <div>
+          <div class="project-body">
+            <ul>
+            <li>Making MoE inference more efficient by easing the imbalance between computation and communication</li>
+            <li>Tracking energy consumption across a GPU cluster</li>
+            <li>Resource scheduling tuned to the usage patterns actually observed</li>
+            </ul>
+          </div>
         </div>
       </article>
 
@@ -162,41 +159,118 @@
       <div>
         <h2 class="sec-title">Large language models</h2>
         <p class="sec-lede" style="margin-top:14px">
-          Large language models are trained mostly on English, and datasets biased toward English
-          produce models that degrade badly on other languages. Much of our work is about closing
-          that gap for Korean, and about making the training affordable enough to do it at all.
+          Work on the models themselves: how fast they generate, how much context they hold, how their tokenizers are built, and whether a benchmark score means what it claims to.
         </p>
       </div>
     </div>
 
-    <div class="areas">
-      <article class="area" id="a-02" data-area="lm" data-reveal>
-        <div class="n">01</div>
-        <h3>Korean datasets, tokenizers and models</h3>
-        <div class="body">
-          <p>We are building a massive Korean dataset using web crawling, de-identification and de-duplication, and a deep learning tokenizer for Korean NLP &#8212; Korean tokenization involves decomposing words into morphemes (&#54805;&#53468;&#49548;) and tagging their parts of speech (&#54408;&#49324;).</p>
-          <p style="margin-top:14px">On top of that data and tokenizer we train Korean language models from scratch, rather than accepting the latency and quality penalty that English-centric models pay on Korean tasks.</p>
-          <div class="tags"><span class="tag">Web crawling</span><span class="tag">De-identification</span><span class="tag">Morphemes</span><span class="tag">Thunder-LLM</span></div>
+    <div class="projects">
+      <article class="project" id="llm-decoding" data-area="lm" data-reveal>
+        <div class="project-side">
+          <div class="project-idx">01</div>
+          <h3>Next-generation language and multimodal models</h3>
+          <p class="project-role">Generating more than one token at a time</p>
+          <div class="project-links"></div>
+        </div>
+        <div>
+          <div class="project-body">
+            <ul>
+            <li><b>Parallel token generation, to raise the inference efficiency of large language models</b><span class="sub">Jacobi decoding and speculative decoding for parallel generation and faster inference.</span></li>
+            <li><b>Efficient text generation with diffusion language models (DLM)</b><span class="sub">Converting autoregressive models to diffusion models, and optimizing parallel decoding through masking and remasking.</span></li>
+            <li><b>Multimodal language models that fuse data of several kinds</b><span class="sub">Joint training over medical imaging, ECG and electronic medical records, for better predictive performance.</span></li>
+            </ul>
+          </div>
         </div>
       </article>
 
-      <article class="area" id="a-02b" data-area="lm" data-reveal>
-        <div class="n">02</div>
-        <h3>Training LLMs under real constraints</h3>
-        <div class="body">
-          <p>Training a model with more than a hundred billion parameters on a cluster runs into the capacity of GPU memory. Parallelizing across GPUs is one answer; using main memory, NVMe SSDs and HDDs as backup space is another. The interaction between the two is non-trivial, so we are building a cluster-targeting framework that uses all of them and a performance model that finds the optimal parallelization.</p>
-          <p style="margin-top:14px">We also work on training techniques &#8212; auto-encoders, layer-wise training, mixtures of experts, better datasets &#8212; that make large model training possible without big-tech resources.</p>
-          <div class="tags"><span class="tag">GPU memory wall</span><span class="tag">NVMe</span><span class="tag">Mixture of experts</span></div>
+      <article class="project" id="llm-longcontext" data-area="lm" data-reveal>
+        <div class="project-side">
+          <div class="project-idx">02</div>
+          <h3>Long-context LLMs and multimodal training</h3>
+          <p class="project-role">Holding a long document without losing the thread</p>
+          <div class="project-links"><a href="publications.html#pub-trontor" class="is-paper">TRONTOR &#183; EMNLP 2026</a></div>
+        </div>
+        <div>
+          <div class="project-body">
+            <ul>
+            <li>Improving long-context models through positional-encoding control and attention-sink analysis</li>
+            <li>Extending long-context modelling techniques to the multimodal setting</li>
+            <li>Multimodal models specialised for the medical domain</li>
+            </ul>
+          </div>
         </div>
       </article>
 
-      <article class="area" id="a-02c" data-area="lm" data-reveal>
-        <div class="n">03</div>
-        <h3>Energy efficiency and model compression</h3>
-        <div class="body">
-          <p>Energy consumption has become a serious issue in training large language models. We characterise performance and energy on GPUs at the granularity of hardware modules &#8212; FPU, tensor core, cache, shared memory &#8212; and of deep learning layers, then propose energy-aware parallelization and optimal underclocking.</p>
-          <p style="margin-top:14px">Separately, we study quantization, pruning and knowledge distillation in depth, and how to combine them properly, so that large models can be deployed on devices with limited computation and memory.</p>
-          <div class="tags"><span class="tag">Energy</span><span class="tag">Underclocking</span><span class="tag">Quantization</span></div>
+      <article class="project" id="llm-tokenizer" data-area="lm" data-reveal>
+        <div class="project-side">
+          <div class="project-idx">03</div>
+          <h3>Tokenizers and inference efficiency</h3>
+          <p class="project-role">Fewer tokens for the same sentence</p>
+          <div class="project-links"><a href="publications.html#pub-thundertok" class="is-paper">Thunder-Tok &#183; arXiv 2025</a></div>
+        </div>
+        <div>
+          <div class="project-body">
+            <ul>
+            <li>How tokens that cross word boundaries affect model quality and inference efficiency</li>
+            <li>Tokenizers with multi-word tokens, cutting token counts and speeding up inference</li>
+            <li>Tokenizers built for the characteristics of each modality, text and speech among them</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" id="llm-training" data-area="lm" data-reveal>
+        <div class="project-side">
+          <div class="project-idx">04</div>
+          <h3>Training and inference efficiency</h3>
+          <p class="project-role">Getting more out of the model after pre-training</p>
+          <div class="project-links"><a href="publications.html#pub-thunderllm" class="is-paper">Thunder-LLM &#183; arXiv 2025</a></div>
+        </div>
+        <div>
+          <div class="project-body">
+            <ul>
+            <li>Post-training that improves model quality</li>
+            <li>High-quality training datasets, and optimizing how the data is composed</li>
+            <li>Faster inference through changes to the generation architecture</li>
+            <li>Domain-specialised language models</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" id="llm-eval" data-area="lm" data-reveal>
+        <div class="project-side">
+          <div class="project-idx">05</div>
+          <h3>Evaluation and benchmarks</h3>
+          <p class="project-role">Numbers that still mean something next year</p>
+          <div class="project-links"><a href="publications.html#pub-nubench" class="is-paper">Thunder-NUBench &#183; EACL 2026</a></div>
+        </div>
+        <div>
+          <div class="project-body">
+            <ul>
+            <li>Benchmarks for Korean comprehension and reasoning</li>
+            <li>How language models handle negation, and how to improve it</li>
+            <li>Why scores shift with the phrasing of a question or its options, and how to evaluate despite it</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" id="vlm-negation" data-area="lm" data-reveal>
+        <div class="project-side">
+          <div class="project-idx">06</div>
+          <h3>Negation understanding in vision-language models</h3>
+          <p class="project-role">Teaching a VLM what is not in the picture</p>
+          <div class="project-links"></div>
+        </div>
+        <div>
+          <div class="project-body">
+            <ul>
+            <li>A benchmark built specifically to measure negation in VLMs</li>
+            <li>Vision-language encoders with improved negation understanding</li>
+            <li>Generative VLMs with improved negation understanding</li>
+            </ul>
+          </div>
         </div>
       </article>
 
@@ -211,27 +285,28 @@
       <div class="eyebrow">Areas</div>
       <div>
         <h2 class="sec-title">Quantum computing</h2>
+        <p class="sec-lede" style="margin-top:14px">
+          An end-to-end software stack for a machine that does not exist at scale yet, and a simulator that stands in for it &#8212; built on the observation that storage is cheap and DRAM is not.
+        </p>
       </div>
     </div>
 
-    <div class="areas">
-      <article class="area" id="a-03" data-area="quantum" data-reveal>
-        <div class="n">01</div>
-        <h3>Software stacks for quantum computing</h3>
-        <div class="body">
-          <p>We are developing an end-to-end software stack for quantum computing: a compiler, a runtime system and a classical quantum-circuit simulator. The current focus is high-performance, scalable simulation and tensor network contraction.</p>
-          <p style="margin-top:14px">We simulated the 42-qubit quantum supremacy circuit on a workstation-level system with many NVMe SSDs and HDDs. The conventional limit for workstation-level full-state simulation is around 34 qubits, which makes our simulator&#8217;s capability 256 times larger. We also built a small cluster with SSDs and HDDs to reach supercomputer-level circuits.</p>
-          <div class="tags"><span class="tag">Compiler</span><span class="tag">Runtime</span><span class="tag">Tensor networks</span></div>
+    <div class="projects">
+      <article class="project" id="quantum-hybrid" data-area="quantum" data-reveal>
+        <div class="project-side">
+          <div class="project-idx">01</div>
+          <h3>High-performance quantum&#8211;classical hybrid computing</h3>
+          <p class="project-role">Simulating, exactly, what the hardware cannot yet run</p>
+          <div class="project-links"><a href="publications.html#pub-snuqs" class="is-paper">SnuQS &#183; ICS 2022</a></div>
         </div>
-      </article>
-
-      <article class="area" id="a-03b" data-area="quantum" data-reveal>
-        <div class="n">02</div>
-        <h3>SnuQS</h3>
-        <div class="body">
-          <p>SnuQS is a full-state quantum-circuit simulation framework that uses storage devices to enlarge the available main memory capacity at small cost. It partitions circuits automatically based on qubit permutation and amplitude layout, and prefetches amplitudes to overlap computation with I/O.</p>
-          <p style="margin-top:14px">Combining circuit partitioning with a three-step qubit permutation guarantees that I/O operations are grouped into contiguous blocks large enough to achieve high bandwidth. The result scales full-state simulation of large circuits at about 300&#215; lower cost than a DRAM-only system.</p>
-          <div class="tags"><span class="tag">Full-state simulation</span><span class="tag">Storage I/O</span><span class="tag">Partitioning</span></div>
+        <div>
+          <div class="project-body">
+            <ul>
+            <li>A platform that simulates large quantum circuits exactly, on classical computing resources</li>
+            <li><b>Storage offloading</b><span class="sub">Only the regions a computation needs are loaded onto the GPU, which gets past the DRAM capacity limit.</span></li>
+            <li><b>Compiler and runtime in concert</b><span class="sub">The circuit structure is analysed so that qubit placement and the data-movement schedule are decided at compile time.</span></li>
+            </ul>
+          </div>
         </div>
       </article>
 
@@ -239,24 +314,90 @@
   </div>
 </section>
 
-<section class="section" id="udc">
+<section class="section" id="applied">
   <div class="wrap">
     <div class="sec-head" data-reveal>
       <div class="rule" aria-hidden="true"></div>
       <div class="eyebrow">Areas</div>
       <div>
-        <h2 class="sec-title">Under-display camera image restoration</h2>
+        <h2 class="sec-title">Domain-specific language models</h2>
+        <p class="sec-lede" style="margin-top:14px">
+          The same models pointed at domains where being wrong is expensive &#8212; law, privacy, specialist search, and clinical prediction.
+        </p>
       </div>
     </div>
 
-    <div class="areas">
-      <article class="area" id="a-04" data-area="vision" data-reveal>
-        <div class="n">01</div>
-        <h3>Real-world datasets and restoration</h3>
-        <div class="body">
-          <p>An under-display camera sits beneath the display, allowing a larger screen-to-body ratio and better eye tracking. Image quality degrades badly in exchange: light transmittance drops and diffraction takes over.</p>
-          <p style="margin-top:14px">Previous work relied on synthetic datasets that fail to capture how the degradation actually behaves. We build real-world datasets &#8212; UDC-SIT for still images and UDC-VIT for video &#8212; and deep learning restoration methods that address the conditions those datasets record.</p>
-          <div class="tags"><span class="tag">UDC-SIT</span><span class="tag">UDC-VIT</span><span class="tag">Diffraction</span><span class="tag">Restoration</span></div>
+    <div class="projects">
+      <article class="project" id="legal-llm" data-area="vision" data-reveal>
+        <div class="project-side">
+          <div class="project-idx">01</div>
+          <h3>Legal language models</h3>
+          <p class="project-role">Reading a judgment for the question it actually turns on</p>
+          <div class="project-links"></div>
+        </div>
+        <div>
+          <div class="project-body">
+            <ul>
+            <li>Models that identify the legal issues at stake in the facts of a case</li>
+            <li>Training and evaluation data built from Korean court judgments</li>
+            <li>Using the relevant statutes and precedents to support a judgment on each issue</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" id="deid" data-area="vision" data-reveal>
+        <div class="project-side">
+          <div class="project-idx">02</div>
+          <h3>De-identification and sensitive documents</h3>
+          <p class="project-role">Removing what should never have been readable</p>
+          <div class="project-links"><a href="publications.html#pub-deidplus" class="is-paper">Thunder-DeID+ &#183; EMNLP 2026</a><a href="publications.html#pub-deid" class="is-paper">Thunder-DeID &#183; EMNLP 2025</a></div>
+        </div>
+        <div>
+          <div class="project-body">
+            <ul>
+            <li>Automatic detection and de-identification of personal information in Korean judgments and other sensitive documents (Thunder-DeID, Thunder-DeID+)</li>
+            <li>A classification scheme for personal information, and tokenization that respects its boundaries</li>
+            <li>Evaluation of de-identification that does not depend on the tokenizer</li>
+            <li>Extension to other document domains with only a little additional training data</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" id="rag" data-area="vision" data-reveal>
+        <div class="project-side">
+          <div class="project-idx">03</div>
+          <h3>Retrieval-augmented generation and domain search</h3>
+          <p class="project-role">Finding the passage that settles it</p>
+          <div class="project-links"></div>
+        </div>
+        <div>
+          <div class="project-body">
+            <ul>
+            <li>Embedding models and retrieval built for statutes, precedents and other specialist documents</li>
+            <li>Better retrieval and re-ranking of the evidence a query actually needs</li>
+            <li>Generating answers from retrieved evidence, and evaluating domain-specific RAG</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" id="biomarker" data-area="vision" data-reveal>
+        <div class="project-side">
+          <div class="project-idx">04</div>
+          <h3>Biomarker analysis pipeline</h3>
+          <p class="project-role">Asking a clinical model what it is actually keying on</p>
+          <div class="project-links"></div>
+        </div>
+        <div>
+          <div class="project-body">
+            <ul>
+            <li>Surfacing the factors that drive models trained on medical imaging, biosignals and clinical data</li>
+            <li>Applying it to frailty prediction, and extending it into a general biomarker analysis framework</li>
+            <li>Testing how far it carries into a multimodal language-model setting</li>
+            </ul>
+          </div>
         </div>
       </article>
 
@@ -274,8 +415,8 @@
     <div class="news">
       <div class="news-item" data-reveal><time>2002&#8211;2009</time><p>Advanced Compiler Research Laboratory, Dept. of Computer Science and Engineering.</p></div>
       <div class="news-item" data-reveal><time>2009&#8211;2018</time><p>Multicore Computing Research Laboratory and the Center for Manycore Programming, supported by the Ministry of Science and ICT.</p></div>
-      <div class="news-item" data-reveal><time>2018&#8211;2021</time><p>Multicore Computing Research Laboratory in CSE, and the Scalable Deep Learning Research Laboratory in the Dept. of Data Science.</p></div>
-      <div class="news-item" data-reveal><time>2021&#8211;</time><p>THUNDER Research Group, spanning the Dept. of Computer Science and Engineering and the Dept. of Data Science.</p></div>
+      <div class="news-item" data-reveal><time>2018&#8211;2021</time><p>Multicore Computing Research Laboratory in CSE, and the Scalable Deep Learning Research Laboratory in the Graduate School of AI.</p></div>
+      <div class="news-item" data-reveal><time>2021&#8211;</time><p>THUNDER Research Group, spanning the Dept. of Computer Science and Engineering and the Graduate School of AI.</p></div>
     </div>
   </div>
 </section>
@@ -355,13 +496,13 @@
         <ul>
           <li><a href="mailto:chief@aces.snu.ac.kr">chief@aces.snu.ac.kr</a></li>
           <li><a href="https://cse.snu.ac.kr/" rel="noopener">SNU CSE</a></li>
-          <li><a href="https://gsds.snu.ac.kr/" rel="noopener">SNU Data Science</a></li>
+          <li><a href="https://gsds.snu.ac.kr/" rel="noopener">SNU Graduate School of AI</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-base">
       <span>&copy; 2023&#8211;<span data-year>2026</span> THUNDER Research Group</span>
-      <span>Computer Science and Engineering &nbsp;·&nbsp; Data Science</span>
+      <span>Computer Science and Engineering &nbsp;·&nbsp; Graduate School of AI</span>
     </div>
   </div>
 </footer>

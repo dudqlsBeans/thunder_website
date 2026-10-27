@@ -345,8 +345,8 @@ h1.display em { font-style: italic; color: var(--ink-2); }
   margin: 16px 0 14px;
 }
 .division p.desc { color: var(--ink-2); font-size: .975rem; max-width: 46ch; }
-.division .figure { margin: 30px 0 26px; }
-.division ul { margin-top: auto; padding-top: 26px; border-top: var(--rule) solid var(--line); }
+.division .figure { margin: 30px 0 34px; }
+.division ul { margin-top: auto; padding-top: 38px; border-top: var(--rule) solid var(--line); }
 .division li {
   display: flex; align-items: baseline; gap: 14px;
   padding: 11px 0;
@@ -391,6 +391,7 @@ h1.display em { font-style: italic; color: var(--ink-2); }
   font-family: var(--mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase;
   padding: 4px 9px; border: var(--rule) solid var(--line); border-radius: 2px; color: var(--ink-3);
 }
+.tag.award { color: var(--ds); border-color: color-mix(in srgb, var(--ds) 45%, transparent); }
 [data-area="systems"]   { --tone: var(--area-systems); }
 [data-area="lm"]        { --tone: var(--area-lm); }
 [data-area="quantum"]   { --tone: var(--area-quantum); }
@@ -399,6 +400,91 @@ h1.display em { font-style: italic; color: var(--ink-2); }
 .area.cs { --tone: var(--cs); }
 .area.ds { --tone: var(--ds); }
 .area .n { color: color-mix(in srgb, var(--tone, var(--cs)) 70%, var(--ink-4)); }
+
+/* ---------- Projects ----------
+   A named system (DeepUM, SnuQS…) or a research thrust, given a spec-sheet
+   layout: identity on the left, argument on the right, hard numbers pulled
+   out of the prose where the old site buried them.                          */
+.projects { display: grid; gap: var(--rule); background: var(--line); border-block: var(--rule) solid var(--line); }
+.project {
+  display: grid; gap: 22px;
+  /* left padding clears the accent bar that grows on hover */
+  padding: clamp(28px, 3.4vw, 46px) clamp(18px, 2vw, 30px)
+           clamp(28px, 3.4vw, 46px) clamp(26px, 2.8vw, 42px);
+  background: var(--bg);
+  position: relative;
+}
+@media (min-width: 940px) {
+  .project { grid-template-columns: minmax(0, 250px) minmax(0, 1fr); column-gap: clamp(34px, 5vw, 76px); }
+  .project-side { position: sticky; top: 96px; align-self: start; }
+}
+.project::before {
+  content: ""; position: absolute; left: 0; top: 0; width: 3px; height: 0;
+  background: var(--tone, var(--cs)); opacity: .75;
+  transition: height .6s var(--ease);
+}
+.project:hover::before, .project:focus-within::before { height: 100%; }
+
+.project-idx {
+  font-family: var(--mono); font-size: .69rem; letter-spacing: .18em;
+  color: color-mix(in srgb, var(--tone, var(--cs)) 80%, var(--ink-3));
+}
+.project h3 {
+  margin-top: 10px;
+  font-family: var(--serif); font-weight: 300; letter-spacing: -.015em;
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem); line-height: 1.18;
+}
+.project h3 .sys { font-family: var(--mono); font-weight: 400; font-size: .82em; letter-spacing: -.01em; }
+.project-role { margin-top: 10px; font-size: .9rem; color: var(--ink-3); max-width: 32ch; }
+
+.project-body { color: var(--ink-2); font-size: .975rem; max-width: 68ch; }
+.project-body p + p { margin-top: 15px; }
+
+/* a project stated as directions rather than prose */
+.project-body ul { margin-top: 15px; display: grid; gap: 11px; }
+.project-body li {
+  position: relative; padding-left: 20px;
+  font-size: .93rem; color: var(--ink-2);
+}
+.project-body li::before {
+  content: ""; position: absolute; left: 0; top: .66em;
+  width: 8px; height: var(--rule);
+  background: var(--tone, var(--ink-4)); opacity: .85;
+}
+.project-body li b { color: var(--ink); font-weight: 450; }
+.project-body li .sub { display: block; margin-top: 4px; color: var(--ink-3); font-size: .95em; }
+
+.metrics {
+  margin: 24px 0 0; padding: 0;
+  display: grid; gap: 1px;
+  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+  background: var(--line); border: var(--rule) solid var(--line);
+}
+.metrics > div { background: var(--bg); padding: 14px 16px; }
+.metrics dt {
+  font-family: var(--mono); font-size: .62rem; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-4);
+}
+.metrics dd {
+  margin: 7px 0 0; font-size: 1.45rem; line-height: 1.1; font-weight: 450;
+  color: var(--tone, var(--ink)); font-variant-numeric: tabular-nums;
+  letter-spacing: -.02em;
+}
+.metrics dd span { display: block; margin-top: 5px; font-size: .74rem; font-weight: 400; color: var(--ink-3); letter-spacing: 0; }
+
+.project-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.project-links a {
+  font-family: var(--mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase;
+  padding: 6px 11px; border: var(--rule) solid var(--line); border-radius: 2px;
+  color: var(--ink-3);
+  transition: color .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease);
+}
+.project-links a:hover { color: var(--ink); border-color: var(--line-2); background: var(--panel); }
+.project-links a.is-paper { color: color-mix(in srgb, var(--tone, var(--cs)) 80%, var(--ink-2)); border-color: color-mix(in srgb, var(--tone, var(--cs)) 32%, var(--line)); }
+@media (min-width: 940px) { .project-links { margin-top: 20px; } }
+
+/* a publication row that has just been jumped to from a project */
+.pub:target { background: var(--panel); box-shadow: inset 3px 0 0 var(--tone, var(--cs)); }
 
 /* ---------- Cards / lists ---------- */
 .cards { display: grid; gap: clamp(18px, 2vw, 26px); }
@@ -457,6 +543,16 @@ h1.display em { font-style: italic; color: var(--ink-2); }
 }
 .filter:hover { color: var(--ink); border-color: var(--line-2); }
 .filter[aria-pressed="true"] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
+
+/* the People page uses the same pills as section navigation rather than filters.
+   Deliberately not sticky: the pills wrap to several rows on a narrow screen,
+   and a stuck bar that tall covers the very headings it jumps to.            */
+a.filter { display: inline-flex; align-items: center; text-decoration: none; }
+/* the jump should read as instant, so these settle faster than the hover fade */
+.filters[data-section-nav] .filter { transition-duration: .12s; }
+a.filter[aria-current="true"] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
+/* land the heading clear of the fixed header */
+.sec-head[id] { scroll-margin-top: 104px; }
 .filter[data-filter="systems"]   { --tone: var(--area-systems); }
 .filter[data-filter="lm"]        { --tone: var(--area-lm); }
 .filter[data-filter="quantum"]   { --tone: var(--area-quantum); }
@@ -480,14 +576,25 @@ h1.display em { font-style: italic; color: var(--ink-2); }
 }
 .person:hover { background: var(--bg-elev); }
 .person .avatar {
-  width: 54px; height: 54px; border-radius: 50%;
-  display: grid; place-items: center; margin-bottom: 12px;
+  width: 72px; height: 72px; border-radius: 50%;
+  display: grid; place-items: center; margin-bottom: 14px;
   border: var(--rule) solid var(--line-2);
-  font-family: var(--serif); font-size: 1.15rem; color: var(--ink-2);
+  font-family: var(--serif); font-size: 1.35rem; color: var(--ink-2);
   background: var(--panel);
+  flex: none;
 }
-.person.cs .avatar { border-color: color-mix(in srgb, var(--cs) 55%, transparent); color: var(--cs); }
+/* a real portrait fills the ring; initials stay the fallback for anyone without one */
+.person .avatar.has-photo { overflow: hidden; background: var(--bg-sunken); }
+.person .avatar img {
+  width: 100%; height: 100%; border-radius: 50%;
+  object-fit: cover; object-position: 50% 22%;
+  filter: saturate(.92) contrast(1.02);
+  transition: filter .4s var(--ease), transform .5s var(--ease);
+}
+.person:hover .avatar img { filter: saturate(1) contrast(1); transform: scale(1.04); }
+.person.cs .avatar, .person.cse .avatar { border-color: color-mix(in srgb, var(--cs) 55%, transparent); color: var(--cs); }
 .person.ds .avatar { border-color: color-mix(in srgb, var(--ds) 55%, transparent); color: var(--ds); }
+.person.ep .avatar { border-color: color-mix(in srgb, var(--area-quantum) 55%, transparent); color: var(--area-quantum); }
 .person h4 { font-size: 1.02rem; font-weight: 500; }
 .person h4 .kr { color: var(--ink-3); font-weight: 400; font-size: .85em; }
 .person .role { font-family: var(--mono); font-size: .67rem; letter-spacing: .13em; text-transform: uppercase; color: var(--ink-3); }
@@ -495,6 +602,65 @@ h1.display em { font-style: italic; color: var(--ink-2); }
 .person .links { margin-top: auto; padding-top: 16px; display: flex; gap: 14px; }
 .person .links a { font-size: .78rem; color: var(--ink-3); border-bottom: var(--rule) solid var(--line); }
 .person .links a:hover { color: var(--ink); border-color: var(--line-2); }
+
+/* ---------- Alumni roster ----------
+   Tabular by nature: when they left, who, what they wrote, where they went.
+   Four columns on desktop, stacked with the name first on a phone.          */
+.roster { border-top: var(--rule) solid var(--line); }
+.roster-row, .roster-head {
+  display: grid; gap: 4px 26px;
+  grid-template-columns: minmax(0, 1fr);
+  padding: 16px 0;
+  border-bottom: var(--rule) solid var(--line);
+}
+@media (min-width: 900px) {
+  .roster-row, .roster-head {
+    grid-template-columns: 148px 200px minmax(0, 1fr) 210px;
+    align-items: baseline;
+    padding: 14px 0;
+  }
+}
+.roster-head {
+  padding: 10px 0; border-bottom-color: var(--line-2);
+  position: sticky; top: 69px; z-index: 5;
+  background: color-mix(in srgb, var(--bg) 94%, transparent);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+}
+.roster-head span {
+  font-family: var(--mono); font-size: .61rem; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--ink-4);
+}
+@media (max-width: 899px) { .roster-head { display: none; } }
+.roster-row { transition: background .3s var(--ease); }
+.roster-row:hover { background: var(--bg-elev); }
+
+.ros-when {
+  font-family: var(--mono); font-size: .69rem; letter-spacing: .05em;
+  color: var(--ink-3); font-variant-numeric: tabular-nums;
+}
+.ros-when b { display: inline-block; min-width: 3.4em; color: var(--ink-2); font-weight: 400; }
+.ros-who { font-size: .95rem; color: var(--ink); }
+.ros-who .alt { color: var(--ink-3); font-size: .84em; }
+.ros-what { font-size: .89rem; color: var(--ink-2); }
+.ros-next { font-size: .85rem; color: var(--ink-3); }
+@media (max-width: 899px) {
+  .ros-who { order: -1; font-weight: 500; }
+  .ros-what { margin-top: 4px; }
+}
+
+/* a degree changes: give the eye a place to rest */
+.roster-group {
+  padding: 30px 0 12px; border-bottom: var(--rule) solid var(--line);
+  display: flex; align-items: baseline; gap: 14px;
+}
+.roster-group h4 {
+  font-family: var(--serif); font-weight: 300; letter-spacing: -.01em;
+  font-size: 1.2rem; color: var(--ink);
+}
+.roster-group .count {
+  font-family: var(--mono); font-size: .64rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--ink-4);
+}
 
 /* ---------- Photo gallery ---------- */
 .gallery {

@@ -75,6 +75,69 @@
     });
   }
 
+  /* ---------- Section navigation (People) ----------
+     The same pills, but they jump to a team instead of filtering. The browser
+     does the scrolling (they are ordinary anchors, and .sec-head[id] carries
+     scroll-margin-top to clear the fixed header); this keeps the active pill
+     right. The click wins immediately and the scroll-spy is held off until the
+     scroll settles, otherwise every section passing under the header would
+     repaint the bar on the way there.                                        */
+  var sectionNav = document.querySelector('[data-section-nav]');
+  if (sectionNav) {
+    var pills = Array.prototype.slice.call(sectionNav.querySelectorAll('.filter'));
+    var sections = pills.map(function (a) {
+      return document.getElementById(a.getAttribute('href').slice(1));
+    });
+
+    var mark = function (el) {
+      pills.forEach(function (a, i) {
+        a.setAttribute('aria-current', String(sections[i] === el));
+      });
+    };
+
+    var held = false, holdTimer;
+    var hold = function () {                       // ignore the spy mid-jump
+      held = true;
+      clearTimeout(holdTimer);
+      holdTimer = setTimeout(release, 1200);       // fallback for no scrollend
+    };
+    var release = function () {
+      clearTimeout(holdTimer);
+      if (!held) return;
+      held = false;
+      spy();
+    };
+    if ('onscrollend' in window) window.addEventListener('scrollend', release);
+
+    var ticking = false;
+    function spy() {
+      if (held || ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () {
+        ticking = false;
+        var current = null;
+        sections.forEach(function (el) {
+          if (el && el.getBoundingClientRect().top <= 140) current = el;
+        });
+        mark(current || sections[0]);
+      });
+    }
+
+    pills.forEach(function (a) {
+      a.addEventListener('click', function () {
+        hold();
+        mark(document.getElementById(a.getAttribute('href').slice(1)));
+      });
+    });
+
+    window.addEventListener('scroll', spy, { passive: true });
+
+    // start on whatever the URL points at, or on the first section
+    var landed = location.hash && document.getElementById(location.hash.slice(1));
+    mark(sections.indexOf(landed) > -1 ? landed : sections[0]);
+    spy();                                        // and reconcile with a restored scroll position
+  }
+
   /* ---------- Hero field: two-source interference, drawn as contour lines ----------
      A physical wave field rather than the usual particle mesh — slow, quiet,
      and it actually means something next to "quantum".                        */
