@@ -10,6 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=JetBrains+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13 2 4 14h6l-1 8 9-12h-6z' fill='%237fd7e6'/%3E%3C/svg%3E">
+<script>/* apply the saved theme before first paint, otherwise every page load
+   flashes the default dark and fades to light */
+try{var t=localStorage.getItem('trg-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
 <body>
 <!-- ================= Header ================= -->
@@ -60,7 +63,7 @@
 <section class="section" style="padding-top:0">
   <div class="wrap">
     <div class="news">
-      <div class="news-item" data-reveal><time>Rolling</time><p><b>MS & PhD students</b> &#8212; apply through SNU&#8217;s Department of Computer Science and Engineering or the Graduate School of AI.</p></div>
+      <div class="news-item" data-reveal><time>Semester</time><p><b>MS & PhD students</b> &#8212; apply through SNU&#8217;s Department of Computer Science and Engineering or the Graduate School of AI.</p></div>
       <div class="news-item" data-reveal><time>Rolling</time><p><b>Undergraduate researchers</b> &#8212; write to us about your research interests and send us a copy of your cv</p></div>
       <div class="news-item" data-reveal><time>Rolling</time><p><b>Postdocs &amp; visiting researchers</b> &#8212; send us your cv and cover letter. Funding depends on the cycle.</p></div>
     </div>

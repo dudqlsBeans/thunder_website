@@ -4,7 +4,8 @@
 (function () {
   'use strict';
 
-  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // motion is off site-wide: reveals land instantly, the hero field draws one still frame
+  var reduced = true;
 
   /* ---------- Theme ---------- */
   var root = document.documentElement;

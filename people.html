@@ -10,6 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=JetBrains+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13 2 4 14h6l-1 8 9-12h-6z' fill='%237fd7e6'/%3E%3C/svg%3E">
+<script>/* apply the saved theme before first paint, otherwise every page load
+   flashes the default dark and fades to light */
+try{var t=localStorage.getItem('trg-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
 <body>
 <!-- ================= Header ================= -->
@@ -69,7 +72,6 @@
 
     <div class="sec-head" id="faculty" data-reveal>
       <div class="rule" aria-hidden="true"></div>
-      <div class="eyebrow">Faculty</div>
       <div><h2 class="sec-title">Principal investigator</h2></div>
     </div>
 
@@ -77,15 +79,12 @@
       <div class="person cse" data-div="cse" data-tags="cse ds ep" data-reveal>
         <div class="avatar has-photo"><img src="assets/img/people/jaejin-lee.jpg" alt="" loading="lazy" decoding="async"></div><h4>Jaejin Lee <span class="kr">(&#51060;&#51116;&#51652;)</span></h4>
         <div class="role">Professor</div>
-        <p>Directs the THUNDER Research Group across the Department of Computer Science and
-        Engineering and the Graduate School of AI.</p>
         <div class="links"><a href="https://sites.google.com/view/jaejinlee" rel="noopener">Profile</a><a href="mailto:chief@aces.snu.ac.kr">Email</a></div>
       </div>
     </div>
 
     <div class="sec-head" id="cse" data-reveal>
       <div class="rule" aria-hidden="true"></div>
-      <div class="eyebrow">CSE</div>
       <div><h2 class="sec-title">Computer Science and Engineering</h2></div>
     </div>
 
@@ -128,7 +127,13 @@
       <div class="person cse" data-div="cse" data-reveal>
         <div class="avatar has-photo"><img src="assets/img/people/hanbeul-kim.jpg" alt="" loading="lazy" decoding="async"></div><h4>Hanbeul Kim <span class="kr">(김한별)</span></h4>
         <div class="role">Ph.D. student</div>
-        <div class="links"><a href="http://thunder.snu.ac.kr/~jongwonpark/" rel="noopener">Profile</a></div>
+        <div
+         class="links"><a href="http://thunder.snu.ac.kr/~jongwonpark/" rel="noopener">Profile</a></div>
+      </div>
+      <div class="person cse" data-div="cse" data-reveal>
+        <div class="avatar has-photo"><img src="assets/img/people/chaewon-kim.jpg" alt="" loading="lazy" decoding="async"></div><h4>Chaewon Kim <span class="kr">(김채원)</span></h4>
+        <div class="role">Post-master researcher</div>
+        <div class="links"><a href="https://rhrnald.github.io/" rel="noopener">Profile</a></div>
       </div>
       <div class="person cse" data-div="cse" data-reveal>
         <div class="avatar has-photo"><img src="assets/img/people/hyungyu-lee.jpg" alt="" loading="lazy" decoding="async"></div><h4>Hyungyu Lee <span class="kr">(이현규)</span></h4>
@@ -170,16 +175,10 @@
         <div class="role">M.S. student</div>
         <div class="links"><a href="http://thunder.snu.ac.kr/~jongwonpark/" rel="noopener">Profile</a></div>
       </div>
-      <div class="person cse" data-div="cse" data-reveal>
-        <div class="avatar has-photo"><img src="assets/img/people/chaewon-kim.jpg" alt="" loading="lazy" decoding="async"></div><h4>Chaewon Kim <span class="kr">(김채원)</span></h4>
-        <div class="role">Post-master researcher</div>
-        <div class="links"><a href="https://rhrnald.github.io/" rel="noopener">Profile</a></div>
-      </div>
     </div>
 
     <div class="sec-head" id="ds" data-reveal>
       <div class="rule" aria-hidden="true"></div>
-      <div class="eyebrow">AI team</div>
       <div><h2 class="sec-title">Graduate School of AI</h2></div>
     </div>
 
@@ -230,6 +229,11 @@
         <div class="links"><a href="https://www.linkedin.com/in/sungmok-jung-b374a431a/" rel="noopener">Profile</a></div>
       </div>
       <div class="person ds" data-div="ds" data-reveal>
+        <div class="avatar has-photo"><img src="assets/img/people/sangho-kim.jpg" alt="" loading="lazy" decoding="async"></div><h4>Sangho Kim <span class="kr">(김상호)</span></h4>
+        <div class="role">Post-master researcher</div>
+        <div class="links"><a href="http://thunder.snu.ac.kr/~sanghokim" rel="noopener">Profile</a></div>
+      </div>
+      <div class="person ds" data-div="ds" data-reveal>
         <div class="avatar has-photo"><img src="assets/img/people/suyoung-park.jpg" alt="" loading="lazy" decoding="async"></div><h4>Suyoung Park <span class="kr">(박수영)</span></h4>
         <div class="role">M.S. student</div>
         <div class="links"><a href="http://thunder.snu.ac.kr/~suyoungpark" rel="noopener">Profile</a></div>
@@ -269,16 +273,11 @@
         <div class="role">M.S. student</div>
         <div class="links"><a href="https://www.linkedin.com/in/hyoungjoon-lee-63a18635a/" rel="noopener">Profile</a></div>
       </div>
-      <div class="person ds" data-div="ds" data-reveal>
-        <div class="avatar has-photo"><img src="assets/img/people/sangho-kim.jpg" alt="" loading="lazy" decoding="async"></div><h4>Sangho Kim <span class="kr">(김상호)</span></h4>
-        <div class="role">Post-master researcher</div>
-        <div class="links"><a href="http://thunder.snu.ac.kr/~sanghokim" rel="noopener">Profile</a></div>
-      </div>
+      
     </div>
 
     <div class="sec-head" id="ep" data-reveal>
       <div class="rule" aria-hidden="true"></div>
-      <div class="eyebrow">EP team</div>
       <div><h2 class="sec-title">Engineering Practice</h2></div>
     </div>
 
@@ -307,7 +306,6 @@
 
     <div class="sec-head" id="alumni" data-reveal>
       <div class="rule" aria-hidden="true"></div>
-      <div class="eyebrow">Alumni</div>
       <div><h2 class="sec-title">Where people went next</h2></div>
     </div>
     <div class="roster" style="margin-bottom:64px">
@@ -745,7 +743,6 @@
 
     <div class="sec-head" data-reveal>
       <div class="rule" aria-hidden="true"></div>
-      <div class="eyebrow">Recognition</div>
       <div><h2 class="sec-title">Student awards</h2></div>
     </div>
     <div class="news">

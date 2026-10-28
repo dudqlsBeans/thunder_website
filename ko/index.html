@@ -10,6 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=JetBrains+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=Noto+Sans+KR:wght@400;500&family=Noto+Serif+KR:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13 2 4 14h6l-1 8 9-12h-6z' fill='%237fd7e6'/%3E%3C/svg%3E">
+<script>/* apply the saved theme before first paint, otherwise every page load
+   flashes the default dark and fades to light */
+try{var t=localStorage.getItem('trg-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
 <body>
 
@@ -22,7 +25,7 @@
         <circle cx="20.4" cy="4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".55"/>
       </svg>
       <b>Thunder</b>
-      <span>연구실</span>
+      <span>Research Group</span>
     </a>
 
     <nav class="nav" id="nav">
@@ -60,7 +63,7 @@
       <span class="eyebrow">컴퓨터공학부 &#183; 서울대 AI대학원</span>
     </div>
 
-    <h1 class="display"><em>대규모 AI</em>를 더 빠르고 효율적으로.</h1>
+    <h1 class="display">Welcome to <em>THUNDER</em> Research Group</h1>
 
     <p class="hero-lede">
       천둥 연구실은 서울대학교 컴퓨터공학부와 서울대 AI대학원에 소속된 연구실입니다.
@@ -133,10 +136,10 @@
         </div>
 
         <ul>
-          <li><i>01</i><span><b>이기종 가속기</b> — NVIDIA·AMD GPU 혼합 환경의 통신, CUDA Unified Memory, NPU·FPGA에서의 AI 연산 최적화.</span></li>
-          <li><i>02</i><span><b>커널 수준 최적화</b> — Tensor Core 기반 FFT와 Convolution, NPU 기반 GEMM, FPGA-GPU 하이브리드 연산.</span></li>
-          <li><i>03</i><span><b>분산 추론</b> — MoE 추론 효율화, GPU 클러스터의 에너지 사용량 분석, 사용 패턴 기반 자원 스케줄링.</span></li>
-          <li><i>04</i><span><b>양자-고전 하이브리드</b> — 고전 컴퓨팅 자원과 스토리지 오프로딩을 활용한 대규모 양자 회로 시뮬레이션.</span></li>
+          <li><i>01</i><span><b>이기종 가속기</b> — NVIDIA, AMD GPU 혼합 환경의 통신, CUDA Unified Memory, NPU, FPGA에서의 AI 연산 최적화</span></li>
+          <li><i>02</i><span><b>커널 수준 최적화</b> — Tensor Core 기반 FFT와 Convolution, NPU 기반 GEMM, FPGA-GPU 하이브리드 연산</span></li>
+          <li><i>03</i><span><b>분산 추론</b> — MoE 추론 효율화, GPU 클러스터의 에너지 사용량 분석, 사용 패턴 기반 자원 스케줄링</span></li>
+          <li><i>04</i><span><b>양자-고전 하이브리드</b> — 고전 컴퓨팅 자원과 스토리지 오프로딩을 활용한 대규모 양자 회로 시뮬레이션</span></li>
         </ul>
       </article>
 
@@ -165,10 +168,10 @@
         </div>
 
         <ul>
-          <li><i>01</i><span><b>효율적인 생성</b> — 병렬 토큰 생성, 확산 언어모델, 토큰 수를 줄이는 토크나이저.</span></li>
-          <li><i>02</i><span><b>장문맥·멀티모달</b> — 위치 인코딩과 어텐션 싱크 분석, 의료영상·심전도·EMR로의 확장.</span></li>
-          <li><i>03</i><span><b>평가</b> — 한국어 벤치마크, 언어 모델과 VLM의 부정 표현 이해.</span></li>
-          <li><i>04</i><span><b>도메인 특화 모델</b> — 법률 LLM, 비식별화, 법령 RAG, 임상 바이오마커.</span></li>
+          <li><i>01</i><span><b>효율적인 생성</b> — 병렬 토큰 생성, 확산 언어모델, 토큰 수를 줄이는 토크나이저</span></li>
+          <li><i>02</i><span><b>장문맥·멀티모달</b> — 위치 인코딩과 어텐션 싱크 분석, 의료영상, 심전도, EMR로의 확장</span></li>
+          <li><i>03</i><span><b>평가</b> — 한국어 벤치마크, 언어 모델과 VLM의 부정 표현 이해</span></li>
+          <li><i>04</i><span><b>도메인 특화 모델</b> — 법률 LLM, 비식별화, 법령 RAG, 임상 바이오마커</span></li>
         </ul>
       </article>
 
@@ -185,7 +188,7 @@
       <div>
         <h2 class="sec-title">네 가지 연구 분야</h2>
         <p class="sec-lede" style="margin-top:14px">
-          현재 진행 중인 연구와 관련 논문, 공개 코드는
+          현재 진행 중인 연구와 관련 논문은
           <a href="research.html" style="color:var(--ink-2);border-bottom:1px solid var(--line-2)">연구 페이지</a>에서
           자세히 확인할 수 있습니다.
         </p>
@@ -197,7 +200,7 @@
         <div class="n">01</div>
         <h3>딥러닝을 위한 실행 플랫폼</h3>
         <div class="body">
-          <p>NVIDIA·AMD GPU 혼합 환경의 통신, CUDA Unified Memory 기반 CPU·GPU 메모리 활용, NPU·FPGA에서의 AI 연산 최적화, 그리고 공유되고 계측되는 클러스터 위에서의 분산 추론.</p>
+          <p>NVIDIA, AMD GPU 혼합 환경의 통신, CUDA Unified Memory 기반 CPU, GPU 메모리 활용, NPU, FPGA에서의 AI 연산 최적화, 그리고 공유되고 계측되는 클러스터 위에서의 분산 추론.</p>
           <div class="tags"><span class="tag">이종 가속기</span><span class="tag">Tensor Core</span><span class="tag">MoE 추론</span><span class="tag">스케줄링</span></div>
         </div>
       </article>
@@ -206,7 +209,7 @@
         <div class="n">02</div>
         <h3>대규모 언어 모델</h3>
         <div class="body">
-          <p>병렬 토큰 생성과 확산 언어모델, 장문맥·멀티모달 학습, 토큰 수를 줄이는 토크나이저, 그리고 내년에도 의미가 남는 벤치마크.</p>
+          <p>병렬 토큰 생성과 확산 언어모델, 장문맥멀티모달 학습, 토큰 수를 줄이는 토크나이저, 그리고 내년에도 의미가 남는 벤치마크.</p>
           <div class="tags"><span class="tag">병렬 디코딩</span><span class="tag">장문맥</span><span class="tag">토크나이저</span><span class="tag">평가</span></div>
         </div>
       </article>
@@ -246,6 +249,7 @@
     </div>
 
     <div class="news">
+      <div class="news-item" data-reveal><time>2026</time><p><b>서울대연구팀, 판결문 최적화 AI비식별화 기술개발</b> <a href="https://www.yna.co.kr/view/AKR20260929092100004" rel="noopener" style="border-bottom:1px solid var(--line-2)">연합뉴스</a></p></div>
       <div class="news-item" data-reveal><time>2025</time><p><b>이재진 교수 연구팀, 법원 판결문 내 개인정보를 비식별화하는 AI 개발</b> <a href="https://cse.snu.ac.kr/community/news/1192" rel="noopener" style="border-bottom:1px solid var(--line-2)">서울대학교 컴퓨터공학부 소식</a></p></div>
       <div class="news-item" data-reveal><time>2025</time><p><b>한국판 &#8216;딥시크&#8217; 만들 수 있다&#8230; 서울대 연구진 &#8216;고성능 한국어 LLM&#8217; 개발</b> <a href="https://n.news.naver.com/article/584/0000033143" rel="noopener" style="border-bottom:1px solid var(--line-2)">기사</a></p></div>
       <div class="news-item" data-reveal><time>2024</time><p><b>이재진 교수 연구진 창업기업 모레, &#8216;최강 한국어 성능&#8217; 갖춘 102B 오픈 소스 모델 공개</b> <a href="https://cse.snu.ac.kr/community/news/1182" rel="noopener" style="border-bottom:1px solid var(--line-2)">서울대학교 컴퓨터공학부 소식</a></p></div>
@@ -270,7 +274,7 @@
       </div>
       <div class="card" data-reveal>
         <h4>소프트웨어와 시스템</h4>
-        <p>저비용·고효율 이기종 슈퍼컴퓨터 천둥(Chundoong)을 개발하고, UDC-SIT·UDC-VIT 데이터셋과
+        <p>저비용 + 고효율 이기종 슈퍼컴퓨터 천둥(Chundoong)을 개발하고, UDC-SIT·UDC-VIT 데이터셋과
         SnuQS, SnuRHAC, SOFF, HUM, SnuCL, SFMalloc, FaCSim, COMIC 등의 소프트웨어를 공개했습니다.</p>
       </div>
       <div class="card" data-reveal>

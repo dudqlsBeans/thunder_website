@@ -10,6 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=JetBrains+Mono:wght@400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13 2 4 14h6l-1 8 9-12h-6z' fill='%237fd7e6'/%3E%3C/svg%3E">
+<script>/* apply the saved theme before first paint, otherwise every page load
+   flashes the default dark and fades to light */
+try{var t=localStorage.getItem('trg-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
 <body>
 
@@ -60,7 +63,7 @@
       <span class="eyebrow">CSE &#183; Graduate School of AI</span>
     </div>
 
-    <h1 class="display">Accelerating <em>large-scale AI</em>, pragmatically.</h1>
+    <h1 class="display">Welcome to <em>THUNDER</em> Research Group</h1>
 
     <p class="hero-lede">
       THUNDER Research Group belongs to both the Department of Computer Science and Engineering and the Graduate School of AI at
@@ -74,7 +77,7 @@
         Explore the research
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
-      <a class="btn btn-ghost" href="join.html">Work with us</a>
+      <a class="btn btn-ghost" href="join.html">Join us</a>
     </div>
   </div>
 
@@ -95,7 +98,7 @@
       <div class="rule" aria-hidden="true"></div>
       <div class="eyebrow">01 &nbsp;/&nbsp; Departments</div>
       <div>
-        <h2 class="sec-title">One group, two departments</h2>
+        <h2 class="sec-title">Departments</h2>
         <p class="sec-lede" style="margin-top:14px">
           Accelerator-based heterogeneous systems are the de facto standard for running large-scale
           applications, but the programming wall stands between a model designer and the machine.
@@ -184,7 +187,7 @@
       <div class="rule" aria-hidden="true"></div>
       <div class="eyebrow">02 &nbsp;/&nbsp; Current work</div>
       <div>
-        <h2 class="sec-title">Four areas of research</h2>
+        <h2 class="sec-title">Research Areas</h2>
         <p class="sec-lede" style="margin-top:14px">
           Standing projects, each with students, code and published results behind it.
           The <a href="research.html" style="color:var(--ink-2);border-bottom:1px solid var(--line-2)">research page</a>
@@ -247,6 +250,7 @@
     </div>
 
     <div class="news">
+      <div class="news-item" data-reveal><time>2026</time><p><b>SNU research team develops AI de-identification optimised for court judgments.</b> <a href="https://www.yna.co.kr/view/AKR20260929092100004" rel="noopener" style="border-bottom:1px solid var(--line-2)">Yonhap News</a></p></div>
       <div class="news-item" data-reveal><time>2025</time><p><b>Prof. Jaejin Lee's team develops an AI that de-identifies personal information in court judgments.</b> <a href="https://cse.snu.ac.kr/en/community/news/1192" rel="noopener" style="border-bottom:1px solid var(--line-2)">SNU CSE news</a></p></div>
       <div class="news-item" data-reveal><time>2025</time><p><b>&#8220;Korea can build its own DeepSeek&#8221;</b> — SNU researchers develop a high-performance Korean LLM. <a href="https://n.news.naver.com/article/584/0000033143" rel="noopener" style="border-bottom:1px solid var(--line-2)">Coverage</a></p></div>
       <div class="news-item" data-reveal><time>2024</time><p><b>Moreh, founded by members of the group, releases a 102B open-source model</b> with leading Korean performance. <a href="https://cse.snu.ac.kr/community/news/1182" rel="noopener" style="border-bottom:1px solid var(--line-2)">SNU CSE news</a></p></div>

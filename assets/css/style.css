@@ -147,6 +147,7 @@ body::after {
   .sec-head { grid-template-columns: 190px minmax(0, 1fr); column-gap: 40px; align-items: start; }
   .sec-head .eyebrow { padding-top: .55em; }
   .sec-head .rule { grid-column: 1 / -1; order: -1; }
+  .sec-head:not(:has(.eyebrow)) { grid-template-columns: minmax(0, 1fr); }
 }
 
 /* ---------- Header ---------- */
@@ -187,7 +188,6 @@ body::after {
   content: ""; position: absolute; left: 13px; right: 13px; bottom: 2px;
   height: var(--rule); background: currentColor;
   transform: scaleX(0); transform-origin: left; opacity: .5;
-  transition: transform .35s var(--ease);
 }
 .nav a:hover { color: var(--ink); }
 .nav a:hover::after { transform: scaleX(1); }
@@ -202,7 +202,8 @@ body::after {
   transition: color .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease);
 }
 .lang-btn:hover { color: var(--ink); border-color: var(--line-2); background: var(--panel); }
-html[lang="ko"] .sec-title, html[lang="ko"] h1.display, html[lang="ko"] .page-head h1 { letter-spacing: -.02em; }
+/* the hero title is the same English line on both sites, so it keeps the base tracking */
+html[lang="ko"] .sec-title, html[lang="ko"] .page-head h1 { letter-spacing: -.02em; }
 html[lang="ko"] .lede, html[lang="ko"] .sec-lede, html[lang="ko"] .hero-lede { word-break: keep-all; }
 /* Korean serif faces have no true italic — synthesised oblique looks wrong, so keep it upright */
 html[lang="ko"] h1.display em, html[lang="ko"] .sec-title em, html[lang="ko"] .page-head h1 em { font-style: normal; }
@@ -271,7 +272,7 @@ h1.display {
   letter-spacing: -.028em;
   max-width: 17ch;
 }
-h1.display em { font-style: italic; color: var(--ink-2); }
+h1.display em { font-style: normal; color: var(--ink-2); }
 .hero-lede {
   margin-top: clamp(26px, 3vw, 38px);
   max-width: 54ch;
@@ -308,8 +309,7 @@ h1.display em { font-style: italic; color: var(--ink-2); }
   font-size: .9rem; letter-spacing: .005em;
   transition: background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease), transform .3s var(--ease);
 }
-.btn svg { width: 14px; height: 14px; transition: transform .35s var(--ease); }
-.btn:hover svg { transform: translateX(3px); }
+.btn svg { width: 14px; height: 14px; }
 .btn-primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 .btn-primary:hover { background: transparent; color: var(--ink); border-color: var(--ink); }
 .btn-ghost:hover { background: var(--panel); border-color: var(--ink-3); }
@@ -326,13 +326,12 @@ h1.display em { font-style: italic; color: var(--ink-2); }
   background:
     radial-gradient(120% 90% at 0% 0%, var(--tint) 0%, transparent 58%),
     var(--panel);
-  transition: border-color .4s var(--ease), transform .4s var(--ease);
+  transition: border-color .4s var(--ease);
 }
 .division:hover { border-color: color-mix(in srgb, var(--tone) 45%, transparent); }
 .division::before {
   content: ""; position: absolute; top: -1px; left: -1px; width: 42%; height: var(--rule);
   background: var(--tone); opacity: .85;
-  transition: width .6s var(--ease);
 }
 .division:hover::before { width: calc(100% + 2px); }
 .division.cs { --tone: var(--cs); --tint: var(--cs-dim); }
@@ -368,17 +367,9 @@ h1.display em { font-style: italic; color: var(--ink-2); }
   padding: clamp(26px, 3vw, 40px) 0;
   border-bottom: var(--rule) solid var(--line);
   position: relative;
-  transition: padding-left .5s var(--ease);
 }
-.area::before {
-  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 2px;
-  background: var(--tone, var(--cs)); transform: scaleY(0); transform-origin: top;
-  transition: transform .5s var(--ease);
-}
-.area:hover::before { transform: scaleY(1); }
 @media (min-width: 780px) {
   .area { grid-template-columns: 60px 1.05fr 1.35fr; align-items: start; }
-  .area:hover { padding-left: 22px; }
 }
 .area .n { font-family: var(--mono); font-size: .72rem; color: var(--ink-4); letter-spacing: .1em; padding-top: .45em; }
 .area h3 {
@@ -421,7 +412,6 @@ h1.display em { font-style: italic; color: var(--ink-2); }
 .project::before {
   content: ""; position: absolute; left: 0; top: 0; width: 3px; height: 0;
   background: var(--tone, var(--cs)); opacity: .75;
-  transition: height .6s var(--ease);
 }
 .project:hover::before, .project:focus-within::before { height: 100%; }
 
@@ -496,7 +486,7 @@ h1.display em { font-style: italic; color: var(--ink-2); }
   border: var(--rule) solid var(--line);
   background: var(--panel);
   display: flex; flex-direction: column; gap: 12px;
-  transition: border-color .35s var(--ease), background .35s var(--ease), transform .35s var(--ease);
+  transition: border-color .35s var(--ease), background .35s var(--ease);
 }
 .card:hover { border-color: var(--line-2); background: var(--panel-2); }
 .card h4 { font-size: 1.05rem; font-weight: 500; letter-spacing: -.005em; }
@@ -516,10 +506,12 @@ h1.display em { font-style: italic; color: var(--ink-2); }
 .pub .authors { color: var(--ink-3); font-size: .875rem; margin-top: 5px; }
 .pub .authors b { color: var(--ink-2); font-weight: 500; }
 .pub .venue {
-  font-family: var(--mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase;
-  color: var(--ink-2);
+  font-family: var(--sans); font-size: .8125rem; line-height: 1.5;
+  color: var(--ink-3);
 }
-.pub .venue em { font-style: normal; color: var(--tone, var(--ink-2)); }
+.pub .venue em {
+  font-style: normal; font-weight: 500; color: var(--tone, var(--ink-2));
+}
 .pub .pub-areas { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
 .pub .pub-areas .tag { font-size: .6rem; padding: 3px 8px; }
 .pub .pub-areas .tag:first-child {
@@ -553,6 +545,7 @@ a.filter { display: inline-flex; align-items: center; text-decoration: none; }
 a.filter[aria-current="true"] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
 /* land the heading clear of the fixed header */
 .sec-head[id] { scroll-margin-top: 104px; }
+.section[id] { scroll-margin-top: 92px; }
 .filter[data-filter="systems"]   { --tone: var(--area-systems); }
 .filter[data-filter="lm"]        { --tone: var(--area-lm); }
 .filter[data-filter="quantum"]   { --tone: var(--area-quantum); }
@@ -589,9 +582,9 @@ a.filter[aria-current="true"] { color: var(--bg); background: var(--ink); border
   width: 100%; height: 100%; border-radius: 50%;
   object-fit: cover; object-position: 50% 22%;
   filter: saturate(.92) contrast(1.02);
-  transition: filter .4s var(--ease), transform .5s var(--ease);
+  transition: filter .4s var(--ease);
 }
-.person:hover .avatar img { filter: saturate(1) contrast(1); transform: scale(1.04); }
+.person:hover .avatar img { filter: saturate(1) contrast(1); }
 .person.cs .avatar, .person.cse .avatar { border-color: color-mix(in srgb, var(--cs) 55%, transparent); color: var(--cs); }
 .person.ds .avatar { border-color: color-mix(in srgb, var(--ds) 55%, transparent); color: var(--ds); }
 .person.ep .avatar { border-color: color-mix(in srgb, var(--area-quantum) 55%, transparent); color: var(--area-quantum); }
@@ -681,9 +674,9 @@ a.filter[aria-current="true"] { color: var(--bg); background: var(--ink); border
 .shot img {
   width: 100%; height: 100%; object-fit: cover;
   filter: saturate(.9);
-  transition: transform .7s var(--ease), filter .5s var(--ease);
+  transition: filter .5s var(--ease);
 }
-.gallery figure:hover .shot img { transform: scale(1.03); filter: saturate(1); }
+.gallery figure:hover .shot img { filter: saturate(1); }
 .gallery figcaption {
   margin-top: 10px; display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline;
   font-size: .875rem; color: var(--ink-2);
@@ -746,13 +739,8 @@ a.filter[aria-current="true"] { color: var(--bg); background: var(--ink); border
 }
 .page-head .lede { margin-top: 26px; max-width: 60ch; color: var(--ink-2); font-size: 1.05rem; }
 
-/* ---------- Motion ---------- */
-[data-reveal] {
-  opacity: 0; transform: translateY(18px);
-  transition: opacity .85s var(--ease), transform .85s var(--ease);
-  transition-delay: var(--d, 0ms);
-}
-[data-reveal].in { opacity: 1; transform: none; }
+/* ---------- Motion ----------
+   Nothing moves: no scroll reveal, no hover growth. Colour still responds. */
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
