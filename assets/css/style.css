@@ -120,12 +120,14 @@ body::after {
   color: var(--ink-3);
 }
 
+/* rule, then an optional eyebrow beside the title. Flex rather than grid so a
+   head with no eyebrow simply gives the title the whole row — no :has() needed. */
 .sec-head {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  display: flex; flex-wrap: wrap;
   gap: 18px;
   margin-bottom: clamp(38px, 5vw, 64px);
 }
+.sec-head > * { flex: 0 0 100%; min-width: 0; }
 .sec-head .rule {
   height: var(--rule);
   background: var(--line);
@@ -144,10 +146,9 @@ body::after {
   font-size: 1.02rem;
 }
 @media (min-width: 900px) {
-  .sec-head { grid-template-columns: 190px minmax(0, 1fr); column-gap: 40px; align-items: start; }
-  .sec-head .eyebrow { padding-top: .55em; }
-  .sec-head .rule { grid-column: 1 / -1; order: -1; }
-  .sec-head:not(:has(.eyebrow)) { grid-template-columns: minmax(0, 1fr); }
+  .sec-head { column-gap: 40px; align-items: flex-start; }
+  .sec-head .eyebrow { flex: 0 0 190px; padding-top: .55em; }
+  .sec-head .eyebrow ~ * { flex: 1 1 0; }
 }
 
 /* ---------- Header ---------- */
